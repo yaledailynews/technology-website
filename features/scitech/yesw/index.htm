@@ -1,0 +1,309 @@
+<title>Yale Daily News - Part I: Planting seeds for STEM growth</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+	body {
+		margin: 0;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left / cover fixed;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 25px/40px georgia, "times new roman", times, serif;
+			letter-spacing: 1px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			text-shadow: 1px 1px 1.5px #666;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 66%;
+		margin: 0 auto;
+		font: 400 14px/25px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/40px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			float: right;
+		}
+		.text {
+			width: 66%;
+			text-align: justify;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center / contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px georgia, "times new roman", times, serif;
+				text-shadow: 1px 1px 1.5px #aaa;
+				letter-spacing: 1px;
+				text-align: right;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+
+
+<div class="topbar">
+	<div class="logo"></div>
+	Part I: Planting seeds for STEM growth
+	<div class="part">Part 3 - Coming Wednesday!</div>
+	<div class="part">Part 2 - Coming Tuesday!</div>
+	<div class="part" href="index.htm">Part 1</div>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		During the past four years, Yale has wooed science-strong high school seniors with colorful brochures, YES-Weekend and recruitment trips. In the first of a three-part series, Rishabh Bhandhari and Jennifer Gersten investigate where those efforts are headed.
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/rishabhbhandari/" target="_blank">Rishabh Bhandari</a> and <a href="http://yaledailynews.com/blog/author/jennifergersten/" target="_blank">Jennifer Gersten</a> - Staff Reporters
+		<div class="q">Web design by Qingyang Chen</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>A</big>s a senior in high school, Tim McLaughlin was a highly coveted athlete. A varsity rower with impressive times for a lightweight, McLaughlin had offers in the fall of 2010 from several rowing powerhouses including the University of Washington, as well as Stanford, Yale and Harvard.
+		<br /><br />
+		But schools also found McLaughlin appealing for a different reason: his aptitude for computer science. While McLaughlin was attracted to Yale&rsquo;s rowing team and friendly campus, he was turned off by its reputation as a school lagging behind its peers in the sciences, technology, engineering and math.
+		<br /><br />
+		&ldquo;There was just a sense that Yale wasn&rsquo;t very strong in computer science,&rdquo; he said.
+		<br /><br />
+		Despite Yale&rsquo;s promise of recruitment, McLaughlin chose not to apply. He headed to Harvard as a member of its class of 2015, citing the combination of Harvard&rsquo;s liberal arts curriculum and strong track record in producing excellent programmers.
+		<br /><br />
+		McLaughlin, who took graduate courses in computer science as a freshman at Harvard, is the type of STEM-oriented student Yale is now looking to attract with outreach programs such as Yale Engineering and Science Weekend (YES-W). The three-day program, which ends Monday afternoon, allows the admissions office to highlight the opportunities and resources available to top high school seniors interested in STEM fields. YES-W is now in its fourth year, and was recently renewed for three more.
+		<br /><br />
+		Dean of Undergraduate Admissions Jeremiah Quinlan said YES-W and the admissions office&rsquo;s broader campaign first began under the tenure of his predecessor Jeffrey Brenzel in order to attract the country&rsquo;s brightest young scientists and engineers. Quinlan added that in the past, many of these students may not have realized the University&rsquo;s strength in STEM fields because of Yale&rsquo;s historical emphasis on the humanities, or the small size of its engineering and science departments.
+		<br /><br />
+		&ldquo;I want students to realize that they sacrifice nothing by coming to Yale to study science,&rdquo; Quinlan said. &ldquo;[The students] are getting the best undergraduate education in terms of both opportunities and resources.&rdquo;
+	</div>
+	<div class="side">
+		<img src="salovey.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;I&rsquo;ve never thought about Yale before this.&rdquo; &mdash; Christopher Wang, a high school senior.
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Getting the Word Out</h2>
+
+		As her team of prefrosh swarmed around her with saws and hot glue guns in the Center for Innovation, Engineering and Design on Saturday night, Jordana Williams &rsquo;15 plucked a plush squirrel from her bandana and duct-taped it to a red Solo Cup. The group had yet to decide what they were going to do with it.
+		<br /><br />
+		&ldquo;Not clear, but it may go sliding down a tube,&rdquo; she said, yelling over the D.J.
+		<br /><br />
+		Williams&rsquo;s high school students were among a group of over 100 highly qualified science and engineering high school seniors who were flown to campus this weekend to see Yale&rsquo;s strength in the STEM fields up close.
+		<br /><br />
+		Quinlan said the students, all of whom are regular decision applicants to the class of 2018, had received likely letters from the University after the admissions office, with input from science and engineering faculty, had identified students whose credentials made them likely candidates for acceptance.
+		<br /><br />
+		&ldquo;YES-W is an opportunity for us to begin a conversation with these students as to why Yale is the best fit for them,&rdquo; Quinlan said. He added that likely letters can also be given to students who are not invited to YES-W or do not identify as science or engineering students.
+		<br /><br />
+		In addition to tours of campus science facilities, this year&rsquo;s YES-W offered numerous opportunities for students to connect with Yale&rsquo;s science faculty. Seven STEM professors and faculty members, including Vince Wilczynski, the deputy dean of the School of Engineering and Applied Science, gave master classes for YES-W attendees. Students also attended panels featuring faculty members, students and alumni of the University and a Master&rsquo;s Tea on Sunday afternoon with James Rothman &rsquo;71, the Yale professor and 2013 Nobel Prize winner in Medicine. On Monday, the last day of the program, students will meet with faculty advisors matched to them based on their academic interests over lunch in the residential college dining halls.
+		<br /><br />
+		&ldquo;As far as I&rsquo;m aware, [YES-W] is the only program of its kind among Yale and its peer network,&rdquo; said Ayaska Fernando &rsquo;08, senior assistant director at the admissions office and the office&rsquo;s director of STEM recruitment.
+		<br /><br />
+		He added that although the misconception still lingers that the University trails its peers in providing a world-class STEM education, programs such as YES-W have been successful in gradually raising applicants&rsquo; awareness of the University&rsquo;s resources. According to Fernando, the provost&rsquo;s office has approved the admissions office&rsquo;s request to fund YES-W for another three years after receiving positive feedback from students who attended the program.
+		<br /><br />
+		Although YES-W is the most significant part of Yale&rsquo;s outreach efforts to STEM students, Quinlan said the University relies on a host of other programs and initiatives to raise student knowledge of the University&rsquo;s science and technology departments, many of which have improved since former University President Richard Levin pledged $1 billion in 2001 to revamp Yale&rsquo;s STEM facilities and offerings.
+		<div class="textimg" id="textimgmoney"></div>
+		In 2009, Fernando said, the admissions office began sending every high school student who scored a 5 on the AP Physics exam a stand-alone brochure outlining the University&rsquo;s strengths and latest developments in STEM fields.
+		<br /><br />
+		That year, Fernando and a number of distinguished Yale faculty also began traveling to regions known for their strong STEM students, like northern California or New Jersey, to host &ldquo;STEM forums&rdquo; where professors emphasized the resources the University invests in its science students.
+		<br /><br />
+		Yale physics professor Ramamurti Shankar, who has attended recruitment trips, said the efforts make Yale&rsquo;s STEM offerings more visible. Prospective students, he said, are learning that science and liberal arts can coexist well at Yale.
+		<br /><br />
+		&ldquo;We have to change any perception lingering that this is not a science place,&rdquo; he said. &ldquo;We want to show them that liberal arts doesn&rsquo;t mean you compromise science, and one of the things that shows that faculty takes this seriously is when we go on these meetings.&rdquo;
+		<br /><br />
+		In recent years, the admissions office has begun making the University&rsquo;s presence felt at national science conferences and summer programs, such as FirstRobotics and Research Science Institute. Fernando said this is an effective way for the University to convey its strengths to a national audience and younger high school and middle school students.
+		<br /><br />
+		While the admissions office needed to convince skeptics in the University administration when YES-W  was first piloted in 2011, Fernando said the entire University community has since been supportive and enthusiastic about the  admissions office&rsquo;s endeavors. He added that faculty members, current undergraduates and alumni have asked the admissions office how they can help in attracting top high school students to Yale.
+	</div>
+	<div class="side">
+		<img src="grid.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;I want students to realize that they sacrifice nothing by coming to Yale to study science.&rdquo; &mdash; Jeremiah Quinlan, Dean of Undergraduate Admissions
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Saying Yes to YES-W</h2>
+
+		All 18 high school students interviewed at this year&rsquo;s YES-W said they were impressed by what they had seen.
+		<br /><br />
+		&ldquo;I&rsquo;ve never thought about Yale before this,&rdquo; said Christopher Wang, a high school senior. &ldquo;I thought, Yale&rsquo;s good at political science. But I talked to a lot of math and science majors about their professors, and everything about Yale impresses me.&rdquo;
+		<br /><br />
+		Kevin Huang, a high school senior from southern California, said in an email that most high school students have the perception that Yale&rsquo;s STEM program lags behind those of Harvard, Princeton and Stanford. Huang added that although this is true, the gap is small and students should make more holistic comparisons. He added that Yale&rsquo;s investment in STEM gives students opportunities such as Perspectives in Science and Engineering that other schools could not match.
+		<br /><br />
+		Dana Chaykovksy &rsquo;17, a YES-W attendee last year, said YES-W convinced her to choose Yale. Before her visit, Chaykovsky said she did not realize the ease with which undergraduates could access science resources at the University.
+		<br /><br />
+		Wilczynski said YES-W was also an opportunity for the students to meet their future classmates and bond over their shared intellectual interests. Both, he said, are trademarks of a Yale education that emphasizes collaboration and communication. Fernando echoed Wilczynski&rsquo;s statement, adding that Yale looked not only for competent scientists, but also ambassadors in the field. 
+		<br /><br />
+		&ldquo;I made a ton of really good friends at YES Weekend, and they&rsquo;re still some of my best friends,&rdquo; said Nolan Malone &rsquo;16, another former attendee of the program. 
+		<br /><br />
+		To keep in step with its peer schools and the investments President Levin made in the STEM community, the admissions office set a benchmark in 2007 for 40 percent of its incoming freshman class to intend to major in a STEM subject. The University first met this goal in the spring of 2012 for the class of 2016, as it did for the class of 2017 and the early action pool for 2018.
+		<div class="textimg" id="textimgstem"></div>
+		Both Quinlan and Fernando said the admissions office is comfortable with this approximate benchmark. Quinlan added that the University did not want to compromise the intimate education and tight-knit community that characterizes a current undergraduate&rsquo;s STEM experience by straining existing STEM resources.
+		<br /><br />
+		Since Yale began its targeted outreach to top science and math students in 2006, the number of STEM applicants to the University has grown by 50 percent, Quinlan said. He added that more than half of the applicants in the class of 2018 were students who expressed strong interests in STEM.
+		<br /><br />
+		&ldquo;Beyond the quantity of applications we&rsquo;re receiving, I&rsquo;m particularly pleased at the growing quality of students who are applying,&rdquo; he said. He added that, in recent years, more STEM students are not only applying to Yale, but choosing the University over schools better known for their STEM programs, such as MIT or Stanford. In every conversation he has had with STEM faculty, Fernando said, he has heard that current freshmen and sophomores at Yale are stronger than they have ever seen before.
+		<br /><br />
+		Fernando said the ultimate success of YES-W and other outreach programs can be measured with increased yield rates of likely STEM majors. He added that Yale was getting &ldquo;more than a good share&rdquo; of YES-W students, many of whom would also receive acceptance letter from other top STEM schools.
+		<br /><br />
+		&ldquo;If you want to get good students, you have to work for them,&rdquo; Shankar said. Even if students do not ultimately chose Yale, Shankar said, he is satisfied if they make their decision knowing what the University really does offer. 
+		<br /><br />
+		42 percent of the class of 2016 and 41 percent of the class of 2017 matriculated to Yale with an intention of majoring in a STEM field.
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;The general conception amongst most high school students is that Yale's STEM program lags behind those of Harvard, Princeton, and Stanford. In some ways, that is true - however, I think Yale has been making great progress in recent years, and the difference now is so minimal that students should really look beyond this slight discrepancy when making college decisions.&rdquo; &mdash; Kevin Huang, a high school senior from Northern California.</div>
+	</div>
+</div>
+<div class="feature" id="feature4">
+	<div class="featuretext">
+		&ldquo;If you want to get good students, you have to work for them.&rdquo; &mdash; Ramamurti Shankar, Yale professor of physics.
+	</div>
+</div>
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
