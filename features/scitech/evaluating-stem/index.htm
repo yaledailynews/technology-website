@@ -1,0 +1,351 @@
+<html>
+<head>
+<title>Yale Daily News - Part II: Evaluating STEM at Yale</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 25px/40px georgia, "times new roman", times, serif;
+			letter-spacing: 1px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			text-shadow: 1px 1px 1.5px #666;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 66%;
+		margin: 0 auto;
+		font: 400 14px/25px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/40px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			float: right;
+		}
+		.text {
+			width: 66%;
+			text-align: justify;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px georgia, "times new roman", times, serif;
+				text-shadow: 1px 1px 1.5px #aaa;
+				letter-spacing: 1px;
+				text-align: right;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Part II: Evaluating STEM at Yale
+	<div class="part">Part 3 (Coming Wednesday)</div>
+	<div class="part" href="">Part II: Evaluating STEM at Yale</div>
+	<div class="part" href = "/features/scitech/yesw">Part I: Planting seeds for STEM growth</div>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Students arriving at Yale today are seeing more institutional emphasis on STEM than ever before. In the second of a three-part series, Rishabh Bhandari and Jennifer Gersten investigate how the University&rsquo;s new STEM initiatives have impacted students.
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/rishabhbhandari/" target="_blank">Rishabh Bhandari</a> and <a href="http://yaledailynews.com/blog/author/jennifergersten/" target="_blank">Jennifer Gersten</a> - Staff Reporters
+		<div class="q">Web design by Qingyang Chen and Soham Sankaran</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>W</big>hen James Lockman &rsquo;89 was a student, Yale was known for football stars and a cappella crooners — not science and engineering.
+		<br /><br />
+		But Lockman, who now serves as the president of the Yale Science and Engineering Association, said the University has made major strides over the past ten years in expanding the scope and visibility of its STEM programs and resources. The strength of Yale STEM, he said, is no longer a secret. 
+		<br /><br />
+		&ldquo;There was a perception among people that the [Massachusetts Institute of Technology] had stronger STEM facilities than Yale. Even I thought that [as a high school senior],&rdquo; said Gregg Favalora &rsquo;96, vice-president of the YSEA. Favalora, who chose Yale over MIT because of its broader liberal arts education, said this perception has since been eradicated.
+		<br /><br />
+		Over the past eight years, the undergraduate admissions office has played a central role in changing the public perception of Yale&rsquo;s STEM programs by explicitly recruiting highly qualified STEM high school seniors and advertising the ongoing research and accomplishments of the University&rsquo;s faculty. 
+		<br /><br />
+		Both Dean of Undergraduate Admissions Jeremiah Quinlan and Ayaska Fernando &rsquo;08 GRD &rsquo;14, senior assistant director at the admissions office and the director of STEM recruitment, said the office aims to let prospective applicants know that Yale offers a world-class STEM undergraduate education. Students will not miss out on opportunities for cutting-edge research or funding by coming to Yale, Quinlan said. 
+		<br /><br />
+		According to 42 students interviewed who are currently majoring in a STEM subject at Yale, these claims have largely proved true. 
+		<br /><br />
+		Still, many of the students who arrived at Yale intending to major in STEM fields have ended up changing their minds. Though the University aims for prospective STEM majors to make up 40 percent of the incoming freshman class, only about a quarter of students in the class of 2014 were STEM majors by the time they were seniors.
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;There was a perception among people that the [Massachusetts Institute of Technology] had stronger STEM facilities than Yale. Even I thought that [as a high school senior],&rdquo; &mdash; Gregg Favalora &rsquo;96, vice-president of the YSEA.
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Living Up to Expectations</h2>
+
+		&ldquo;I&rsquo;ve absolutely loved my STEM experience here at Yale,&rdquo; said Spencer Alexander &rsquo;14, an electrical engineering major. 
+		<br /><br />
+		When Alexander submitted applications to colleges, he said Yale was initially lower on his list than other Ivy League schools with more well-known engineering programs, including Princeton and Cornell. It was not until he visited campus during Bulldog Days and saw the opportunities available for future students that he was persuaded to come to Yale, he said. 
+		<br /><br />
+		Alexander said Yale&rsquo;s STEM resources are often underrated because of their small size. Sam Faucher &rsquo;16, a chemical engineering major who chose Yale over schools with more established STEM programs such as Harvard and Stanford, said college rankings tend to favor schools with bigger STEM programs because the ranking systems use metrics such as the aggregate research output at each school or the number of professors in each department. 
+		<br /><br />
+		Most students interviewed said the small size of Yale&rsquo;s STEM program is actually one of its strengths. They cited easier access for students to labs and professors, a collaborative environment and readily available funding as hallmarks of a Yale STEM education.
+		<br /><br />
+		Fernando said Yale&rsquo;s faculty-to-student ratio is one of the lowest in the University&rsquo;s peer group, adding that this more intimate learning environment gives Yale undergraduates an advantage when applying to competitive graduate schools. 
+		<br /><br />
+		&ldquo;Because each faculty member is writing only one or two recommendation letters each year, our students&rsquo; graduate school applications tend to be supported by very meaty, very substantive and thorough recommendation letters,&rdquo; he said. 
+		<br /><br />
+		Fernando, a graduate student studying mechanical engineering, said several of his classmates matriculated to some of the top graduate schools in the country — a testament, he said, to the caliber of the STEM students Yale both attracts and produces.
+		<br /><br />
+		Alexander said he has found Yale professors to be willing and helpful mentors. 
+		<br /><br />
+		In addition, he said the University offers generous funding for students to conduct summer research. Programs such as Perspectives on Science and Engineering provide funding even for freshmen, Alexander said.
+		<br /><br />
+		Nimisha Ganesh &rsquo;15 said her freshman year faculty advisor funded her entire freshman summer research project and was responsive throughout the summer whenever she needed help. 
+		<br /><br />
+		Still, students interviewed said the strength of Yale&rsquo;s STEM programs was not the only factor that influenced them to choose Yale over schools known to have a more technical focus. They said they were also attracted to Yale&rsquo;s liberal arts curriculum and culture of extracurricular activities. 
+		<br /><br />
+		Jon Dorsch &rsquo;16, who turned down the California Institute of Technology and MIT once he was taken off Yale&rsquo;s waitlist, said he wanted to attend a school where intellectual diversity flourished.
+		<br /><br />
+		&ldquo;If you don&rsquo;t do STEM at a school like Caltech, you don&rsquo;t do anything. You drop out or you transfer,&rdquo; he said. 
+		<br /><br />
+		Though he majors in mechanical engineering at Yale, Dorsch said he has also taken classes that he could not imagine taking at any other school, such as &ldquo;Listening to Music.&rdquo; 
+		<br /><br />
+		Faucher said Yale&rsquo;s emphasis on the liberal arts separates the University from even its Ivy League peers. He added that it is not uncommon for STEM students at Yale to pursue widely different extracurricular pursuits, such as improvisational comedy and drama, or to write for a literary publication. 
+		<br /><br />
+		All 42 students interviewed said they were attracted to the University because of the significant investments Yale has made in renovating and expanding STEM facilities available to undergraduates. 
+		<br /><br />
+		&ldquo;The entire STEM community is growing,&rdquo; Russ Egly &rsquo;16 said. &ldquo;They&rsquo;ve been pumping tremendous amounts of money in the last decade and that&rsquo;s going to start showing in the next few years.&rdquo;
+		<br /><br />
+		Several students and alumni interviewed mentioned the Center for Engineering, Innovation, and Design (CEID), which opened in 2012, as an example of the kind of facility that has helped Yale recruit top young scientists and engineers. Alexander, who is a science and engineering tour guide for the admissions office, said prospective applicants are frequently impressed by the CEID, as well as by the University&rsquo;s purchase of West Campus — which includes more than 500,000 square feet of research laboratories. Alexander said these facilities may explain why top STEM students are increasingly choosing Yale over traditional STEM powerhouses. 
+		<br /><br />
+		Since the CEID&rsquo;s opening, the center&rsquo;s glass walls on Prospect Street have given Yale&rsquo;s engineering department unprecedented visibility. Lockman, the engineering alumnus, said the CEID has helped make the &ldquo;little secret&rdquo; of Yale&rsquo;s engineering program public. Student extracurricular groups and academic classes related to design and product development have made use of the center&rsquo;s resources, which include study spaces, 3-D printers, laser cutters and wet labs. Swipe access to these facilities is available to any student who completes the requisite online quiz and training. 
+	</div>
+	<div class="side">
+		<img src="grid.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;If you don&rsquo;t do STEM at a school like Caltech, you don&rsquo;t do anything. You drop out or you transfer&rdquo; &mdash; Jon Dorsch &rsquo;16.
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Retention, Not Just Acceptance</h2>
+
+		When University President Peter Salovey first stepped onto the Yale campus as a graduate student in 1981, roughly 20 percent of all degrees awarded to Yale College graduates were in the STEM fields. But despite a significant rise over the past few decades in the number of freshmen who arrive at Yale intending to pursue STEM fields, the number of students who end up majoring in STEM has barely changed: only 23 percent of the class of 2014 is currently majoring in a STEM field, according to the Office of Institutional Research.
+		<br /><br />
+		Fernando said one of the University&rsquo;s goals is to raise the retention rate of incoming STEM students. But he added that high attrition rates in the STEM fields are a national problem and not just specific to Yale. 
+		<br /><br />
+		&ldquo;There are a number of reasons inherent in a STEM education that explain why so many incoming STEM students change course,&rdquo; Egly said, citing the difficulty of the majors as one primary explanation. &ldquo;These courses aren&rsquo;t just very time-consuming and difficult but the majors also require a lot of credits.&rdquo;
+		<br /><br />
+		Egly added that the relative grade inflation of the social sciences could also make a STEM major less appealing to students.
+		<br /><br />
+		Alexander said many students who enter as prospective chemistry or biology majors are considering medical school. If they discard this option once in college, many will also discard the STEM path at large, he said. Dorsch added that many students start as STEM majors without being very committed because it is easier to start in STEM and then move out than it is to move into STEM from a non-quantitative major.
+		<br /><br />
+		But students interviewed also said the University&rsquo;s introductory courses leave much to be desired and often turn students away from STEM majors. 
+		<br /><br />
+		Austin Haynesworth &rsquo;15 said that while students in the humanities can usually drop or replace badly taught courses, STEM students often have no choice but to take a course with a poorly reviewed professor if the course is a prerequisite for their major. 
+		<br /><br />
+		&ldquo;The [teaching assistants] for the introductory science classes are horrible,&rdquo; Egly said, adding that many of his friends left the STEM fields after having poor experiences with introductory classes. But Egly said his classes were much better taught at the advanced levels, a sentiment shared by other students interviewed.
+		<br /><br />
+		He also said the University&rsquo;s small science departments grant students less flexibility in selecting courses than they would at larger schools such as Stanford or MIT. As someone interested in energy engineering, Egly said he is disappointed Yale is only beginning to develop a certificate in the discipline, while schools such as MIT allow students to minor in the field. Dorsch echoed Egly&rsquo;s complaint, adding that the University does not have a good course on rockets.
+		<br /><br />
+		Harry Larson &rsquo;14, a columnist for the News and former STEM major who now double majors in economics and English, said many students may leave the STEM majors for less time-consuming majors that enable them to participate in Yale&rsquo;s vibrant extracurricular and social scene. Larson added that he thinks more students would stay STEM majors if Yale&rsquo;s culture prioritized academics over extracurriculars. 
+		<br /><br />
+		Still, Larson said the University could take a number of relatively small steps to retain STEM students, such as moving more large introductory lectures to central locations on campus like Woolsey Hall and Linsly-Chittenden Hall. 
+		<br /><br />
+		Students interviewed expressed different views on whether Yale has the faculty resources to continue expanding its STEM programs. 
+		<br /><br />
+		University restrictions on hiring have hit the Computer Science Department particularly hard, and the department has strained to accommodate a surge in student interest in its introductory courses. 
+		<br /><br />
+		Computer science major Moriah Rahamim &rsquo;15 said her classes have remained large even as she has progressed to higher levels. While humanities courses, she said, commonly have one teaching fellow per ten students, computer science courses may have two teaching fellows for an entire 100-person lecture. She cited long lines for office hours and limited one-on-one time with professors as evidence that the department is too small to handle student demand.
+		<br /><br />
+		&ldquo;It&rsquo;s been a huge problem,&rdquo; Rahamim said. &ldquo;You feel like you&rsquo;re not really getting the resources and available support that you were promised.&rdquo;
+		<br /><br />
+		Most computer science majors interviewed said they chose Yale specifically for the department&rsquo;s emphasis on theoretical concepts over practical applications. Others, however, expressed concern that Yale does not offer a single course in web development or app design, both of which are increasingly desirable skills for STEM employers.
+		<br /><br />
+		Taylor McHugh &rsquo;16 said she was also skeptical about STEM expansion because the qualities that make Yale a unique place to practice science could be diluted if many more students joined the STEM community. 
+		<br /><br />
+		Fernando disagreed with these concerns, saying that the University&rsquo;s low faculty-to-student ratio and extensive resources per student make Yale well poised to accommodate an increase in the number of undergraduates who choose to study STEM. He added that the University has over 800 laboratories and that there are no signs that students are struggling to find research opportunities.
+		<br /><br />
+		In the 2012-&rsquo;13 academic year, 333 students at Yale were majoring in biology and physical sciences.
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;There are a number of reasons inherent in a STEM education that explain why so many incoming STEM students change course. These courses aren&rsquo;t just very time-consuming and difficult but the majors also require a lot of credits.&rdquo; &mdash; Russ Egly &rsquo;16.</div>
+	</div>
+</div>
+<div class="feature" id="feature4">
+	<div class="featuretext">
+		&ldquo;If you want to get good students, you have to work for them.&rdquo; &mdash; Ramamurti Shankar, Yale professor of physics.
+	</div>
+</div>
+
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
