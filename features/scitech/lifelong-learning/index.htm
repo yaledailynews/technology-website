@@ -1,0 +1,349 @@
+<html>
+<head>
+<title>Yale Daily News - Part III: A STEM for lifelong growth</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 25px/40px georgia, "times new roman", times, serif;
+			letter-spacing: 1px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			text-shadow: 1px 1px 1.5px #666;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 40px;
+		}
+		.featurecredit {
+			font: 400 14px/25px georgia, "times new roman", times, serif;
+			position: absolute;
+			right: 40px;
+			bottom: 40px;
+			height: 25px;
+			width: 33%;
+			text-align: right;
+			padding: 5px;
+			color: #fff;
+			text-shadow: 1px 1px 1.5px #666;
+		}
+		#feature1 {
+			background-image: url('JoyceXi_ClassDay2013-95.jpg');
+		}
+		#feature2 {
+			background-image: url('HenryEhrenberg_ClassDay2013-684.jpg');
+		}
+		#feature3 {
+			background-image: url('BriannaLoo_YESW-83.jpg');
+		}
+		#feature4 {
+			background-image: url('TasnimElboute_YEI-113.jpg');
+		}
+	.content {
+		width: 66%;
+		margin: 0 auto;
+		font: 400 14px/25px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/40px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			float: right;
+		}
+		.text {
+			width: 66%;
+			text-align: justify;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimg1 {
+				background-image: url('Scitech Part 3 WED PRINT.jpg');
+				height: 400px;
+			}
+			#textimg2 {
+				background-image: url('Scitech Part 3 WED WEB.jpg');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px georgia, "times new roman", times, serif;
+				text-shadow: 1px 1px 1.5px #aaa;
+				letter-spacing: 1px;
+				text-align: right;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+			text-align: left;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+			text-align: left;
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Part III: A STEM for lifelong growth
+	<a href="/features/scitech/lifelong-growth"><div class="part">Part III: A STEM for lifelong growth</div></a>
+	<a href="/features/scitech/evaluating-stem"><div class="part" href="/features/scitech/evaluating-stem">Part II: Evaluating STEM at Yale</div></a>
+	<a href="/features/scitech/yesw"><div class="part" href="/features/scitech/yesw">Part I: Planting seeds for STEM growth</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		After tossing their caps, Yale seniors head for the postgraduate frontier. In the last of a three-part series, Rishabh Bhandari and Jennifer Gersten ask what that frontier holds for the university&rsquo;s prospective scientists.
+	</div>
+	<div class="featurecredit">Photo by Joyce Xi</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/rishabhbhandari/" target="_blank">Rishabh Bhandari</a> and <a href="http://yaledailynews.com/blog/author/jennifergersten/" target="_blank">Jennifer Gersten</a> - Staff Reporters
+		<div class="q">Web design by Qingyang Chen and Soham Sankaran</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>W</big>hen job-hunting this past fall, engineering major Spencer Alexander &rsquo;14 skipped the walk to Undergraduate Career Services. 
+		<br /><br />
+		Instead, he took a train to Columbia University, where he found the big-company engineering recruiters who weren&rsquo;t coming to Yale. In search of postgraduate jobs, Alexander said he and many of his friends in the engineering major travel to New York to attend these fairs &mdash; often at the encouragement of their UCS advisors. 
+		<br /><br />
+		Many STEM majors interviewed said that although the University is headed in the right direction, there is still room for improvement. They cited both the growing number of students who are taking STEM classes at Yale and the expansion of Yale&rsquo;s STEM resources as reasons to be optimistic about the future of these disciplines at Yale, but felt the University should do more to help students, especially engineers, find postgraduate opportunities.
+		<br /><br />
+		<div class="textimg" id="textimg2"></div>
+		<br /><br />
+		Students interested in going straight to medical school or graduate school depart from Yale on a well-trodden path. Engineering majors in search of jobs, however, must frequently forge their own paths to postgraduate opportunities. 
+		<br /><br />
+		&ldquo;I want to understand not only how to build things but what are the consequences of me building these things &mdash; not only in terms of the science but politically and economically too,&rdquo; said Jon Dorsch &rsquo;16, a mechanical engineering major.
+	</div>
+	<div class="side">
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;Coming from the west coast, I hadn&rsquo;t really thought of going to Yale. But what I found at Yale was that I could pursue [my interests] without compromising my interest in engineering.&rdquo; &mdash; Nimisha Ganesh &rsquo;15
+	</div>
+	<div class="featurecredit">Photo by Henry Ehrenberg</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>From one senior year to the next</h2>
+		
+		Both Dean of Undergraduate Admissions Jeremiah Quinlan and Ayaska Fernando &rsquo;08 GRD &rsquo;14, senior assistant director at the admissions office and the director of STEM recruitment, said the type of high school students who apply to Yale want to use their education to tackle pressing issues on a national and even global scale. 
+		<br /><br />
+		Quinlan said the rise in STEM applicants has outpaced the growth of Yale&rsquo;s broader applicant pool over the past five years. Although the admissions office&rsquo;s outreach efforts explain this trend in part, Quinlan said a more important factor was the changing attitude of the nation&rsquo;s high school seniors towards the STEM fields. 
+		<br /><br />
+		Quinlan said students are increasingly seeing science and engineering as direct paths to addressing challenges such as climate change or international food supply. Fernando said he wants incoming scientists and engineers at Yale to have a desire to make their fields and knowledge accessible to the broader community &mdash; first at Yale and then globally. 
+		<br /><br />
+		&ldquo;We are very comfortable with where we are now [in terms of number of STEM students in recent incoming classes], but we will continue to respond to our applicant pool,&rdquo; Quinlan said, adding that demographic changes will continue to determine how Yale&rsquo;s incoming classes will look. The classes of 2016 and 2017 were the first at Yale to have more than 40 percent of students intending to major in STEM. 
+		<br /><br />
+		Isabella Quagliato, a program manager in the dean&rsquo;s office of the School of Engineering and Applied Science, said both the undergraduate college and the graduate schools are getting a higher caliber of students now because of outreach efforts and investments in STEM the University has made in recent years. 
+		<br /><br />
+		&ldquo;It&rsquo;s a chicken and egg situation &mdash; you need the resources and facilities to promote the schools, but you also need an outreach effort to let people know about these programs and why your school is one they should attend,&rdquo; she said. 
+	</div>
+	<div class="side">
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;There are a plethora of research opportunities for undergraduates while they&rsquo;re at Yale, but just looking at UCS, you get the sense that they expect you to move into finance the day you get your degree.&rdquo; &mdash; Jacob Marcus &rsquo;14 
+	</div>
+	<div class="featurecredit">Photo by Brianna Loo</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Engineering a foundation for students</h2>
+
+		One advantage Yale&rsquo;s graduate programs have over their counterparts at more technical schools is an emphasis on interdisciplinary studies, Quagliato said. 
+		<br /><br />
+		SEAS news director Rase McCray said Kyle Vanderlick, who became dean of SEAS in 2007, has made it a priority to develop interdisciplinary programs on both the graduate and undergraduate level. Launched in 2009, the Advanced Graduate Leadership Program gives six to eight students in the SEAS doctoral program the opportunity to cross-register in the School of Management, intern in academic offices, and participate in a number of policy and educational initiatives. 
+		<br /><br />
+		<div class="textimg" id="textimg1"></div>
+		<br /><br />
+		Also, graduates and undergraduates now have the opportunity to take CEID-based courses that offer training in practical design for engineering and non-engineering majors, like last fall&rsquo;s Medical Device Design and Innovation . 
+		<br /><br />
+		McCray said these courses are helping to broaden the scope of Yale engineers&rsquo; skill sets, and are likely to make Yale&rsquo;s engineering department more attractive to potential applicants.
+		<br /><br />
+		&ldquo;These programs are going to appeal to students who aren&rsquo;t just interested in becoming rote engineers; they&rsquo;re interested in going out and making ways,&rdquo; McCray said. &ldquo;They want to be the people who are boosting the boundaries of what engineering can do. Everything is in place for us to really start attracting those kinds of students.&rdquo;
+		<br /><br />
+		In the past year, the School of Engineering has hired nine new faculty members. Although at about 90 members the faculty is still relatively small compared to schools with a more technical focus, McCray said the department is working to make the most of what it has. According to McCray, Vanderlick has placed an emphasis on hiring faculty whose research straddles multiple disciplines. The results  are an increase in interdisciplinary course offerings like those offered at the CEID, and cross-department collaborations, and they are helping to build employers&rsquo; perceptions of Yale engineers as well-versed in numerous fields, not only their areas of specialty.
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;These programs are going to appeal to students who aren&rsquo;t just interested in becoming rote engineers; they&rsquo;re interested in going out and making ways,&rdquo; McCray said. &ldquo;They want to be the people who are boosting the boundaries of what engineering can do. Everything is in place for us to really start attracting those kinds of students.&rdquo;</div>
+	</div>
+</div>
+<div class="feature" id="feature4">
+	<div class="featuretext">
+		&ldquo;We are very comfortable with where we are now [in terms of number of STEM students in recent incoming classes], but we will continue to respond to our applicant pool.&rdquo; &mdash; Jeremiah Quinlan, Dean of Undergraduate Admissions
+	</div>
+	<div class="featurecredit">Photo by Tasnim Elboute</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>On the high SEAS</h2>
+
+		And, Rase said, employers are beginning to take notice. While in the past engineering recruiters from large companies have skipped Yale for schools with larger engineering departments, this year representatives from Microsoft and other prominent members of the technology industry gave talks at the CEID, with job recruiters on hand to speak with students about applying. 
+		<br /><br />
+		This year is also the first that SEAS, in collaboration with UCS, ran five small career fairs for junior and senior STEM majors to meet with representatives from companies like Bloomberg and Epic. October also saw a number of recruiting events geared towards students from specific engineering majors. This week, Yale is participating in its third-annual nation-wide &ldquo;Engineers Week,&rdquo; hosting talks and recruitment events for employers and Yale&rsquo;s graduate schools in the CEID. 
+		<br /><br />
+		&ldquo;Coming from the west coast, I hadn&rsquo;t really thought of going to Yale,&rdquo; said Nimisha Ganesh &rsquo;15, who attended Yale&rsquo;s first YES-W. &ldquo;But what I found at Yale was that I could pursue [my interests] without compromising my interest in engineering.&rdquo;
+		<br /><br />
+		Gregg Favalora &rsquo;96, a board member of the Yale Science and Engineering Association, said Yale has historically trained its STEM students to be well-rounded. Favalora recalled hearing the then-Dean of Engineering at Yale David Allan Bronley comfort undergraduates worried about their job prospects when competing with graduates from more technical schools. 
+		<br /><br />
+		&ldquo;He would often tell us that Yale engineers start companies that will then hire MIT engineers,&rdquo; he said. 
+		<br /><br />
+		He added that this became true in his own case when the firm he founded, Actuality Systems, hired &ldquo;dozens&rdquo; of MIT-educated engineers.
+		<br /><br />
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/5rLbIugTkO4" frameborder="0" allowfullscreen class="textimg"></iframe>
+		<br /><br />
+		Jonathan Yu &rsquo;16, a prospective biomedical engineering major who transferred to Yale from Williams College, said he was surprised by how many engineering majors at Yale wanted to go into finance or consulting. Although Alexander will work at IBM upon graduation, most of his engineering friends are headed to prestigious finance and consulting firms such as Goldman Sachs or McKinsey. Alexander said those firms made a special effort to recruit Yale engineers not only because they were analytical and quantitative thinkers, but also because of their strong communication skills, a consequence of Yale&rsquo;s liberal arts education. 
+		<br /><br />
+		&ldquo;There are a plethora of research opportunities for undergraduates while they&rsquo;re at Yale, but just looking at UCS you get the sense that they expect you to move into finance the day you get your degree,&rdquo; said chemistry major Jacob Marcus &rsquo;14. Although UCS does a good job of advising STEM students looking to enter medical school, he said, the center has few job listings that appeal to other science students.  
+		<br /><br />
+		Mechanical engineering major Russ Egly &rsquo;16 said many engineering firms assume Yale engineers are better prepared to be managers than their peers at other institutions. But, he added, the same firms also assume that engineers graduating from MIT will have a stronger foundation in math and science than those graduating from Yale. 
+		<br /><br />
+		Asked if she felt she had been served well by her Yale experience in STEM, Claire Xue &rsquo;14 was of two minds.
+		<br /><br />
+		&ldquo;In some ways, absolutely. In some ways, less so.&rdquo; 
+	</div>
+	<div class="side">
+	</div>
+</div>
+
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
