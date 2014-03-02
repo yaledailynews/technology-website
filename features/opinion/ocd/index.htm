@@ -1,0 +1,337 @@
+<html>
+<head>
+<title>Yale Daily News - OCD and Yale's silence</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 25px/40px georgia, "times new roman", times, serif;
+			letter-spacing: 1px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			text-shadow: 1px 1px 1.5px #666;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 66%;
+		margin: 0 auto;
+		font: 400 14px/25px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/40px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			float: right;
+		}
+		.text {
+			width: 66%;
+			text-align: justify;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text .big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px georgia, "times new roman", times, serif;
+				text-shadow: 1px 1px 1.5px #aaa;
+				letter-spacing: 1px;
+				text-align: right;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Mental Health Part I: OCD and Yale's silence
+	<a href="#"><div class="part">New's View (Wednesday)</div></a>
+	<a href="#"><div class="part" href="/features/scitech/evaluating-stem">McDonald (Tuesday)</div></a>
+	<a href="#"><div class="part" href="/features/scitech/yesw">Bolling: OCD and Yale's silence</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Danielle Bolling, a graduate student, details how Yale Health neglected to treat her for OCD.
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By Danielle Bolling - Guest Columnist &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Illustration by <a href = "http://yaledailynews.com/blog/author/annelisaleinbach/">Annelisa Leinbach</a>
+		<div class="q">Web design by Qingyang Chen and Soham Sankaran</div>
+		<hr />
+	</div>
+	<div class="text">
+		<p>
+    <div class = "big">A</div>s a graduate student in the Child Psychiatry Department at Yale, I am well informed about mental health and surrounded by world-renowned psychiatrists. I
+    used to believe that I would be well positioned to navigate Yale's mental health services. I don't believe that anymore.
+</p>
+<p>
+    My symptoms began with worries that crept in surreptitiously. Double-checking statistics? Normal. Triple-checking statistics? Normal. Being convinced that
+    I may have committed academic fraud by falsifying data because I could not find concrete evidence that I didn't falsify data? Not ideal. Sitting at home
+    trying to block out the thoughts in my head that a girl who fell down under my supervision had appeared fine but died in her sleep from a brain hemorrhage?
+    Not OK.
+</p>
+<p>
+    I called Yale's Mental Health Department. When I first explained my obsessive worrying to my assigned therapist, he seemed genuinely concerned.
+</p>
+<p>
+    One night, I was struck by the fear that I had hit someone with my car. I would call it a "realization," except for the fact that it wasn't real. I
+    contacted a friend, who advised me to call Yale Mental Health. My therapist was away, so I called the emergency line.
+</p>
+<p>
+    After establishing that I wasn't suicidal, the emergency responder replied with "Well, what do you want me to do?"
+</p>
+<p>
+    So I wasn't going to kill myself, but what was I supposed to do about the fact that I might have killed someone else? While browsing the Internet for news
+    of local car accidents, I learned that I was experiencing common symptoms of obsessive compulsive disorder (OCD).
+</p>
+<p>
+    The recommended treatment for OCD is cognitive behavioral therapy (CBT), which includes planned exposures to anxiety-inducing situations and homework
+    assignments in which patients record their worrying thoughts. Guidelines for treatment of OCD suggest CBT and medications such as Prozac as first-line
+    treatments.
+</p>
+<p>
+    After a long run of therapy that was not, fast-forward to me causing a real
+    car accident. While leaving a gas station, my car was hit from behind, coming to a full stop as it hit a telephone pole. My parents came from New York to
+    pick me up. My lethargic, silent ruminations seemed to them like a normal reaction to the accident. I didn't tell them that that was how I had spent the
+    last several months of my life.
+</p>
+<p>
+    In the back of a book on my nightstand, I wrote a list: "For when I die." It included where to scatter my ashes and how to tell people I died: "If I kill
+    myself, don't tell [my students], make up some other cause of death PLEASE." Desperate, I told a consulting psychiatrist I wanted to try medication.
+</p>
+<p>
+    Many, many milligrams of Prozac later, I began to feel like a normal person again. Actually, that's not true. I felt completely abnormal. I lost 25 pounds.
+    I slept through most of the day. Occasionally at night, I would wake up with nausea that felt like food poisoning. But Prozac helped the worries. I still
+    thought about car accidents, but now this worry could be pacified by carefully checking my car for scratches. My Yale Mental Health therapist finally gave
+    me an assignment to get a notebook to record my worries.
+</p>
+
+	</div>
+	<div class="side">
+		<div class="sidequote">After establishing that I wasn't suicidal, the emergency responder replied with &ldquo;Well, what do you want me to do?&rdquo;</div>
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<p>
+    <div class = "big">T</div>Two weeks passed with no mention of the homework, so I pulled out the notebook at the end of the session.
+</p>
+<p>
+    He took the notebook from me and began reading out loud. He paused and addressed me directly.
+</p>
+<p>
+    "You were afraid you hit someone with your car at a gas station? Isn't your car not even moving when you are getting gas?"
+</p>
+<p>
+    During our next session, he again forgot to mention my notebook, and I articulated my frustration with his services. He called me to apologize, and told me
+    I had distracted him during the session with my complaints of feeling faint. I called the patient representative at Yale Health and asked for a different
+    therapist.
+</p>
+<p>
+    Therapist #2 was nice. I asked her specifically for CBT. What I got was a 30-minute session once a week with no structured exposures and no written
+    homework. My reaction? "Student mental health is unequipped to offer standard CBT treatment for OCD, so I'd like a referral to an outside therapist
+    please."
+</p>
+<p>
+    "We don't give referrals."
+</p>
+<p>
+    I was confused. The student handbook says "If in the course of medical evaluation and treatment, a member requires outpatient services not provided at the
+    Yale Health Center, the member's primary care clinician may make a referral to an approved specialist in the Yale Health network outside the Yale Health
+    Center." Was mental health different from physical health? Last time I checked, my mind was part of my body. I emailed my concerns to Dr. Lorraine Siggins,
+    Chief of Mental Health and Counseling. No response.
+</p>
+<p>
+    A new semester started, and I felt like giving up. I inquired about a medical leave.
+</p>
+<p>
+    On leave, I would have no main source of income, since graduate school is my full-time job. I would also have no health care (being over 26, my parents'
+    healthcare wouldn't help). When I asked Dr. Siggins to approve my medical leave in time for Yale to avoid paying my semester's tuition, I finally got a
+    meeting with her.
+</p>
+<p>
+    During the confusion of arranging a leave, therapist #2 switched me to a third therapist whom I was scheduled to meet one day before meeting with Dr.
+    Siggins. Dissuaded by the financial impracticality of taking a medical leave, I called Dr. Siggins the morning of our meeting to cancel. I am currently
+    enrolled as a full-time graduate student.
+</p>
+<p>
+    I'm not better. Despite knowing exactly what treatment to ask for, it took nearly a year to receive what I hope will be acceptable care at Yale Health. I
+    feel that someone without my level of knowledge, arriving at Yale Mental Health needing treatment for serious mental illness, would have little hope. If
+    you require more than brief weekly sessions of generalized therapy, Yale Mental Health is probably not the place for you. And they don't make referrals.
+</p>
+<p>
+<i>Danielle Bolling is a student in the Graduate School of Arts &amp; Sciences. Contact her at <a href = "mailto:danielle.bolling@yale.edu">danielle.bolling@yale.edu</a>.</i>
+</p>
+	</div>
+	<div class="side">
+		<div class="sidequote">I'm not better. Despite knowing exactly what treatment to ask for, it took nearly a year to receive what I hope will be acceptable care at Yale Health.</div>
+	</div>
+</div>
+
+
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
