@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /features/opinion/bipolar/
+Disallow: /features/opinion/bipolar
 
 User-agent: Googlebot
 Disallow: /features/opinion/bipolar/
+Disallow: /features/opinion/bipolar
