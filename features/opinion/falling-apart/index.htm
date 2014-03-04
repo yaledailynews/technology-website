@@ -1,0 +1,323 @@
+<html>
+<head>
+<title>Yale Daily News - My bipolar disorder and Yale</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 25px/40px georgia, "times new roman", times, serif;
+			letter-spacing: 1px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			text-shadow: 1px 1px 1.5px #666;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 66%;
+		margin: 0 auto;
+		font: 400 14px/25px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/40px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title .sq {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			float: right;
+		}
+		.text {
+			width: 66%;
+			text-align: justify;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text .big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px georgia, "times new roman", times, serif;
+				text-shadow: 1px 1px 1.5px #aaa;
+				letter-spacing: 1px;
+				text-align: right;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Mental Health Part II: My bipolar disorder and Yale
+	<a href="#"><div class="part">Difiesta: Falling Apart</div></a>
+	<a href="/features/opinion/my-bipolar-disorder-and-yale/"><div class="part" href="/features/scitech/evaluating-stem">Part II: My bipolar disorder and Yale</div></a>
+	<a href="/features/opinion/ocd-and-yales-silence/"><div class="part" href="/features/scitech/yesw">Bolling: OCD and Yale's silence</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Nick Defiesta, struggling with grief, calls for a change in attitudes on mental health — and a shift in campus culture.
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By Nick Defiesta - Staff Columnist  <div class="q">Web design by <span class = "sq">Qingyang Chen</span> and <span class = "sq">Soham Sankaran</span> / Illustration by <a href = "http://yaledailynews.com/blog/author/annelisaleinbach/">Annelisa Leinbach</a></div>
+		<hr />
+	</div>
+	<div class="text">
+		<p>
+    <div class = "big">T</div>here was a lot of bravery in Rachel Williams’ ’17 story “We Just Can’t Have You Here.” Bravery in how she dealt with the callousness of her treatment,
+    bravery in penning a narrative about her experience that could be read by virtually all of her peers, teachers, family.
+</p>
+<p>
+    But in the month since Williams’ column, it was another act of courage — one that is easily lost in her piece — that has stuck with me: her willingness to
+    admit to herself that she was not, in fact, OK.
+</p>
+<p>
+    That small act might seem trivial. But it’s not, especially at Yale. In a campus filled to the brim with academic overachievement, social pressures and far
+    too few sunny days, our mental health is inevitably tested.
+</p>
+<p>
+    We aren’t doing ourselves any favors by contributing to this environment, even if we’re doing so passively. By accepting this paradigm — where
+    extracurricular activities can consume more hours per week than a full-time job, the society tap process neglects to consider juniors’ wellbeing and the
+    race for internships begins almost as soon as the school year does — most of us, in one way or another, play an indirect role in perpetuating the unhealthy
+    atmosphere at Yale. We all feel pressure to be “OK.”
+</p>
+<p>
+    I’m guilty of this, too. When my little brother passed away this summer, amidst all the shock and grief and heartache, my mom asked whether I was sure I
+    wanted to come back to New Haven right away. Of course I did, I thought, I’m OK enough to head back to school.
+</p>
+<p>
+    Before leaving home, I set up an appointment at Yale Mental Health &amp; Counseling. For what it’s worth, my experience with Yale Health was excellent —
+    after an initial evaluation, I was able to schedule a consistent appointment with an understanding clinician. While the institution has been subject to an
+    overwhelming amount of criticism, the system worked perfectly well for me: I received the treatment I needed in a timely manner.
+</p>
+<p>
+    Yet after a month of weekly appointments at 55 Lock St., I didn’t think I needed to speak to a psychiatrist anymore. To see somebody for mental health
+    reasons felt unnecessary and shameful, particularly at Yale.
+</p>
+<p>
+    What made up my mind was a conversation with a close friend. When we came to the subject of Yale Mental Health &amp; Counseling — divorced from my
+    experiences — he suggested that people who went to a psychiatrist were either exaggerating their issues or weren’t strong enough to handle University life.
+</p>
+<p>
+    I agreed. Seeing somebody at Yale Health was a sign of weakness — and really, I was OK. I missed my next appointment and didn’t respond to the repeated
+    calls from my psychiatrist or the personalized letter he sent to my mailbox.
+</p>
+	</div>
+	<div class="side">
+		<div class="sidequote">When my little brother passed away this summer, amidst all the shock and grief and heartache, my mom asked whether I was sure I wanted to come back to New Haven right away. Of course I did, I thought, I’m OK enough to head back to school.</div>
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<p>
+    <div class = "big">T</div>hat was the wrong move. As the days grew shorter and the friends who were my support system gradually drifted back to their own lives, I was left to fend
+    for myself.
+</p>
+<p>
+    As I tried to hold all the pieces of myself together, as I insisted to myself that I was OK, small signs to the contrary trickled out: spontaneously
+    breaking into tears as I walked back to my apartment, sitting through entire classes without hearing a word. November fell into December, December fell
+    into January, and it only became more and more difficult to pull myself out of bed every morning.
+</p>
+<p>
+    By the time February rolled around, I finally decided to head back to Yale Health. I called the number on the letter my psychiatrist had sent me — perhaps
+    I kept it thinking that I might have needed it later on — and set up another appointment.
+</p>
+<p>
+    There, my counselor helped me see just how far I had fallen, and how grief had affected parts of my life. It had hurt my ability to relate to others, my
+    motivation and even my sleep schedule in ways I hadn’t realized.
+</p>
+<p>
+    I felt like I was able to breathe again when I left his office, and I hadn’t even known I’d been suffocating. I’d been trying so hard to hold all the
+    pieces together, when really what I needed was to let it all fall apart before trying to make myself whole again. I was not, in fact, OK — and that was OK.
+</p>
+<p>
+    My ongoing struggle has not been with a specific University policy or institution, but with the attitudes toward mental health among the student body. More
+    than just providing additional or higher-quality services to those suffering from mental health issues, administrators and students need to work to change
+    the discussion entirely.
+</p>
+<p>
+    Campus discourse about mental health is still characterized by a certain amount of stigma, as even the best-intentioned friends can treat going to a
+    counselor as something to be ashamed of. Better mental health education, more open discussion and the simple recognition that mental disorders are
+    widespread (over a quarter of the U.S. adult population has suffered a mental disorder in the past year, according to the National Institute for Mental
+    Health) could be a big step in the right direction.
+</p>
+<p>
+    Ultimately, we need to turn the tables on labeling the acknowledgement of mental health disorders as a sign of weakness. To do so is instead an incredible
+    show of strength. To allow the pieces of our lives to fall apart, to loudly proclaim, “I’m not OK,” is a true act of courage.
+</p>
+<p>
+<i>Nick Defiesta is a senior in Berkeley College. His columns run on alternate Tuesdays. Contact him at <a href = "mailto:nick.defiesta@gmail.com">nick.defiesta@gmail.com</a></i>
+</p>
+	</div>
+	<div class="side">
+		<div class="sidequote">I felt like I was able to breathe again when I left his office, and I hadn’t even known I’d been suffocating.</div>
+	</div>
+</div>
+
+
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
