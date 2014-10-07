@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 $.getJSON("http://www.corsproxy.com/spreadsheets.google.com/feeds/list/0AlodOQ6KsieFdDNBX0tVMGV2VTRzSmhFUnJJRVRjdEE/od6/public/values?alt=json", function(data) {
+=======
+$.getJSON("http://spreadsheets.google.com/feeds/list/0AlodOQ6KsieFdDNBX0tVMGV2VTRzSmhFUnJJRVRjdEE/od6/public/values?alt=json", function(data) {
+>>>>>>> 337d2d52ef30bbb720729faf3607fba1e3804e6f
 
 //for (var i in data.feed)
 //{
