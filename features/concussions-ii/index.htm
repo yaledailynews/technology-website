@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>Yale Daily News - Part II | Head-On: After the hit</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover3.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 55px;
+			float: left;
+			line-height: 60px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+			.sidequote {
+				margin-top: 200px;
+				font: 400 13px/22px 'Open Sans', sans-serif;
+				font-weight: bold;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sidequote {
+				margin-top: 200px;
+				font: 400 12px/18px 'Open Sans', sans-serif;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Part II | Head-On: After the hit
+	<a href="/features/concussions-i"><div class="part">Part I: Confronting the science of concussions</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		The clinical symptoms of concussions mask the true experiences of Yale student-athletes. When the pressure to play is combined with the difficulty of diagnosing concussions in games, the players ultimately suffer the consequences. <em style="font-weight:normal;">Marc Cugnon reports.</em>
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/marccugnon/" target="_blank">Marc Cugnon</a> &middot; Staff Reporter
+		<div class="q">Web design by Qingyang Chen, Soham Sankaran, Aaron Lewis and Chris Wan</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>C</big>ontact sports and concussions go hand in hand. As players become stronger, faster and bigger, technology and science are left playing catch-up.
+		<br /><br />
+		Concussions, by nature, are different than any other kind of athletic injury. Rather than a twisted ankle or a broken arm, for example, brain injuries are hidden from plain sight.
+		<br /><br />
+		But even when diagnosed, concussions are often ignored, raising the question of who is responsible for taking action on head injuries &mdash; players, coaches or trainers? 
+		<br /><br />
+		&ldquo;The onus for reporting concussions is really on the player,&rdquo; Yale soccer defender Henry Flugstad-Clarke &rsquo;17 said. &ldquo;Competitiveness makes it tough for players to make calls. You want to keep playing and try to fight through it.&rdquo;
+		<br /><br />
+		<h2>The Pressure to Play</h2>
+		For athletes, the drive to win and the desire to avoid injury are often in conflict. Athletes across competitive levels &mdash; from recreational Sunday soccer players to top-flight Premier League stars &mdash; are incentivized by their competitive nature to stay in the game.
+		<br /><br />
+		Underreporting is more than an issue of scientific and technological dawdling, as even highly funded professional sports teams get things wrong on a regular basis. 
+		<br /><br />
+		In an Oct. 5 clash between top English teams Chelsea and Arsenal, Chelsea goalkeeper Thibaut Courtois collided with Arsenal&rsquo;s Alexis Sanchez, hitting his head on the striker&rsquo;s knee. After a few moments spent on the ground, Courtois was allowed to continue playing for 15 minutes until he became dizzy and began to bleed from his ear. 
+		<br /><br />
+		The incident left Chelsea manager Jose Mourinho screaming at the referee to stop the game and led to a bevy of controversy heaped upon the soccer world.
+		<br /><br />
+		Flugstad-Clarke gave his own thoughts on the issue, relating it to the inherent competitiveness of professional and college athletics.  
+		<br /><br />
+		&ldquo;As an athlete, there is a pressure of having to perform,&rdquo; Flugstad-Clarke said. &ldquo;You don&rsquo;t want to lose out.&rdquo;
+		<br /><br />
+		Incidents like this show that concussion underreporting extends to all athletic levels. Even teams afforded the best technology and training staffs still seem to falter in their ability to deal with head injuries.<br /><br />
+		&ldquo;I currently have a concussion,&rdquo; Yale women&rsquo;s soccer forward Lillian Bitner &rsquo;17 said. &ldquo;I wasn&rsquo;t officially diagnosed and I continued taking headers with the issue. Since I&rsquo;ve already had concussions, it was even easier for me to get this one. I waited to tell my trainer and when I finally did they told me to stop playing.&rdquo;
+		<br /><br />
+		With 22 players on the field in a soccer game, head collisions are easy for even the most talented trainers and referees to miss. Other sports, such as football and hockey, are no different.
+		<br /><br />
+		Additionally, though doctors do their best to diagnose players immediately, the desire to avoid letting down one&ldquo;s teammates leads many players to refrain from speaking up.
+		<br /><br />
+		&ldquo;The trainers at Yale are really strict about concussions,&rdquo; Bitner said &ldquo;It&rsquo;s definitely my fault that I didn&rsquo;t tell someone. I should have said something right away.&rdquo;
+		<br /><br />
+		Flugstad-Clarke argued that American football has actually increased the awareness of concussions in other sports. He added that media scrutiny on America&rsquo;s most popular game has made American soccer leagues and teams follow concussion protocol more closely. 
+		<br /><br />
+		&ldquo;We don&rsquo;t just ignore it here at Yale,&rdquo; Flugstad-Clarke said. &ldquo;People are willing to report it. We got information at the beginning of the season and I think college soccer is more aware now than ever.&rdquo;
+		<br /><br />
+		But the dual incentives faced by players &mdash; competing and preventing serious injuries &mdash; can incentivize players to treat concussions as something to overcome and fight through, Flugstad-Clarke said. The fact that players are rarely qualified to diagnose their own injuries also does not help.
+		<br /><br />
+		And while Yale may be making strides in pushing players to report injuries, Flugstad-Clarke said, other parts of the soccer world are not.
+		<br /><br />
+		&ldquo;I think a lot of concussions don&rsquo;t get reported in soccer,&rdquo;Flugstad-Clarke said. &ldquo;At Yale there&rsquo;s more awareness, but I remember at the club level, we had guys get hit in the head and never once had a concussion reported.&rdquo;
+	</div>
+	<div class="side">
+	<img src="graphic.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;The trainers at Yale are really strict about concussions. It&rsquo;s definitely my fault that I didn&rsquo;t tell someone. I should have said something right away.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Life as a Concussed Yale Athlete</h2>
+		&ldquo;Yale has a concussion protocol that basically is just &lsquo;protect your head&rsquo;,&rdquo; said one former athlete, who spoke about his experiences with head injuries and Yale&rsquo;s medical protocol on the condition of anonymity. &ldquo;That means live in total darkness and stay in your dorm.&rdquo;
+		<br /><br />
+		The student&rsquo;s varsity career came to an end as a result of a particularly bad hit and ensuing concussion, but not before he made a brief return to his team.
+		<br /><br />
+		Even being allowed to return, though, involved risks.
+		<br /><br />
+		&ldquo;When you want to come back, you have to pass a baseline reaction and memory test,&rdquo; he said. &ldquo;I failed it three times, and on the fourth I drank coffee and took Adderall to make sure I would pass it.&rdquo;
+		<br /><br />
+		&ldquo;Good athletes,&rdquo; he said, follow directions. In his personal experience, many will do anything, including compromise their own health, for the good of the team. 
+		<br /><br />
+		It thus remains unclear who, exactly, is responsible for athletes&rsquo; health.
+		<br /><br />
+		For student athletes, the perceived invisibility of concussions only exacerbates their difficulties, even when they are properly cared for.
+		<br /><br />
+		But even with proper care, concussions can result in traumatic social and academic ramifications for student-athletes.
+		<br /><br />
+		&ldquo;Because we have so many other forms of stress, the effort that we put into athletics is extremely amplified,&rdquo; the student said. &ldquo;The fact that you have a concussion, piled with other stuff, can lead to psychological trouble. When you&rsquo;re concussed, you start to doubt your brain, and that changes how you interact with friends and other individuals.&rdquo; 
+		<br /><br />
+		The concussion soon hampered the student&rsquo;s ability to perform in the classroom.
+		<br /><br />
+		The problems quickly spiraled out of control.
+		<br /><br />
+		&ldquo;I took a test and then didn&rsquo;t remember taking it after I finished,&rdquo; he said.
+		<br /><br />
+		After that, he said, he knew it was time to end his varsity career.
+		<br /><br />
+		He added that athletes suffering from concussions are not sporting some sort of visible indicator of an injury, like crutches or a cast. Thus, it is often difficult for those with whom concussed athletes interact to truly recognize the kind of ailment that these players have suffered.
+		<br /><br />
+		He also said that many concussed athletes begin to doubt themselves. The student began to wonder if he was interacting in the same manner as he had been before his injury. In his own words, he was &ldquo;questioning his brain.&rdquo;
+		<br /><br />
+		The social stresses of concussions can put injured student-athletes in difficult situations. Showing up to class or even looking at a computer screen can quickly become problematic.
+		<br /><br />
+		For relief, the student said, some players are forced to turn to measures outside the law. 	
+		<br /><br />
+		&ldquo;A lot of kids with concussions that I&rsquo;ve talked to, myself included, gravitated toward marijuana to alleviate the symptoms,&rdquo; the student said. &ldquo;It made me feel better when I smoked. Also, the drugs we were given by our doctors here at Yale were basically mild antidepressants. I found that they masked my symptoms, basically making my brain feel numb, but they made me totally unaware of entire days.&rdquo;
+		<br /><br />
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/T87DLFMGMeU"></iframe>
+		<br /><br />
+		It was only when the student stopped taking his medication that both his everyday awareness and his symptoms returned. He suffered through problems that seemed to morph rather than improve, resulting in insomnia and lasting issues that still plague him to this day.
+		<br /><br />
+		Even though his symptoms have abated, the student said his concussion still has an impact.
+		<br /><br />
+		&ldquo;Sometimes I still deal with concussion symptoms after an increase in academic-related stress, like back-to-back midterms,&rdquo; he said.
+		<br /><br />
+		The student&rsquo;s story is one that speaks to both the difficulty of dealing with concussions as well as the added struggle of dealing with them in a rigorous academic setting like Yale. Although players are willing to compromise their well-being for the perceived good of the team, oftentimes the true gravity of a head injury can be lost in the equation.
+	</div>
+	<div class="side">
+	<div class="sidequote">&ldquo;It made me feel better when I smoked. Also, the drugs we were given by our doctors here at Yale were basically mild antidepressants. I found that they masked my symptoms, basically making my brain feel numb, but they made me totally unaware of entire days.&rdquo;
+	</div>
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;The fact that you have a concussion, piled with other stuff, can lead to psychological trouble. When you&rsquo;re concussed, you start to doubt your brain, and that changes how you interact with friends and other individuals.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Head Injuries, In-Game</h2>
+		&ldquo;There&rsquo;s no doubt head injuries are prevalent in football, and athletes are only becoming bigger faster and stronger,&rdquo; Yale football starting quarterback Morgan Roberts &rsquo;16 said. &ldquo;I think technology in helmets is drastically different than it was only four or five years ago. I feel it is important we are equipped with the best possible headgear to prevent concussions. As players, we are encouraged to leave the game after any big hit.&rdquo;
+		<br /><br />
+		Roberts did acknowledge, however, that several of his teammates have suffered concussions this season. He chalked this up to the inherent violence of football, saying that the risk for injury is inevitable and that the sport&rsquo;s violence is part of its appeal.
+		<br /><br />
+		Brian Tompkins, head coach of the men&rsquo;s soccer team, said that reporting concussions has become part of the program&rsquo;s culture.
+		<br /><br />
+		&ldquo;The treatment of concussions has become an important part of what we do,&rdquo; Tompkins said. &ldquo;If there is some sort of head contact, I defer to our trainer, who goes through a specific concussion protocol with the injured player.&rdquo;
+		<br /><br />
+		According to Tompkins, trainers go through initial screenings with players immediately after the injury takes place. If the player is deemed concussed, or if there is thought to be some sort of medical issue surrounding the injury, trainers will refer the players to further medical attention with a physician.
+		<br /><br />
+		Both Tompkins and football head coach Tony Reno asserted that the medical staff has the final say in letting players back on the field.
+		<br /><br />
+		&ldquo;If the trainer says a player looks fine, I would consider putting him back in,&rdquo; Tompkins said. &ldquo;Otherwise, that player is shut down until he is medically cleared to play.&rdquo;
+		<br /><br />
+		Symptoms and effects also vary from person to person, making evaluations &mdash; already complicated by the subtlety of most symptoms &mdash; even more difficult, Tompkins said.
+		<br /><br />
+		Part of accurately diagnosing and treating head injuries is making sure that everyone involved with each athletic team puts player health first. To aid that, Reno said, the football team talks with every player before his Yale career begins to discuss the dangers of concussions and what potential danger signs are.
+		<br /><br />
+		Players can be encouraged and made aware of concussion dangers ad infinitum, but as Flugstad-Clarke pointed out, players must be willing to act on their knowledge.
+		<br /><br />
+		<br /><br />
+		Contact Marc Cugnon at marc.cugnon@yale.edu. 
+	</div>
+	<div class="side">
+		<img src="baseball.jpg" />
+	</div>
+	<div class="side">
+		<img src="basketball.jpg" />
+	</div>
+	<div class="side">
+		<img src="hockey.jpg" />
+	</div>
+</div>
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
