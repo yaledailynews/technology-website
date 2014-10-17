@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>Yale Daily News - Part III | Head-On: Tackling concussion policy</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 1800px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+			.sidequote {
+				margin-top: 200px;
+				font: 400 13px/22px 'Open Sans', sans-serif;
+				font-weight: bold;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sidequote {
+				margin-top: 200px;
+				font: 400 12px/18px 'Open Sans', sans-serif;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Part III| Head-On: Tackling concussion policy
+	<a href="/features/concussions-ii"><div class="part">Part II: After the hit</div></a>
+	<a href="/features/concussions-i"><div class="part">Part I: Confronting the science of concussions</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		With increased media scrutiny levied on concussions, states across the country have imposed new policies and regulations to deal with concussions. While Yale has done the same, the future of the University&rsquo;s concussion policy remains an open question. This is the final story in a three-part series. <em style="font-weight:normal;">Ben Fait and Marc Cugnon report.</em>
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/benfait/" target="_blank">Ben Fait</a> and <a href="http://yaledailynews.com/blog/author/marccugnon/" target="_blank">Marc Cugnon</a> &middot; Staff Reporters
+		<div class="q">Web design by Qingyang Chen, Soham Sankaran, Aaron Lewis and Chris Wan</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>I</big>t was mid-July, and Isaac Morrier &rsquo;17 found himself sitting in the Acute Care room at Yale Health. He had hit his head on a stone archway 72 hours earlier, and he felt disoriented and was having problems with his short-term memory.
+		<br /><br />
+		When he was brought into the examination room, the nurse told him he was fine, and gave the go-ahead to keep working out, Morrier said. He asked the nurse to double check &mdash; she confirmed again that he was fine. But as he learned from a private doctor a week and a half later, he was not &mdash; he had a concussion.
+		<br /><br />
+		<h2>YALE&rsquo;S POLICY EFFORTS</h2>
+		Morrier said his concussion was not diagnosed until more than a week and a half after his visit to Yale Health. His lightweight crew teammates had noticed him acting strange and exhibiting symptoms, he said.
+		<br /><br />
+		He felt as though the concussion test administered by Yale Health was not as comprehensive as the one that he received upon visiting Yale Athletic Health, he said.
+		<br /><br />
+		He added that after receiving further medical attention from a private doctor, he was told that many of his negative symptoms resulted from working out after he hit his head, rather than the collision itself.
+		<br /><br />
+		&ldquo;My nurse took my heart rate and asked me a couple questions about the hit,&rdquo; Morrier said. &ldquo;I told her that my memory was a little off and that I felt kind of funky. She started asking me the kind of questions you&rsquo;d ask a football player while he&rsquo;s lying on the field. She told me I just had a contusion [a bruise that occurs when blood vessels break and blood leaks into the brain] and was fine to work out that afternoon.&rdquo;
+		<br /><br />
+		As more is revealed about the gravity and long-term impact of head injuries, the University has taken steps to prevent and treat concussions for student-athletes.
+		<br /><br />
+		But are these steps enough?
+		<br /><br />
+		&ldquo;The safety of every student at Yale is our number-one priority,&rdquo; Director of Athletics Tom Beckett said. &ldquo;Whether it&rsquo;s a student coming to participate in varsity athletics, or a club sport student, or someone playing intramurals, providing a healthy and safe atmosphere for every member of our community is our top priority.&rdquo;
+		<br /><br />
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZMcB5bcSiPo"></iframe>
+		<br /><br />
+		Christopher Pecora, Yale&rsquo;s director of sports medicine, said the University has an extremely detailed concussion treatment policy. The policy, Pecora said, is quite lengthy and breaks down each step of concussion treatment, from the moment of injury to the eventual return of Eli players or students to athletic fields and classrooms.
+		<br /><br />
+		The procedure is based on a review of current literature and committee reviews of similar programs at other universities. When an athlete appears to have a concussion and seems to be in no danger of cardiac arrest or loss of vital functions, physicians immediately perform a test of basic motor, cognitive, verbal and visual response &mdash; often on the sidelines of the field.
+		<br /><br />
+		If the physician detects any potentially life-threatening issues &mdash; like prolonged unconsciousness &mdash; the athlete is immediately hospitalized. If signs are less severe, but still present, the player is taken off the field and put on a treatment plan.
+		<br /><br />
+		That plan generally involves cognitive rest, and within several days, the athlete will meet with a physician to discuss further treatment plans. If the athlete is not exhibiting any symptoms, they return to their classes and are gradually reintroduced to practices, starting with non-contact workouts.
+		<br /><br />
+		&rdquo;[Cognitive rest] really is as close as possible to lying in bed in a dark room, and we realize that&rsquo;s really difficult for people to do,&rdquo; said Michael Rigsby, medical director of Yale Health. &ldquo;There is no specific medication that is proven to be helpful &mdash; we make recommendations about things like fish oil and vitamins, which suggest some benefit, but mostly we recommend rest.&rdquo; He added that the process generally takes fewer than two weeks.
+		<br /><br />
+		According to Beckett, Yale athletes involved in high-risk sports take what is known as a Head Minder baseline test. The exam, which tests cognitive functions and reaction times, serves a comparative function. Athletes take the test when they first arrive at Yale, allowing doctors and trainers to establish a baseline of that person&rsquo;s normal cognitive ability. Then, when an athlete exhibits concussion symptoms, physicians have a point of comparison.
+		<br /><br />
+		Currently, only contact sports are classified as &rdquo;high-risk.&ldquo; Those in non-contact sports do not take the test.
+		<br /><br />
+		Increasing the test&rsquo;s availability to more than just varsity athletes is a part of the athletic administration&rsquo;s ongoing approach to combating head injuries, Beckett said.
+		<br /><br />
+		&ldquo;Our plan is to make this kind of care available to everyone,&rdquo; he said. &ldquo;We&rsquo;re concerned about students participating in intramural or club sport activities where there could be the risk of getting concussed.&rdquo;
+		<br /><br />
+		According to Pecora, when athletes who have not established their baselines need to take the test, doctors use cognition data from a worldwide bank of information. Physicians compare these patients&rsquo; cognition scores to average scores for similar individuals &mdash; if the score discrepancy is significant, doctors may have reason to worry.
+		<br /><br />
+		But this test is not as exact as that which is administered to high-risk athletes, who have a personalized baseline score.
+	</div>
+	<div class="side">
+		<img src="football1.jpg" />
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;The safety of every student at Yale is our number-one priority.&rdquo;
+			&mdash;Tom Beckett, Yale Director of Athletics
+		</div>
+	</div>
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;[Cognitive rest] really is as close as possible to lying in bed in a dark room, and we realize that's really difficult for people to do. There is no specific medication that is proven to be helpful.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>CLASSROOM CONSIDERATIONS</h2>
+		The consequences of concussions extend beyond the field.
+		<br /><br />
+		&ldquo;I&rsquo;m still submitting all of my papers handwritten,&rdquo; Morrier said. &ldquo;The symptoms still give me trouble, but my professors are being really accommodating. At this point I&rsquo;m spending a lot of my free time sleeping or sitting in my room with the lights off.&rdquo;
+		<br /><br />
+		He added that he cannot go out anymore, and he dropped his language class due to his concussion-related symptoms.
+		<br /><br />
+		A concussion is not a sprained ankle. While the latter is a mostly on-field problem, the former pervades every aspect of a student-athlete&rsquo;s life. If a student can&rsquo;t kick a ball, he or she certainly can&rsquo;t finish a differential equations problem set. 
+		<br /><br />
+		&ldquo;Concussions have a tremendous impact, and can affect a student&rsquo;s ability to read, to concentrate [and] to work,&rdquo; Director of Yale Health Paul Genecin said.
+		<br /><br />
+		Genecin also said that concussions can affect a student&rsquo;s personality and mood, and that they can be horribly disabling.
+		<br /><br />
+		Given that concussions impact more than just on-field performance, administrators are prioritizing getting students back in the classroom. 
+		<br /><br />
+		&ldquo;Only when you can return fully to learning, can you begin to start progressing toward returning to play,&rdquo; Pecora said. &ldquo;We&rsquo;re more involved now than ever in coordinating with deans and instructors in helping students deal with concussions academically.&rdquo;
+		<br /><br />
+		Beckett stated that the deans of residential colleges work closely with Yale&rsquo;s medical staff. Deans are notified about concussions immediately and are informed of the student&rsquo;s prescribed treatment. Deans can then notify professors, and students can receive support during their period of cognitive rest. According to Beckett, the safety net provided by the residential college system is &ldquo;second to none.&rdquo;
+	</div>
+	<div class="side">
+		<img src="wsoccer1.jpg" />
+	</div>
+	<div class="side">
+		<img src="brain.jpg" />
+	</div>
+	<div class="side">
+		<img src="hockey1.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;Only when you can return fully to learning, can you begin to start progressing toward returning to play. We&rsquo;re more involved now than ever in coordinating with deans and instructors in helping students deal with concussions academically.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>A COMPLEX POLICY LANDSCAPE</h2>
+		According to Michael Rigsby, the development of concussion policy involves collaboration between trainers, coaches, physicians and medical administrators. As a result of that approach &mdash; and more data in general &mdash; concussion policy has improved significantly over the last several years.
+		<br /><br />
+		&rdquo;The biggest actual policy change is around reducing risk by reducing the number of practices [and] contact practices... and throughout the Ivy League, there is less of that opportunity [to get] concussions [through contact practices] than in the NCAA in general,&rdquo; Rigsby said.
+		<br /><br />
+		According to Beckett, Yale is currently working with the other Ivy League schools as well as the Big Ten schools to develop new policies and procedures to treat concussions and ensure student and player safety.
+		<br /><br />
+		Changes in policy have not been limited solely to concussion treatment procedures. The athletics administration has taken prevention steps as well. Beckett said that other universities are shifting to limit contact time in practices and games so that there is less opportunity for concussions to occur. Yale has been ahead of the curve.
+		<br /><br />
+		&ldquo;We want to make sure we do our best to reduce concussions,&rdquo; football head coach Tony Reno said. &ldquo;We practice differently. We now have two days of contact practice instead of four. I think guys go through practice with fewer opportunities for helmet-to-helmet contact.&rdquo;
+		<br /><br />
+		Despite this, the treatment of concussions is still imperfect, Rigsby said. He cited more standardized neuropsychological testing as one example of advancement &mdash; instead of simply asking when symptoms disappear, physicians have an objective test, like the Head Minder exam.
+		<br /><br />
+		Most progress in treatment is made via progress in research, he said. Where our knowledge of concussions is incomplete, so too is our treatment.
+		<br /><br />
+		And though treatments are not all-encompassing, politicians have been able to use the law to reduce the risk of concussions in lower athletic levels. Over the past five years, legislative attempts to regulate youth and high school sports have been ramping up.
+		<br /><br />
+		In 2009, Washington passed the Zackery Lystedt Law. The same year, the Oregon state legislature passed Max&rsquo;s Law, named after Max Conradt, a high school football player who lost his ability to function independently after suffering a concussion on the field. As of March 17, 2014, all 50 states have passed some sort of legislation aimed at protecting student-athletes from concussions.
+		<br /><br />
+		According to a 2013 report by the Centers for Disease Control and Prevention, these concussion laws ensure some form of education for coaches and athletes, mandate removal from play during a concussion and require compulsory clearance from physicians in order for athletes to return to play.
+		<br /><br />
+		No such laws exist for collegiate or professional play.
+		<br /><br />
+		On May 28, 2014, Connecticut passed H.B. 5113, &ldquo;An Act Concerning Youth Athletics and Concussions.&rdquo; The act mandates concussion preparation and education and enforces accepted treatment for concussions in high school athletes. The bill does not extend to athletes at state higher education institutions.
+		<br /><br />
+		Several attempts have been made to introduce similar federal legislation, but none have passed. The Concussion Treatment and Care tools Act (ConTACT) was assigned to congressional committee on Sept. 17, 2013, but has yet to move out of committee.
+		<br /><br />
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/T87DLFMGMeU"></iframe>
+		<br /><br />
+		In the week and a half between his Yale Health visit and his official diagnosis, Morrier made his way to the lightweight crew locker room. He put his fingers up to the keypad, prepared to input a code to let himself in. He input the first digit. Pause. Had he input the digit? He could not remember. He hit it again. And again. His short-term memory had failed him. Minutes later, a teammate let him in.
+	</div>
+	<div class="side">
+		<img src="baseball1.jpg" />
+	</div>
+	<div class="side">
+		<img src="msoccer1.jpg" />
+	</div>
+	<div class="side">
+		<img src="football2.jpg" />
+	</div>
+	<div class="side">
+		<img src="football2.jpg" />
+	</div>
+</div>
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
