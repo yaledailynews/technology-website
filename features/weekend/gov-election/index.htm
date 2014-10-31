@@ -1,0 +1,497 @@
+<html>
+<head>
+<title>WEEKEND: Your vote counts</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+		#feature5 {
+			background-image: url('cover5.jpg');
+		}
+		#feature6 {
+			background-image: url('cover6.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 1000px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+			.sidequote {
+				margin-top: 200px;
+				font: 400 13px/22px 'Open Sans', sans-serif;
+				font-weight: bold;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sidequote {
+				margin-top: 200px;
+				font: 400 12px/18px 'Open Sans', sans-serif;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	WEEKEND: Your vote counts
+	<a href="http://yaledailynews.com/weekend"><div class="part">WEEKEND</div></a>
+	<a href="http://yaledailynews.com/blog/2014/10/29/new-haven-to-loom-large-in-gubernatorial-election//"><div class="part">CITY | New Haven</div></a>
+	<a href="http://yaledailynews.com/blog/2014/10/30/gubernatorial-candidates-stake-out-positions-on-gun-control/"><div class="part">CITY | Gun control</div></a>
+	<a href="http://yaledailynews.com/blog/2014/10/30/education-policy-central-to-gov-race/"><div class="part">CITY | Education policy</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Four days from now, the people of Connecticut will elect a governor. Barring an unforeseen turn of events, either Democrat Dan Malloy or Republican Tom Foley will nab the closely contested governorship. But here at Yale student apathy is carrying the day. Why do students have a hard time caring? Tracking the efforts of Yale Dems and Republicans, <em style="font-weight:normal;"> Isabelle Taft investigates.</em>
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/isabelletaft/" target="_blank">Isabelle Taft</a> &middot; Staff Reporter
+		<div class="q">Web design by Qingyang Chen, Soham Sankaran, Aaron Lewis and Chris Wan</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>E</big>xactly three weeks before Election Day, Maxwell Ulin &rsquo;17 and Gabrielle Diaz &rsquo;18 were on a mission. Around 6:15 p.m., they marched from Old Campus to Timothy Dwight College bearing campaign literature, a list of TD residents registered to vote in Connecticut, and arguments intended to convince even the most politically oblivious student to support Gov. Dannel Malloy.
+		<br /><br />
+		Consulting the list, the two members of the Yale College Democrats headed into entryway L of TD. A number of knocks and hopeful shouts (&ldquo;Claire? Claaaaaaaaaaaaaaaire?&rdquo;) went unanswered, but Ulin and Diaz were undeterred. It was a Tuesday night, and people were at rehearsal or the library or meetings or dinner. Finally, someone opened the door. She looked confused. Ulin buoyantly asked to speak to her suitemate.
+		<br /><br />
+		&ldquo;They&rsquo;re trying to get you to vote,&rdquo; she shouted over her shoulder.
+		<br /><br />
+		A young woman emerged from her bedroom, wearing a t-shirt and pajama shorts, her red hair in a messy bun on top of her head. She, too, looked confused and caught off-guard, even a little vulnerable. Standing in the middle of her common room, she folded her arms and tapped her foot as Ulin delivered his talking points: Malloy is the most progressive governor in America. Under his leadership, Connecticut became the first state to enact a minimum wage above $10 an hour. He abolished the death penalty. He decriminalized marijuana.
+		<br /><br />
+		&ldquo;I&rsquo;m voting in Pennsylvania,&rdquo; she said after he finished.
+		<br /><br />
+		&ldquo;I would just say that the election here is more competitive,&rdquo; Ulin said. &ldquo;I would strongly suggest you vote in Connecticut.&rdquo;
+		<br /><br />
+		&ldquo;I&rsquo;m not registered in Connecticut,&rdquo; she responded defiantly. &ldquo;I&rsquo;m registered in Pennsylvania.&rdquo;
+		<br /><br />
+		Ulin glanced down at the list; he didn&rsquo;t seem to have a script prepared for her claim, and the list indicated in no uncertain terms that she was registered to vote in Connecticut. (Voters can register in two states, but may only vote in one state on Election Day.) Instead of telling her she was wrong, he asked her to re-register in Connecticut.
+		<br /><br />
+		&ldquo;He&rsquo;s really fast at it,&rdquo; Diaz chimed in, attesting to Ulin&rsquo;s skill in the art of voter registration.
+		<br /><br />
+		The potential voter was not persuaded. She closed her door and Diaz and Ulin walked onward toward the other suites on their list, spirits dampened only slightly, even when a girl standing in the hallway screamed at them not to leave any campaign flyers on or under her door.
+		<br /><br />
+		According to a poll released by Quinnipiac University on Wednesday, Malloy is locked in a dead heat against Republican Tom Foley &mdash; a Greenwich businessman and former ambassador to Ireland who lost the governorship by around 6,500 votes in 2010. The two men have taken very different paths to the ballot. Malloy worked as a lawyer in Stamford before serving on the city board of finance and four terms as mayor. Foley spent much of his career in venture capital and private investment, interspersed with public sector service in Iraq and his stint in Ireland.
+		<br /><br />
+		On that warm Tuesday evening, Ulin and Diaz&rsquo;s list included only registered Democrats and unaffiliated voters, so the odds were slim that one of their targets would be a staunch Foley supporter. Instead, they were largely fighting a different enemy: Yale students&rsquo; deep apathy towards Connecticut politics. Ulin and Diaz&rsquo;s challenge was persuading classmates to vote at all &mdash; or even to read campaign flyers.
+		<br /><br />
+		Whether students know it or not, Yale matters in this gubernatorial election, which is among the country&rsquo;s five most competitive. Malloy&rsquo;s 2010 margin of victory was only slightly larger than the total number of Yale undergraduates, and the Malloy campaign is counting on the Yale Dems to deliver about 800 votes from students on Nov. 4 and help voters from across New Haven get transportation to the polls. The Foley campaign, meanwhile, has worked closely with the Yale College Republicans to canvass and phone-bank. Though most of the Republicans&rsquo; efforts take place away from campus, in the purplish suburbs around solid blue New Haven, they will be spearheading efforts to get registered Republicans from campus to the polls on Election Day.
+		<br /><br />
+		But hard numbers, lists of each candidate&rsquo;s accomplishments or failures and logical appeals to consider the relative significance of a vote in Connecticut often fail to persuade students who maintain ties to politics back home, or who never cared about politics in the first place. And on their march through TD, Ulin and Diaz were only visiting those students who were already registered here in Connecticut, likely leaving hundreds of students who will either vote at home or not at all. Amidst papers, problem sets and midterms, performing one&rsquo;s civic duty &mdash; if one recognizes voting as such &mdash; may not be a priority.
+		<br /><br />
+		Political apathy in the United States is nothing new, or unique to Yale. According to FairVote, a non-profit organization dedicated to increasing participation in the democratic process, about 60 percent of eligible Americans turn out to vote during presidential election years, compared to about 70 percent in most developed democracies. During midterm years like this one, American turnout declines to 40 percent. So maybe I shouldn&rsquo;t have been surprised when I surveyed 60 freshmen on Old Campus the weekend before fall break and found that just 22 could name Malloy as Connecticut&rsquo;s governor. There was something indisputably disturbing, however, about the cheerfulness with which most admitted their ignorance, as if they had happily granted themselves permission to ignore events that will affect millions of lives just beyond Yale&rsquo;s walls.
+	</div>
+	<div class="side">
+		<img src="malloyfoley.jpg" />
+	</div>
+	<div class="side">
+		<div class="sidequote">There was something indisputably disturbing, however, about the cheerfulness with which most admitted their ignorance, as if they had happily granted themselves permission to ignore events that will affect millions of lives just beyond Yale&rsquo;s walls.	
+		</div>
+	</div>
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		They were largely fighting a different enemy: Yale students&rsquo; deep apathy towards Connecticut politics. Ulin and Diaz&rsquo;s challenge was persuading classmates to vote at all &mdash; or even to read campaign flyers.
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>RACE TO THE BOTTOM</h2>
+		If the freshmen I spoke with had been paying attention to the governor&rsquo;s race, they might have had a decent excuse for not voting in Connecticut: The campaign has been largely uninspiring. On the trail, Malloy has mostly trumpeted the various measures &mdash; to be fair, many of them highly significant &mdash; that he helped enact during his first term instead of presenting concrete plans for the future. Foley has mostly trumpeted the fact that he is not Dan Malloy. This strategy might work for Foley; Malloy has consistently struggled to clear the hurdle of a 50 percent approval rating &mdash; 41 percent of likely voters had a favorable opinion of him in the Oct. 29 Quinnipiac Poll. Foley, and many Yale Republicans I spoke with, loves reciting a statistic Gallup Polling published in May: 49 percent of state residents say they would move out of the state if they could, the second-highest proportion of any state in the country.
+		<br /><br />
+		Amidst all of the talking points and vapid phrases such as &ldquo;Malloy Math,&rdquo; Republicans&rsquo; mocking epithet for Malloy&rsquo;s claims about his economic policies, there has been little substantive discourse. An exchange between Foley and Malloy on Aug. 28 during the first debate of the general election season served as a good introduction to the overall tenor of the race: petty and rancorous. The moderator asked a question about the gun laws Malloy passed in the wake of the Newtown massacre, which Democrats have lauded as the country&rsquo;s strictest but which many gun owners claim are borderline unconstitutional. Foley claimed he had told Malloy about his concerns regarding the legislation.
+		<br /><br />
+		&ldquo;Tom and I haven&rsquo;t had a conversation, ever,&rdquo; Malloy declared gleefully.
+		<br /><br />
+		&ldquo;We have conversations all the time,&rdquo; Foley defended himself. &ldquo;In the press.&rdquo;
+		<br /><br />
+		According to Gary Rose, chairman of the Department of Government and Politics at Sacred Heart University, the governor&rsquo;s race is in many ways a repeat of 2010. The two major candidates are the same, the national mood is generally one of malaise and the most important issue to Connecticut voters is the economy. The changes, Rose says, are for the worse: more vitriol, more outside spending, more mudslinging.
+		<br /><br />
+		&ldquo;This is without a doubt one of the most personal and negative campaigns in Connecticut history,&rdquo; Rose said.
+		<br /><br />
+		The Wesleyan Media Project, an organization that analyzes political ads across the country, reported in late September that Connecticut&rsquo;s gubernatorial election is the country&rsquo;s most negative &mdash; nearly 80 percent of ads aired by Malloy, Foley and groups supporting them are negative.
+		<br /><br />
+		Tomas Albergo &rsquo;16 is spending the semester at home in Guilford as he recovers from a medical procedure; he said the ads have been ubiquitous on local cable networks.
+		<br /><br />
+		&ldquo;The Malloy campaign is trying to pin Foley as a Romney-esque destroyer of jobs, while Foley&rsquo;s camp has created a &lsquo;Desperate Dan Malloy&rsquo; character who purportedly has caused the largest tax increase in Connecticut&rsquo;s history,&rdquo; Albergo said in an email.
+		<br /><br />
+		Most Yale students are able to escape the television spots, but even YouTube videos have been blitzed with ads such as Foley&rsquo;s &ldquo;Angry Dan,&rdquo; which claims Malloy is inexplicably taking out aggression on Connecticut residents, and Malloy&rsquo;s &ldquo;Radical,&rdquo; which links Foley to socially conservative groups.
+		<br /><br />
+		The negativity is partly a result of outside spending. Ronald Schurin, an associate professor of political science at the University of Connecticut, said that all of the ads funded by outside groups that he has seen have been negative.
+		<br /><br />
+		Schurin is convinced that negative ads are effective. Not only that, but candidates can claim they had nothing to do with the ads (since, by law, they aren&rsquo;t allowed to coordinate with outside groups) while reaping the benefits.
+		<br /><br />
+		Connecticut Forward, funded by the Democratic Governors&rsquo; Association and several unions, has spent nearly $5.5 million on ads for Malloy&rsquo;s reelection. Michael Bloomberg&rsquo;s Independence USA PAC spent nearly $2 million on an ad praising Malloy&rsquo;s gun legislation. (The PAC&rsquo;s Oct. 24 filing with the Connecticut Elections Enforcement Commission misspells the governor&rsquo;s first name as &ldquo;Daniel.&rdquo;) Supporting Foley, the National Rifle Association&rsquo;s Political Victory Fund spent just shy of $50,000 on mailings; Grow Connecticut, funded largely by the Republican Governors&rsquo; Association, has spent over $7 million.
+		<br /><br />
+		Both candidates are participating in Connecticut&rsquo;s public financing program, entitling each to a $6.5 million grant from the state on the condition that they stop other fundraising. The voluntary public financing option, known as the Citizens&rsquo; Election Program, was put in place in 2008 to curb special interest influence. But outside spending unleashed by recent Supreme Court decisions, including Citizens United and McCutchen v. FEC, means special interest groups still command influence. Rose sees this as part of a worrisome trend &mdash; outside spending was high in Connecticut&rsquo;s 2012 races as well. And all the negativity, he believes, could suppress turnout.
+		<br /><br />
+		&ldquo;Strong Republicans and Democrats are going to vote no matter what,&rdquo; Rose said. &ldquo;But a number of moderates in the middle &hellip; some of them might be expressing their disdain for this negativity by just not voting.&rdquo;
+	</div>
+	<div class="side">
+		<img src="malloy.jpg" />
+	</div>
+	<div class="side">
+		<img src="foley.jpg" />
+	</div>
+	<div class="side">
+		<div class="sidequote">The Wesleyan Media Project reported in late September that Connecticut&rsquo;s gubernatorial election is the country&rsquo;s most negative &mdash; nearly 80 percent of ads aired by Malloy, Foley and groups supporting them are negative.
+		</div>
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;The Malloy campaign is trying to pin Foley as a Romney-esque destroyer of jobs, while Foley&rsquo;s camp has created a &lsquo;Desperate Dan Malloy&rsquo; character who purportedly has caused the largest tax increase in Connecticut&rsquo;s history.&rdquo;
+		<br />
+		&mdash;Tomas Albergo &rsquo;16
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>THE DARK HORSE</h2>
+		While some voters may stay home as a result of the bickering between the two major party candidates, others will likely turn to a third option: Tea Partier-turned-independent candidate Joe Visconti. Visconti challenged Foley in the Republican primary but failed to gain enough votes at the party convention in May to even make the primary ballot. After Foley defeated Senate Minority Leader John McKinney in the August primary, McKinney fell in line to support the party&rsquo;s nominee, but Visconti qualified to run as an independent by submitting 10,000 supporting signatures to the Secretary of the State.
+		<br /><br />
+		A week before Election Day, Visconti, a former West Hartford Republican town councilor, had raised $20,000 since he first began campaigning last winter. Despite limited funds, an all-volunteer staff, and a distinct lack of a verbal filter, Visconti claimed seven percent of likely voters in the Oct. 29 Quinnipiac poll, including 14 percent of independents. He spent a day at Yale and on the New Haven Green a few weeks ago, and claimed most students had no idea who he was, but quickly embraced his policies.
+		<br /><br />
+		&ldquo;There&rsquo;s two lines of thinking: One, &lsquo;I love you &mdash; I&rsquo;m voting for you,&rsquo;&rdquo; Visconti said. &ldquo;The second group is going to love you but they don&rsquo;t know if you can win. You&rsquo;ve already lost the freedom in your life if you believe you have to pick between two options you don&rsquo;t want.&rdquo;
+		<br /><br />
+		A survey of 43 students by the News found that only one knew the name of the third candidate in Connecticut&rsquo;s gubernatorial race.
+		<br /><br />
+		Though very few share Visconti&rsquo;s belief that he could pull through and claim the governorship, his success thus far is surprising, especially given his stance on social issues in a state with no Republican congressmen. He is pro-life and opposed to gay marriage. He made his name as a &ldquo;Second Amendment supporter&rdquo; who consistently decried Malloy&rsquo;s post-Newtown legislation, in contrast to Foley, who has waffled on the issue. It is hard to imagine the blue-blooded businessman hunting or shooting targets, though he won the endorsement of the pro-gun Connecticut Citizens&rsquo; Defense League in September. Since then, Connecticut Republicans have been all but begging Visconti to disappear.
+		<br /><br />
+		Visconti gleefully pointed out that Foley chose to boycott the second debate that included him, leaving Malloy and the race&rsquo;s most right-wing candidate to duke it out as equals during prime time on NBC last week. He was not even upset that he had not been invited to the last debate of the race, which takes place on Sunday at 8 a.m.
+		<br /><br />
+		&ldquo;People sleep in on Sundays at 8 a.m.,&rdquo; Visconti declared. &ldquo;That&rsquo;s what Tom Foley does: &lsquo;I&rsquo;ll do the debate when no one&rsquo;s watching.&rsquo;&rdquo;
+		<br /><br />
+		Though conventional wisdom suggests that Visconti will siphon votes from Foley&rsquo;s right flank (and indeed, Visconti seems to reserve his greatest ire for his fellow Republican, claiming that Malloy is running a better race), Quinnipiac&rsquo;s polling indicates that he draws support from disaffected Republicans and Democrats alike. Conservatives are drawn to his overall platform, which generally aligns with the national GOP&rsquo;s more than that of the typical New England Republican. Some liberals are drawn to his staunch opposition to the Common Core, which teachers&rsquo; unions have protested and which Malloy has consistently supported. Because of his support from traditionally Democratic voters, Republican fears that Visconti will serve as a &ldquo;spoiler&rdquo; and ruin Foley&rsquo;s chances of victory seem overblown.
+		<br /><br />
+		But in a race as close as this one, every vote counts.
+	</div>
+	<div class="side">
+		<div class="sidequote">[Visconti] spent a day at Yale and on the New Haven Green a few weeks ago, and claimed most students had no idea who he was, but quickly embraced his policies.
+		</div>
+	</div>
+</div>
+<div class="feature" id="feature4">
+	<div class="featuretext">
+		&ldquo;There&rsquo;s two lines of thinking: One, &lsquo;I love you &mdash; I&rsquo;m voting for you.&rsquo; The second group is going to love you but they don&rsquo;t know if you can win. You&rsquo;ve already lost the freedom in your life if you believe you have to pick between two options you don&rsquo;t want.&rdquo;
+		<br />
+		&mdash;Joe Visconti
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>THE MACHINE COMES TO YALE</h2>
+		That is why Malloy made a point of having lunch with the Yale Dems in the Branford dining hall the Tuesday before fall break. About 20 people filled the dining hall annex by 1 p.m., when the governor was due to arrive. As Dems boardmembers had warned he might, he came late. Several people had to leave before he actually showed up; those who stayed got impatient.
+		<br /><br />
+		&ldquo;If he doesn&rsquo;t show up soon, I&rsquo;m voting for Foley,&rdquo; a freshman joked after waiting 20 minutes.
+		<br /><br />
+		Malloy, wearing a non-partisan purple tie and a black suit, finally walked into the room a few minutes after 1:30 p.m. He sat down in front of a plate of dining hall spaghetti that had materialized seemingly out of nowhere, and began jovially exhorting everyone to ask questions. Campaigning, he said, was exhausting; he hadn&rsquo;t been in a grocery store in six months. But two weeks before Election Day, he said he was feeling good about his odds.
+		<br /><br />
+		He has to say that, I thought. But to the Dems Election Coordinator Tyler Blackmon &rsquo;16, the governor&rsquo;s confidence looked real for the first time in months.
+		<br /><br />
+		&ldquo;I think he genuinely thought he was going to lose,&rdquo; Blackmon said, explaining that the governor&rsquo;s internal polling had not looked promising until recently.
+		<br /><br />
+		Part of the governor&rsquo;s strategy relies on increasing his margin of victory in New Haven to 18,000 votes. The significance of the Elm City in the race also explains why Michelle Obama came to town yesterday, speaking at Wilbur Cross High School to a crowd of 1,600, including around 30 Yalies. Rose said bringing the popular first lady to New Haven in the last few days before the election could help improve Democratic turnout.
+		<br /><br />
+		To the same end, Blackmon said, the Dems will start working before 6 a.m. on Election Day to pass out campaign literature, remind students to vote and run shuttles to the polls, which will service not only Yale students but also, at the direction of the Malloy campaign, other New Havenites. By the time students wake up and head out to breakfast or class, the Dems will have put a pro-Malloy doorhanger on every single suite on campus. Throughout the day, more than 50 people will work at the Dems&rsquo; campus headquarters at 425 College St., adjacent to Silliman College.
+		<br /><br />
+		Dems wrote &ldquo;Vote 4 Malloy&rdquo; and &ldquo;Vote in Connecticut&rdquo; in chalk all over campus, recruited freshmen to plaster campus in pro-Malloy posters and spent fall break canvassing and producing a cheesy pro-Malloy video. They hope the frenzy of activity will enable them to turn out 800 Yale students on Nov. 4.
+		<br /><br />
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/3rfuU6stQr4" frameborder="0" allowfullscreen></iframe>
+		<br /><br />
+		The Yale College Republicans command fewer committed members and have less ambitious plans for Election Day. YCR President Andrea Barragan &rsquo;16 said that whereas the Dems are able to draw dozens of people to any given event, the Republicans have about 15 core members. The group&rsquo;s get-out-the-vote efforts will begin in earnest on Monday night, when they will contact registered Republicans on campus and urge them to get to the polls. Over the past few months, student Republicans have spent some Saturdays canvassing or phone-banking for Foley, but they do not stay local: The Foley campaign always sends a car to ferry student volunteers 15 minutes away from campus, making the Republicans largely invisible on campus. Former YCR President Austin Schaefer &rsquo;15 believes the conditions of Yale&rsquo;s political climate make the mission of the YCR slightly different than that of the Dems. While the Dems can focus on turning ideological supporters into Connecticut voters, the Republicans try to force students to question liberal convictions.
+		<br /><br />
+		&ldquo;A lot of it&rsquo;s about trying to remind people that there are other ways to look at a lot of issues than what you see [in] the YDN opinion [page],&rdquo; Schaefer said.
+	</div>
+	<div class="side">
+		<div class="sidequote">By the time students wake up and head out to breakfast or class, the Dems will have put a pro-Malloy doorhanger on every single suite on campus.
+		</div>
+	</div>
+</div>
+<div class="feature" id="feature5">
+	<div class="featuretext">
+		Part of the governor&rsquo;s strategy relies on increasing his margin of victory in New Haven to 18,000 votes. The significance of the Elm City in the race also explains why Michelle Obama came to town yesterday, speaking at Wilbur Cross High School to a crowd of 1,600, including around 30 Yalies.
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>THE TERMS OF (POLITICAL) ENGAGEMENT</h2>
+		One week before Election Day, Ulin was again on a mission. Campaign literature was running low, so Ulin and Thomas Veitch &rsquo;15 had to rely on their own powers of persuasion as they canvassed suites in McClellan. Things went fairly well &mdash; many people answered their doors, cheerfully pledged to vote for Malloy and thanked the pair for dropping by.
+		<br /><br />
+		&ldquo;I actually was not going to vote but now I guess I should,&rdquo; said a Jonathan Edwards junior after Ulin and Veitch rattled off a few of Malloy&rsquo;s accomplishments and claimed that a Foley victory would roll back progress. A few moments earlier, she had said she knew nothing about the gubernatorial race.
+		<br /><br />
+		For all of the ignorance and apathy Yale students harbor towards Connecticut and local politics, we are generally eager to please. So when people drop by our suite asking us to do something that is not too difficult and sounds like the right thing to do anyway, we are apt to do it (or at least say we will). Rachel Miller &rsquo;15 canvassed with the Dems in 2012 for President Obama and U.S. Senator Chris Murphy, and last year she served as field manager of Yale for mayoral candidate Justin Elicker FES &rsquo;10 SOM &rsquo;10. Miller said she has found most Yale students hold positions on the major national issues and know the names and political affiliations of their elected officials back home. The challenge is reminding them that their home for four years offers a whole new cast of political characters and concerns.
+		<br /><br />
+		Last year, during the competitive mayoral and Ward 1 aldermanic contests, Miller was pleased by the level of student engagement in the races. In some ways, she thinks, it may be easier to persuade students of the significance of local races than of state races.
+		<br /><br />
+		&ldquo;People can digest, This is my extremely local representative. I need to go vote for them,&rdquo; Miller said. &ldquo;And also there&rsquo;s this mayoral race. I should probably know about that too. This is a very local and immediate concern to you.&rdquo;
+		<br /><br />
+		Shirley Kuang &rsquo;17, whom Ulin and Diaz canvassed in TD nearly a month ago, registered in New Haven during the 2013 mayoral election. She recalled that campaign as exciting, commanding attention and conversation on campus in a way the statewide race has not. She knew people who were involved in the Elicker campaign and she had decided which candidate to vote for weeks before the election. When Diaz and Ulin knocked on her door, Kuang had not heard much about either Malloy or Foley.
+		<br /><br />
+		Kuang considers herself a Democrat, and so she responded &ldquo;That&rsquo;s great!&rdquo; to Ulin&rsquo;s pitch. But she said she would have welcomed a pro-Foley pitch as well, though no one ever offered her one.
+		<br /><br />
+		&ldquo;I&rsquo;d like to know both sides even if I am more inclined to vote for the Democrat,&rdquo; Kuang said. &ldquo;I kind of do want to know who Tom Foley is.&rdquo;
+		<br /><br />
+		Alex Posner &rsquo;18, a native of New York City, is a Democrat as well. He attended a meeting of the Dems in September where Malloy spoke, and he said he was looking forward to voting for the governor. He knows this race is close, and his vote matters more in Connecticut than in his liberal hometown. He could not name Malloy&rsquo;s opponent.
+		<br /><br />
+		Miller acknowledged that the strength of the Dems on campus and the relative weakness of the Republicans creates the expectation that the average Yalie who engages in local politics supports the Democrats. Amalia Halikias &rsquo;15, communications director of Yalies for Foley and the Yale College Republicans, said even many Republicans believe convincing a large number of Yalies to vote for Foley would be impossible.
+		<br /><br />
+		&ldquo;I think there is a false assumption either that Yale students don&rsquo;t care or that Yale students are a lost cause,&rdquo; Halikias said.
+		<br /><br />
+		Halikias believes the relative success of Republican Paul Chandler, who won 37 percent of the Ward 1 vote last year, demonstrated that left-leaning students can be swayed to consider more conservative candidates. This year, however, no one seems to be trying to do much swaying.
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;I think there is a false assumption either that Yale students don&rsquo;t care or that Yale students are a lost cause.&rdquo;
+		<br />
+		&mdash;Amalia Halikias &rsquo;15, Yale College Republicans
+		</div>
+	</div>
+	<div class="side">
+		<img src="dems.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature6">
+	<div class="featuretext">
+		For all of the ignorance and apathy Yale students harbor towards Connecticut and local politics, we are generally eager to please. So when people drop by our suite asking us to do something that is not too difficult and sounds like the right thing to do anyway, we are apt to do it (or at least say we will).
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>THE FIRST TUESDAY IN NOVEMBER</h2>
+		Though Barragan and Miller will be voting for different people on Nov. 4, they agree on at least one thing: Yale students should know a major race is happening in Connecticut.
+		<br /><br />
+		&ldquo;These things will affect our local barista at our favorite coffee shop and we should take that into consideration,&rdquo; Barragan said. &ldquo;Even if they&rsquo;re not voting they should be aware of what&rsquo;s going on.&rdquo;
+		<br /><br />
+		On your way to breakfast Tuesday morning, look for the doorhanger the Yale Dems put there before the sun was up. Google Tom Foley. Connecticut has same-day voter registration, so it is not too late to decide to vote. The political messages chalked on the sidewalk will wash away in the rain, but the impact of a ballot cast on Nov. 4 will linger for years.
+		<br /><br />
+		<br /><br />
+		<br /><br />
+</div>
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
