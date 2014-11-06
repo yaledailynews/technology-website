@@ -1,0 +1,388 @@
+<html>
+<head>
+<title>Dance, theater groups struggle to find space</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 1800px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+			.sidequote {
+				margin-top: 200px;
+				font: 400 13px/22px 'Open Sans', sans-serif;
+				font-weight: bold;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sidequote {
+				margin-top: 200px;
+				font: 400 12px/18px 'Open Sans', sans-serif;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Dance, theater groups struggle to find space
+	<a href="http://yaledailynews.com/blog/category/culture/"><div class="part">CULTURE</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Over the summer, undergraduate dance groups and theater performers largely lost access to the Broadway Rehearsal Lofts, exacerbating the current shortage of facilities allotted to them. With the popular rehearsal space now unavailable, these groups are left scrambling for a place to hone their craft. <em style="font-weight:normal;">David Kurkovskiy reports.</em>
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/davidkurkovskiy/" target="_blank">David Kurkovskiy</a> &middot; Staff Reporter
+		<div class="q">Web design by Yale Daily News</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>L</big>ooking forward to an exciting year of theater ahead, Yale Drama Coalition Vice President Skyler Ross &rsquo;16 found out one summer day that he and many of his peers in the performing arts community were being forced to move. The only place on campus exclusively reserved for undergraduate theater and dance rehearsals would no longer be fully accessible to groups that had traditionally relied on these spaces to practice their craft.
+		<br /><br />
+		&ldquo;It was definitely something that we were blindsided by,&rdquo; Ross said.
+		<br /><br />
+		Starting this semester, the Broadway Rehearsal Lofts studios &mdash; located in the same building as the outdoor goods retail store Trailblazer &mdash; changed their operating hours so that theater and dance groups would only have access to the rehearsal spaces for a couple of hours a day. At the end of September, three new rehearsal spaces opened at 60 Sachem St., the site of the former School of Management building. Undergraduate performing arts groups, however, uniformly expressed dissatisfaction at the new studios&rsquo; ability to fully serve their groups&rsquo; needs.
+		<br /><br />
+		Currently, many dance groups are using the Sachem Street building, while a number of theater rehearsals have been relegated to classrooms across campus. The cutback of rehearsal hours in the BRL is not an isolated occurrence, but a reflection of broader facilities-related issues for undergraduates involved in theater and dance. Rehearsal and performance venues are frequently over-booked and are scattered about campus. For the over 600 students who participate in theater and dance shows every year, the task of securing such spaces has become even more of a challenge.
+	</div>
+</div>
+<div class="feature" id="feature2">
+</div>
+<div class="content">
+	<div class="text">
+		<h2>AN UNFAVORABLE RELOCATION</h2>
+		The BRL house one of the largest dance studios available to undergraduate performing arts groups, two acting studios and the Undergraduate Production office, taking up the two floors above Trailblazer.
+		<br /><br />
+		In response to a series of noise complaints that Trailblazer issued regarding the BRL, the rehearsal studios were required to be closed during Trailblazer&rsquo;s hours of operation. The University initially attempted to address the noise concerns by sound-buffering the walls, according to head of Undergraduate Productions Kate Krier. But Krier said the buffering efforts were ultimately deemed insufficient.
+		<br /><br />
+		Associate Dean for the Arts Susan Cahan explained that the University took steps to address the concerns of Trailblazer, but when the noise issue could not be resolved, the University had to come up with an alternative solution to provide rehearsal space for undergraduate theater and dance groups.
+		<br /><br />
+		The University arranged for the conversion of three rooms in a building on 60 Sachem St. into rehearsal studios to compensate for the cutbacks in the BRL&rsquo;s operating hours. While the mandated changes in studio hours were put into effect at the beginning of the semester, the new studios at 60 Sachem were not available until a month later. Leaders of groups that normally scheduled rehearsal hours during Trailblazer&rsquo;s open hours said they encountered scheduling difficulties during the month-long waiting period. Vasilije Dobrosavljevic &rsquo;16, captain of the Yale Ballroom Dance Team, said that his group faced such challenges because it had historically held practices twice a week in the BRL between the hours of 7:30 p.m. and 9 p.m.
+		<br /><br />
+		&ldquo;If you&rsquo;re a group that is depending on BRL, and Yale closes BRL on you and doesn&rsquo;t give you an alternative, that&rsquo;s a really big deal,&rdquo; Dobrosavljevic said.
+		<br /><br />
+		Some students interviewed said they felt hurt that the groups that use the BRL studios most were not directly contacted by the administration to have the situation explained. Ross said that many students were initially upset and felt that the University was prioritizing a tenant over tuition-paying students.
+		<br /><br />
+		Dobrosavljevic and Ross said they think that the complete closure of the BRL studios during Trailblazer&rsquo;s hours seemed like a drastic move. Ross added that a small rehearsal with just a director and two actors, for example, would not generate the kind of noise that would be heard downstairs.
+	</div>
+	<div class="side">
+		<img src="dance1.jpg" />
+	</div>
+	<div class="side">
+		<img src="dance2.jpg" />
+	</div>
+	<div class="side">
+		<img src="dance3.jpg" />
+	</div>	
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;If you&rsquo;re a group that is depending on BRL, and Yale closes BRL on you and doesn&rsquo;t give you an alternative, that&rsquo;s a really big deal,&rdquo;
+		<br />
+		&mdash;Vasilije Dobrosavljevic &rsquo;16
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>THE LARGER PROBLEM</h2>
+		Sept. 27 marked the official opening of the Sachem Street studios. Similar to the BRL, two of the spaces are acting studios and the third is a dance studio.
+		<br /><br />
+		While the new rehearsal spaces provide the same number of studios that the BRL had, students and administrators interviewed said that the replacement studios do not meet the needs of student groups as well as the BRL did. Leaders of dance groups in particular said their ensembles have been negatively impacted by the change.
+		<br /><br />
+		Alliance for Dance at Yale President Nicole Feng &rsquo;16 highlighted the size differences between the BRL and Sachem studios as a problem for several types of dance groups. While the dance studio at the BRL measures 26&rsquo; x 56&rsquo;, the Sachem Street studio measures 32&rsquo; x 32.&rsquo; In addition, the smaller diagonal that results from the square shape of the Sachem floor limits the flexibility of dancers, restricting the types of choreography and number of participants that dance groups are able to include in their performances, according to Feng.
+		<br /><br />
+		&ldquo;For certain dance styles, the diagonal length [of the floor] is very important,&rdquo; Feng said. &ldquo;In jazz and ballet technique, you utilize that diagonal to practice across the floor.&rdquo;
+		<br /><br />
+		Feng added that for some folkloric dance groups, such as the traditional Asian dance group Phoenix, the use of props is essential to their dance style. Feng said that practicing in smaller studios prevents groups such as Phoenix from accomplishing a full range of motion with their props, which include fans.
+		<br /><br />
+		Cahan agreed with students&rsquo; worries about the size of the Sachem St. studio compared to that of the BRL.
+		<br /><br />
+		&ldquo;I think that all of us are concerned that, of the existing dance spaces, the BRL is the largest, the best equipped and the most appropriate,&rdquo; Cahan added.
+		<br /><br />
+		Student group leaders interviewed said that problem of lacking facilities facing dance groups is not limited to rehearsal space, but also includes the shortage of on-campus theaters that allow dance groups to perform. Currently, the only performance spaces suitable to dance are the Morse/Stiles Crescent Theater and the Off Broadway Theater. Groups such as the ballroom team have resorted to using dining halls as a replacement performance space, according to Dobrosavljevic. Ensembles funded by the Creative and Performing Arts Awards, which support undergraduate performing arts performances, may also apply to have their productions staged at Co-Op Arts and Humanities High School, located on College Street.
+		<br /><br />
+		Hannah Leo &rsquo;15 and Zoe Reich-Aviles &rsquo;16, president and artistic director of the dance group A Different Drum respectively, said in an email that the process for getting access to on-campus performance spaces is competitive, and that dance groups must compete among each other and with theater productions for such spaces. Leo and Reich-Aviles wrote that ADD applied for funding from the CPA, Arts Discretionary Fund and Undergraduate Organizations Committee funds for their show &ldquo;iDance {therefore} iAm&rdquo; that opens this week. They were not able to receive funding to perform the show in the Educational Center for the Arts on Audubon Street, they wrote, because the ECA theater is not Yale-owned or considered an on-campus space.
+		<br /><br />
+		While ADD has used the ECA Theater in the past, they are using it this week for the first time in five years, due to how expensive the space is to rent.
+		<br /><br />
+		Leo and Reich-Aviles added that although they think Sachem studio is visually appealing, it does not replace the need that the BRL studio had filled.
+	</div>
+	<div class="side">
+		<img src="theater1.jpg" />
+	</div>
+	<div class="side">
+		<img src="theater2.jpg" />
+	</div>
+	<div class="side">
+		<img src="theater3.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature4">
+	<div class="featuretext">
+		&ldquo;I think that all of us are concerned that, of the existing dance spaces, the BRL is the largest, the best equipped and the most appropriate,&rdquo;
+		<br />
+		&mdash;Susan Cahan, Associate Dean for the Arts
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>ADAPTING TO NEW CONDITIONS</h2>
+		While dance groups have observed that their new studios are smaller than those at the BRL, the two theater studios in the Sachem location are larger than their BRL counterparts, according to Ross.
+		<br /><br />
+		Still, Ross said that the new studios are farther away from the central campus than the BRL studios, making it rather inconvenient for actors to rehearse there. He added that because the studios also function as classrooms during the day, the wheeled desks and chairs in the studios have to be returned to their locations at the end of rehearsals, which further detracts from rehearsal time.
+		<br /><br />
+		Krier and Ross highlighted that members of the theater community have been flexible in their rehearsal schedules as a result of the cutback in the BRL studios&rsquo; open hours.
+		<br /><br />
+		Feng said that the location of her &ldquo;Dance Theater&rdquo; class this semester, which meets twice a week in the BRL, was supposed to be moved to the 60 Sachem studio, but the new studio was not big enough to house the class. The class was then given special permission to keep meeting in the BRL studio. A similar exception was made for Yale Dance Theater rehearsals for the same reason, Feng noted.
+		<br /><br />
+		Cahan added that the situation is being closely monitored to ensure that the rehearsals of the dance studies class and Yale Dance Theater do not continue to cause noise problems for Trailblazer.
+		<br /><br />
+		Students and administrators interviewed said they hope that the larger issue of lacking theater and dance facilities will be resolved with a collaborative effort between the arts communities and the administration.
+		<br /><br />
+		Feng expressed a desire that ADAY will be able to work together with the University to resolve the issues that affect her organization. Director of the Dance Studies curriculum Emily Coates &rsquo;06 GRD &rsquo;11 said she hopes that the closure of the BRL studios will lead to a larger, collaborative effort to resolve the issues of available facilities for dance and theater groups on campus.
+		<br /><br />
+		Cahan also voiced a hope that a space comparable to the BRL will be secured for the dance community.
+		<br /><br />
+		&ldquo;I hope that in the future we will be able to provide a dance studio of equivalent size and quality for dancers on campus,&rdquo; Cahan said.
+	</div>
+	<div class="side">
+		<img src="dance4.jpg" />
+	</div>
+	<div class="side">
+		<img src="theater4.jpg" />
+	</div>	
+	<div class="side">
+		<img src="dance5.jpg" />
+	</div>
+</div>
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
