@@ -1,0 +1,401 @@
+<html>
+<head>
+<title>2014 Career paths revealed</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+  body, html {
+    margin: 0;
+    height: 100%;
+  }
+  .topbar {
+    height: 30px;
+    background: #eee;
+    border-bottom: 1px solid #bbb;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    z-index: 5;
+    padding: 5px 5px 5px 180px;
+    font: 400 20px/30px georgia, "times new roman", times, serif;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  }
+    .logo {
+      background: url('logo.png') no-repeat top left / contain;
+      height: 30px;
+      width: 130px;
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+    .part {
+      text-transform: uppercase;
+      float: right;
+      font: 400 14px/30px 'Lato', serif;
+      margin: 0 10px;
+      padding: 0 10px;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: background 0.2s ease-in-out;
+      -webkit-transition: background 0.2s ease-in-out;
+    }
+    .part:hover {
+      background: #ccf;
+    }
+  .feature {
+    height: 100%;
+    background: #fff no-repeat top left fixed;
+    background-size: cover;
+    position: relative;
+  }
+    .featuretext {
+      font: 400 20px/35px georgia, "times new roman", times, serif;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      width: 33%;
+      position: absolute;
+      top: 15%;
+      right: 40px;
+      text-align: right;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.8);
+
+    }
+    #feature1 {
+      background-image: url('cover.jpg');
+    }
+    #feature2 {
+      background-image: url('cover2.jpg');
+    }
+    #feature3 {
+      background-image: url('cover3.jpg');
+    }
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    font: 400 18px/27px georgia, "times new roman", times, serif;
+  }
+  .content:after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+  }
+    .title {
+      color: #999;
+      text-transform: uppercase;
+      font: 400 14px/20px 'Lato', sans-serif;
+      margin-top: 10px;
+    }
+    .title a {
+      text-decoration: none;
+      color: #aaf;
+    }
+    .title a:hover {
+      color: #aaf;
+      text-decoration: underline;
+    }
+    .title a:visited {
+      text-decoration: none;
+      color: #aaf;
+    }
+    .title hr {
+      height: 1px;
+      margin: 10px 0 20px 0;
+      background: #999;
+      border: 0;
+    }
+    .q {
+      line-height: 20px;
+      font-size: 12px;
+
+      
+    }
+    .text {
+      width: 66%;
+      text-align: left;
+      margin: 40px 0;
+      float: left;
+    }
+    .textimg {
+      background: #fff no-repeat top center;
+      background-size: contain;
+      margin: 40px auto;
+    }
+      #textimgmoney {
+        background-image: url('money.png');
+        height: 500px;
+      }
+      #textimgstem {
+        background-image: url('stem.png');
+        height: 300px;
+      }
+    .text big {
+      font-size: 80px;
+      float: left;
+      line-height: 70px;
+      margin-right: 10px;
+    }
+    .side {
+      width: 30%;
+      padding-left: 3%;
+      float: right;
+      margin: 40px 0;
+    }
+      .side img {
+        width: 100%;
+      }
+      .sidequote {
+        margin-top: 200px;
+        font: 400 14px/25px 'Open Sans', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.25px;
+        text-align: right;
+        margin-left: 30px;
+      }
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+      margin: 0 0 25px 0;
+      letter-spacing: 2px;
+    }
+    h3 {
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 25px;
+      margin: 0 0 15px 0;
+      letter-spacing: 2px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .featuretext {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        width: 50%;
+      }
+
+      .sidequote {
+        margin-top: 200px;
+        font: 400 13px/22px 'Open Sans', sans-serif;
+        font-weight: bold;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .sidequote {
+        margin-top: 200px;
+        font: 400 12px/18px 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .content {
+        width: 90%;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      .featuretext {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0px;
+      }
+    }
+</style>
+<script>
+  $(function() {
+    $('.part').click(function() {
+      var href = $(this).attr('href');
+      if (typeof href !== 'undefined' && href !== false) {
+        window.location = href;
+      }
+    });
+  });
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+<body>
+<div class="topbar">
+  <a href = "http://yaledailynews.com"><div class="logo"></div></a>
+  2014 Career paths revealed
+  <a href="/features/freshman"><div class="part">Class of 2018: Freshman Survey</div></a> 
+</div>
+<div class="feature" id="feature1">
+  <div class="featuretext">
+  Six months after receiving their diplomas, members of the Yale class of 2014 are now full-fledged alumni. Over the past few months, the Office of Career Strategy has surveyed the former students to draw out trends in their decisions to work, study or explore outside Yale. The News also distributed its own survey to analyze social life, job satisfaction and alumni activity. <em style="font-weight:normal;">Tyler Foggatt reports on the numbers.</em>
+  </div>
+</div>
+<div class="content">
+  <div class="title">
+    By <a href="http://yaledailynews.com/blog/author/tylerfoggatt/" target="_blank">Tyler Foggatt</a> &middot; Staff Reporter
+    <div class="q">Web design by The Yale Daily News</div>
+    <hr />
+  </div>
+  <div class="text">
+  <big>L</big>ast spring, the Office of Career Strategy released a survey to the class of 2014, asking the students to indicate their plans for the fall after graduation. As of last week, 1,225 of the 1,298 students have responded, yielding data that describe what 94.4 percent of the class is doing and where they are located, among other metrics. Captured by the preliminary data &mdash; updates to finalize its findings are expected later this month &mdash; are the companies, industries, schools and locations favored most and least by Yale&rsquo;s newest alumni.
+  <br /><br />
+  &ldquo;The interest of Yale students after graduation is extremely broad,&rdquo; OCS Director Jeanine Dames said. &ldquo;There is no one area that attracts Yale students as a critical mass.&rdquo;
+  <br /><br />
+  According to the OCS numbers, 73.3 percent of the class currently holds a full-time, part-time or short-term position, while others are conducting independent research, traveling, volunteering or performing military service or care work. Job choice, the survey revealed, was not necessarily dictated by field of study: 38 percent of the respondents said that their careers are unrelated to the majors they completed at Yale.
+  <br /><br />
+  The graduates did, however, gravitate towards jobs with larger employers. Slightly more than half reported a position at companies with more than 500 employees, up from roughly 44 percent of the class of 2013. Other factors that stood out include the time of year in which the students received a formal offer &mdash; 61.8 percent of the class secured positions in the spring or later &mdash; and the industry and geographic location of the job. Though official salary figures have not been released for 2014, a sample of 262 alumni surveyed by the News revealed 25 percent to be earning less than $20,000 this year. Meanwhile, six percent are already making more than $100,000.
+  <br /><br />
+  Though the class spread out over a variety of fields, there were still a select few that drew the most graduates &mdash; the select few that most have come to expect in recent years.
+  <br /><br />
+  <br /><br />
+  <h2>THE USUAL SUSPECTS</h2>
+  Taking 16.6 percent of the class, financial services was once again the most popular industry for Yale graduates, one year after 14.8 percent entered the field. Goldman Sachs hired the most members of the class of 2014 with 23. McKinsey &amp; Company, Bain &amp; Company, Microsoft and Boston Consulting Group were the other companies that took on the most 2014 grads besides the University, which hired 51 of them. The education, consulting, research and technology sectors yielded similar, but slightly lower numbers from the class, creating a hierarchy that mirrored patterns seen in 2013.
+  <br /><br />
+  As for the actual work that the graduates now carry out, the OCS data delved into job &ldquo;function,&rdquo; for which research, finance, consulting and teaching topped the list across the different industries.
+  <br /><br />
+  Those working in consulting appeared to be the most pleased, according to results from the News&rsquo; survey, with 79 percent indicating that they were &ldquo;highly satisfied&rdquo; or &ldquo;satisfied&rdquo; with their jobs. Financial services and education, meanwhile, were at least satisfactory for 56 percent and 57 percent of their employees, respectively.
+  <br /><br />
+  Diana Orozco &rsquo;16, who interned at the investment bank during the summer after freshman year, said she thinks Yalies are drawn to Goldman Sachs because of its intellectually stimulating environment.
+  <br /><br />
+  &ldquo;[Working at Goldman Sachs] is high-reward and relatively low-risk,&rdquo; Orozco said.
+  <br /><br />
+  Orozco added that she could see herself working at Goldman Sachs after graduation.
+  <br /><br />
+  <img src="employers.jpg" alt="employers" class="center" >
+  <br /><br />
+  Tech, another marquee industry in Ivy League circles, has also developed a large recruiting presence on campus. Maren Hopkins &rsquo;14, a Microsoft employee, said that the majority of Yalies who end up at Microsoft work in software development. There are others, however, who work on hardware like Hopkins, who earned a mechanical engineering degree at Yale.
+  <br /><br />
+  The Seattle-based company&rsquo;s recruiters, she added, prioritize Yale because of its strong computer science program.
+  <br /><br />
+  &ldquo;I think Microsoft is working hard to recruit on campus because Yale has a strong computer science program, so more students hear about the jobs and get a chance to interview,&rdquo; she said.
+  <br /><br />
+  Additionally, nine alumni from the class of 2014 are working in various locations around the country for Teach for America.
+  </div>
+<div class="side">
+  <div class="sidequote">BY THE NUMBERS<br />
+    Working at JP Morgan: 12<br />
+    Listed as "Self Employed": 3<br />
+    Living in Hong Kong: 7<br />
+    Studying at MIT: 6 <br />
+  </div>
+  </div>
+</div>
+<div class="feature" id="feature2">
+  <div class="featuretext">
+    Goldman Sachs hired the most members of the class of 2014 with 23. McKinsey &amp; Company, Bain &amp; Company, Microsoft and Boston Consulting Group were the other companies that took on the most 2014 grads besides the University, which hired 51 of them.
+  </div>
+</div>
+<div class="content">
+  <div class="text">
+    <h2>THE outliers</h2>
+    While a large portion of the class did take conventional jobs after graduation, numerous members ignored these industries in favor of different fields, with some not even falling into any of the 20 industries named in the OCS survey.
+    <br /><br />
+    Thirty-eight selected the &ldquo;Other&rdquo; option, reporting industries like culinary arts and industrial supply. One such respondent, Johanna Flato &rsquo;14, now works for a travel-planning startup in Cincinnati called Roadtrippers. She said she found the opportunity through Venture for America, which helps recent graduates find employment at startups in emerging cities. One benefit, Flato added, has been her ability to balance work with art projects that she has kept up on the side after majoring in arts and humanities.
+    <br /><br />
+    Flato&rsquo;s classmate Erica Reetz &rsquo;14 said her field, industrial supply, is unconventional among Yale graduates, which appealed to her on a certain level.
+    <br /><br />
+    &ldquo;I think it&rsquo;s a great idea to show Yalies they have far more options than finance and consulting,&rdquo; Reetz said. &ldquo;I was interested in consulting, but when I found this opportunity it was a much better match for me.&rdquo;
+    <br /><br />
+    Seventy-seven percent of those not fitting into any conventional category indicated that they were highly satisfied with their jobs. This was one of the higher satisfaction rates reported by the class of 2014 in the News&rsquo; survey.
+    <br /><br />
+    Other outliers managed to choose a listed industry, but still said they consider their work to be unorthodox. Among these were careers in professional sports, social work and veterinary research that had elements of finance, consulting and education.
+    <br /><br />
+    Former economics major Max Napolitano &rsquo;14 now works for the Miami Dolphins in a job that spans many departments &mdash; including sponsorship, ticket sales and marketing &mdash; with the general goal of generating higher revenue for the National Football League franchise.
+    <br /><br />
+    &ldquo;I started in June and have been enjoying every minute of it,&rdquo; Napolitano said, adding that he had always wanted to work in sports. &ldquo;I wake up every morning excited for the day and motivated to make a difference.&rdquo;
+    <br /><br />
+    Rachel Kubi &rsquo;14 said that she strayed from the typical job search by exploring forums beyond the UCS Symplicity site, which most of her friends used to find their work. In her position as a Parent Educator at the Tulane Parenting Education Program Family Resource Center, she mixes case management with social work and teaching, she said. 
+    <br /><br />
+    Perhaps the most unique case is that of Jen Kramer &rsquo;14, who is now a professional magician. The former theater studies major moved to Las Vegas, where she performs regularly at the Wyndham Grand Desert Resort.
+    <br /><br />
+    &ldquo;I&rsquo;ve loved magic since I was a kid,&rdquo; Kramer said. &ldquo;When I was a freshman at Yale, I founded the Yale Magic Society and continued to perform as much as I could. I then reached out to [professional magician] Nathan Burton about interning for him in Las Vegas over the summer. Fortunately, it worked out really well, and I learned a lot from the experience about all the details that go into making a Vegas magic show happen.&rdquo;
+    <br /><br />
+    But the largest contingent of students electing not to pursue careers in finance, education, consulting or research decided to continue their studies in graduate or professional school. 187 respondents have moved on to master&rsquo;s, JD, MD and MBA programs, mainly at universities like Yale, Harvard, Columbia and Stanford.
+  </div>
+  <div class="side">
+  <img src="industries.jpg" />
+  </div>
+  <div class="side">
+  <img src="functions.jpg" />
+  </div>
+</div>
+<div class="feature" id="feature3">
+  <div class="featuretext">
+    &ldquo;I think it&rsquo;s a great idea to show Yalies they have far more options than finance and consulting. I was interested in consulting, but when I found this opportunity it was a much better match for me.&rdquo;
+    <br />
+    &mdash;Erica Reetz &rsquo;14
+  </div>
+</div>
+<div class="content">
+  <div class="text">
+    <h2>LOCATION, LOCATION, LOCATION</h2>
+    Roughly three-fourths of the class of 2014 now lives in New York, Connecticut, California, Massachusetts and Washington, D.C. Dames said that, though most people expect a large amount of Yalies to be living in New York, they are often surprised to hear that Connecticut is the second most common place for recent Yale graduates to live. Those that do live in Connecticut, however, tend to live in New Haven, either working or studying at Yale offices and schools.
+    <br /><br />
+    The more alumni in one city, the more they tended to socialize with each other, the data showed. Sixty-nine percent of News survey respondents living in New Haven also said that they interact with other Yalies several times a week. Half of the respondents living in New York City said the same.
+    <br /><br />
+    Graduates in less common areas said that being separated from their college friends slightly dampens an otherwise-enjoyable experience in different cities.
+    <br /><br />
+    &ldquo;I love San Antonio,&rdquo; Ryder Bilings &rsquo;14 said. &ldquo;It&rsquo;s a really vibrant city with a lot of character and things to do. The biggest downside is there aren&rsquo;t a lot of Yalies down here. Most of my college friends went to work in New York or those other places, and I miss having them around.&rdquo;
+    <br /><br />
+    Bilings, a business analyst for Labatt Food Services in the company&rsquo;s San Antonio office, added that his Texas roots helped facilitate the move. Unlike most of his classmates, he said, he actively sought to return to his hometown for post-graduate work, even if doing so meant separating himself from his college friends in New York City.
+    <br /><br />
+    Several grads who responded to the News&rsquo; survey from unconventional areas echoed the sentiment that separation from their classmates has been difficult, at times.
+    <br /><br />
+    &ldquo;I work and live abroad, and being far from family and close friends is difficult and lowers my level of satisfaction,&rdquo; one person said anonymously.
+    <br /><br />
+    But isolation from Yalies does not necessarily preclude these alumni from embracing their current environments. Molly Gibbons &rsquo;14, who works at Analysis Group in Denver, named cultural outlets and the proximity of the Rocky Mountains as central elements of Denver&rsquo;s appeal that distinguish it from larger cities.
+    <br /><br />
+    &ldquo;Having the benefits of a full city life &mdash; great museums, brilliant shows, delightful neighborhoods, extraordinary restaurants &mdash; and a thirty-minute commute to the mountains is unbeatable,&rdquo; Gibbons said. &ldquo;The excitement and pride with which locals describe the city is inspired.&rdquo;
+    <br /><br />
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/jD3uzowxJHM"></iframe>
+    <br /><br />
+    Other clusters of Yalies live in unexpected pockets around the globe. For example, Sophie Nethercut &rsquo;14 now works for the Sitka Conservation Society in Sitka, Alaska, where at least 15 Yalies live among the roughly 9,000 residents, she said.
+    <br /><br />
+    Outside the United States, 2014 graduates mainly live in China and the United Kingdom. In total, 162 of the OCS survey&rsquo;s respondents said that they now live abroad. According to the OCS data, the most popular industries for these areas were similar to those seen domestically.
+    <br /><br />
+    Of the 13 alumni living in China, seven are working in education, while 11 of the 39 in the United Kingdom work in either education or finance. There also exist, however, alumni with careers in entertainment, communications and policy or attending graduate school in both areas. This trend, Dames said, falls in line with the broader picture that many students do enter the same, expected fields, while others still filter elsewhere &mdash; more consistently than people might realize.
+    <br /><br />
+    &ldquo;It&rsquo;s amazing how diffused this [data] is,&rdquo; Dames said. &ldquo;When you look at other schools, there&rsquo;s 25 or 30 percent of the population going to one area, and that just doesn&rsquo;t happen at Yale.&rdquo;
+  </div>
+<div class="side">
+  <div class="sidequote">REASONS FOR JOB SATISFACTION<br />
+    "[I'm] working toward a mission I believe in"<br />
+    "Mental stimulation and compensation"<br />
+    "Work-Life balance"<br />
+    "Compensation"<br />
+    "Alignment with career objective"<br />
+  </div>
+  <div class="sidequote">REASONS FOR JOB DISSATISFACTION<br />
+    "Not being around Yalies"<br />
+    "Work on Saturday"<br />
+    "My program is not what it said it would be"
+  </div>
+</div>
+<div class="content" id = "comments">
+  <div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+  <hr />
+  <div class="title">
+    &copy; Copyright 2014 Yale Daily News. All rights reserved.
+  </title>
+</div>
+</body>
+</html>
