@@ -1,0 +1,491 @@
+<html>
+<head>
+<title>WEEKEND | Presidents and Precedents</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+		#feature5 {
+			background-image: url('cover5.jpg');
+		}
+		#feature6 {
+			background-image: url('cover6.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 1000px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+			.sidequote {
+				margin-top: 200px;
+				font: 400 13px/22px 'Open Sans', sans-serif;
+				font-weight: bold;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sidequote {
+				margin-top: 200px;
+				font: 400 12px/18px 'Open Sans', sans-serif;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Presidents and Precedents
+	<a href="http://yaledailynews.com/weekend"><div class="part">WEEKEND</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Everyone loves Peter Salovey, but can anyone tell you why? Into his second year on the job, Salovey has not changed Yale in any major way. There's no telling whether he plans to do so anytime soon. But would he even be able to if he wanted to? The role of a university president has changed significantly over the past 60 years. Looking to the past, <em style="font-weight:normal;"> Scott Stern investigates</em> how those changes will shape Yale's future under Salovey.
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/scottstern/" target="_blank">Scott Stern</a>
+		<div class="q">Web design by The Yale Daily News</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>O</big>n Feb. 10, 1950, A. Whitney Griswold &rsquo;29 GRD &rsquo;33 and his wife, Mary, headed to New York for an evening of theater and fine dining. After seeing &ldquo;Caesar and Cleopatra,&rdquo; Whitney &mdash; a young Yale history professor &mdash; and Mary decided to stay over in New York and have lunch the next day with Roswell Ham, then-President of Mount Holyoke College. After hearing all about Ham&rsquo;s life as a college president, Whitney remarked to Mary, &ldquo;Thank God we&rsquo;re not in that racket.&rdquo;
+		<br /><br />
+		He needn&rsquo;t have worried. Though Yale&rsquo;s president, Charles Seymour 1908 GRD 1911, had just announced his retirement, Griswold was a highly unlikely choice for the job. He had never been interviewed for the position. He was too young, just 43. He was something of a nonconformist, at least by Yale standards: a solid Democrat on a faculty full of Republicans. And though Griswold had sterling credentials &mdash; a bachelors and doctorate from Yale (the country&rsquo;s first ever Ph.D. in American Studies) and nearly two decades of celebrated teaching &mdash; he genuinely did not want the job.
+		<br /><br />
+		Yet, when he returned to the Elm City later that evening, Griswold learned that the Yale Corporation, the University&rsquo;s highest governing body, had chosen him to run the nation&rsquo;s third-oldest university. &ldquo;When the Corporation announced its choice,&rdquo; Yale&rsquo;s late, great historian Brooks Mather Kelley &rsquo;53 wrote in &ldquo;Yale: A History,&rdquo; &ldquo;many observers could not have been more surprised if Yale had chosen God.&rdquo;
+		<br /><br />
+		As president, Griswold remained intensely focused on Yale&rsquo;s academics. He dismissed extracurriculars as &ldquo;Bonesy bullshit&rdquo; and &ldquo;that Dink Stover crap,&rdquo; as historian Jerome Karabel recounted in &ldquo;The Chosen.&rdquo; Practicing what he preached, Griswold spent much of his time engaged in scholarly pursuits.
+		<br /><br />
+		&ldquo;It was his nature. He was a scholar &mdash; he liked to think; he liked to write,&rdquo; recalls Henry &ldquo;Sam&rdquo; Chauncey &rsquo;57, who became a Yale administrator during Griswold&rsquo;s later years and eventually served as the University Secretary.
+		<br /><br />
+		&ldquo;Whit had, generally speaking, one appointment in the morning and one appointment in the afternoon &mdash; if he had to give a speech or go to a dinner or something at night, he didn&rsquo;t usually have the afternoon appointment. And he generally spent a lot of his time talking to faculty members, and occasionally to students, but the rest of the time he sat at his desk with a yellow legal pad and wrote beautiful essays or statements.&rdquo;
+		<br /><br />
+		In the six decades that have passed since that winter day in 1950, six men have served as Yale&rsquo;s president: Griswold (1951-1963), Kingman Brewster &rsquo;41 (1963-1977), A. Bartlett Giamatti &rsquo;60 GRD &rsquo;64 (1978-1986), Benno Schmidt &rsquo;63 LAW &rsquo;66 (1986-1992), Richard Levin GRD &rsquo;74 (1993-2013), and Peter Salovey GRD &rsquo;86 (2013-present). (I am not including in this count Hanna Holborn Gray or Howard Lamar, both of whom served only briefly as acting president.)
+		<br /><br />
+		From Griswold&rsquo;s day to Salovey&rsquo;s, the job&rsquo;s demands have exploded. The president has gone from a solitary, contemplative figure to a manager, speaker and fundraiser with an international profile. Keeping that in mind, the question I posed to Salovey and the two-dozen other individuals interviewed for this article was this: how has the changed nature of the presidency affected the president&rsquo;s ability to effect change?
+		<br /><br />
+		Salovey has only just begun his presidency, but his popularity seems virtually limitless. However, in our modern, international, highly corporatized, highly bureaucratized Yale, will he be able to make the changes that Yale demands?
+		<br /><br />
+		Full disclosure: I&rsquo;ve sometimes been pretty critical of Salovey in my staff column for the News. I&rsquo;ve been vocal about these changes, the ones (I feel) Yale demands. In writing this piece, I&rsquo;ve tried to remain constantly aware of my own potential biases. This piece began as an effort to understand why the changes I&rsquo;ve wanted are not coming to fruition. Surprising no one more than myself, I&rsquo;ve come to believe that the answer is not a matter of personalities, but one of circumstances.
+		<br /><br />
+		The constraints Salovey faces can seem, to an outsider, mind-numbing. He works around the clock, nearly every day of the year. He treks across the country and around the world on Yale business.
+		<br /><br />
+		&ldquo;There aren&rsquo;t many breaks in the day,&rdquo; Salovey told me. &ldquo;And I wish there were more, because what I love is writing and speaking.&rdquo;
+		<br /><br />
+		&ldquo;You know,&rdquo; Salovey continued, &ldquo;the idea of a president sitting alone, smoking a pipe, reading Jonathan Edwards, and slowly, with a quill, writing a speech &mdash; that is so far from how I spend my day, I can&rsquo;t tell you. But at some point in Yale&rsquo;s history that is what presidents did. Those days are over.&rdquo;
+		<br /><br />
+		* * *
+		<br /><br />
+		During the 1950s, Yale was all male and virtually all white. Private school students made up more than 60 percent of the Class of 1957 (a figure considered startlingly low), and most of these came from just a handful of elite prep schools. Almost 100 students came from Andover each year.
+		<br /><br />
+		At the head of this monochromatic student body, Griswold remained a traditionalist. He was largely unconcerned with the makeup of the student population, but rather wanted the University to return to its academic roots. So Griswold eliminated anything that smacked of vocational training or interdisciplinary focus: the teaching program, the transportation program, the alcohol studies program, even the renowned international relations institute (which hastily decamped for Princeton).
+		<br /><br />
+		&ldquo;From the day he got here,&rdquo; recalled Chauncey, &ldquo;Griswold started what he called &lsquo;purifying&rsquo; the University &#8230; He said, &lsquo;Yale is going to be departments: history, English, physics, and it&rsquo;s going to be &lsquo;pure.&rsquo;&rsquo; And he cleaned everything out.&rdquo;
+		<br /><br />
+		This decision-making process was far from atypical. On April 4, 1959, the Yale Corporation gathered to decide the names of Yale&rsquo;s 11th and 12th residential colleges, at that point still two years away. Eventually, of course, they settled on Morse and Ezra Stiles. But unlike today &mdash; when there is no shortage of debate over the new colleges&rsquo; names &mdash; Griswold named Morse and Stiles largely on his own, Sterling Professor Emeritus of English and former Stiles Master Traugott Lawler told me.
+		<br /><br />
+		* * *
+		<br /><br />
+		Times have changed. The makeup of the University has changed. And the presidential decision-making process has changed.
+		<br /><br />
+		&ldquo;Let me say something very clearly,&rdquo; Salovey told me. &ldquo;I don&rsquo;t want to go back to those more homogeneous times, ever. But I think in a more homogeneous university, everybody sort of comes at it from the same point of view, so when the president says, &lsquo;Here&rsquo;s what we&rsquo;re doing,&rsquo; people go, &lsquo;Sounds like a pretty good idea.&rsquo;&rdquo;
+		<br /><br />
+		On Oct. 8, 2014, Salovey emailed the extended Yale community, soliciting suggestions for the names of Yale&rsquo;s as-yet unbuilt 13th and 14th residential colleges. This came after years of intense speculation over the names, which the Corporation has yet to select.
+		<br /><br />
+		For years, the News has seen scores of op-eds about the college names (including two of my own). As early as 2008, the Yale Alumni Magazine had created a &ldquo;Name those colleges!&rdquo; challenge for its readers. And after the October email went out, someone plastered campus with &ldquo;Grace Hopper College&rdquo; flyers. Students and alumni want to weigh in; the power to make big decisions, it would seem, is far more constrained by a world of instantaneous access to information and a multitude of demanding stakeholders.
+		<br /><br />
+		&ldquo;I can&rsquo;t just announce something and expect it&rsquo;s going to happen,&rdquo; Salovey says. &ldquo;I can champion it, I can put some resources behind it, I can go out and try to raise money to support it &#8230; But I can&rsquo;t expect that by presidential fiat it will just happen.&rdquo;
+	</div>
+	<div class="side">
+		<div class="sidequote">	&ldquo;You know, the idea of a president sitting alone, smoking a pipe, reading Jonathan Edwards, and slowly, with a quill, writing a speech &mdash; that is so far from how I spend my day, I can&rsquo;t tell you. But at some point in Yale&rsquo;s history that is what presidents did. Those days are over.&rdquo;
+		<br />
+		&mdash;Peter Salovey, University President
+	</div>
+	</div>
+</div>
+<div class="feature" id="feature2">
+</div>
+<div class="content">
+	<div class="text">
+		<big>W</big>hen Griswold died in 1963, Kingman Brewster took over the job. This was, Chauncey told me, &ldquo;the point where life [was] getting kind of exciting in universities.&rdquo; The burgeoning Civil Rights and Women&rsquo;s Rights Movements were underway.
+		<br /><br />
+		Into this just-simmering cauldron of change came Brewster, a scion of the old, patrician elite. Brewster had earned his bachelors at Yale in 1941, but then decamped for Harvard Law School, where he was a student and then a professor. Griswold brought him in as provost in 1960.
+		<br /><br />
+		Too slowly for the radical students, but far too quickly for the disgruntled alumni, Brewster began to change Yale. In 1967, he announced new admissions standards, which opened the school up to less advantaged students. Two years later, Yale finally admitted women.
+		<br /><br />
+		Brewster was not a radical. He frequently vacillated and evolved on the issues for which his stances are supposedly well known. Nonetheless, he was a decidedly and consciously political president. Over the years, he developed a well-known oeuvre of provocative statements. This came to define his persona, and his legacy.
+		<br /><br />
+		&ldquo;[Brewster] was an unmistakable figure. He was not a great, charismatic public presence. But many revered him,&rdquo; says Sterling Professor of English David Bromwich &rsquo;73 GRD &rsquo;77.
+		<br /><br />
+		Whereas Griswold had occasionally spoken out (on, say, McCarthyism and free speech), Brewster made headlines by denouncing the Vietnam War and even the president. On the front page of the News in 1972, for instance, in a statement demanding respect for free speech, he wrote, &ldquo;I think it is terribly important to avoid playing into the [Nixon] Administration&rsquo;s hands&#8230;&rdquo; In perhaps his most famous moment as president, on one rainy night in 1970, Brewster told a crowd of thousands that he was &ldquo;skeptical of the ability of black revolutionaries to achieve a fair trial anywhere in the United States.&rdquo; The speech set off a firestorm; United States Vice President Spiro Agnew personally called for Brewster&rsquo;s resignation.
+		<br><br />
+		* * *
+		<br><br />
+		Would a college president today speak out on a controversial national issue?
+		<br /><br />
+		According to Joseph Zolner SOM &rsquo;84, senior director of the Harvard Institutes for Higher Education and an expert on university leadership, the changing role of the university president has constrained political activism.
+		<br /><br />
+		&ldquo;Because there are now so many stakeholders and interest groups&#8230;&rdquo; he says, &ldquo;It&rsquo;s becoming riskier to stick your neck out and take stands on issues of public import.&rdquo;
+		<br /><br />
+		Marvin Krislov &rsquo;82 LAW &rsquo;88, President of Oberlin College, brought up another factor: political activism depends to a large extent on the individual.
+		<br /><br />
+		Vietnam was highly relevant to Brewster&rsquo;s job, he says &mdash; there was a draft. Nonetheless, Krislov added, &ldquo;Many of us would not feel that it is within our expertise and our purview to speak out on, let&rsquo;s say, whether the United States should intervene militarily in some particular region of the world.&rdquo;
+		<br /><br />
+		&ldquo;Some of us might,&rdquo; Krislov continued, &ldquo;but some of us might feel that wouldn&rsquo;t be&rdquo; &mdash; he paused for a moment &mdash; &ldquo;prudent.&rdquo;
+		<br /><br />
+		Salovey is not an apolitical figure. He has spoken out prominently on the issue of socioeconomic diversity in higher education, on federal funding for universities and on immigration reform for highly skilled workers. Still, there are certainly topics he just won&rsquo;t touch. &ldquo;I am most comfortable speaking about issues that concern higher education,&rdquo; Salovey told the News in March 2014. And it&rsquo;s true: He has not been vocal about national issues on the scale of those that Brewster famously addressed. But why is that?
+		<br /><br />
+		&ldquo;I can&rsquo;t think of a president since Kingman who has gotten as much publicity for speaking out on hot-button issues,&rdquo; says former Deputy Provost Charles Long. &ldquo;And I don&rsquo;t think it has anything to do with changing circumstances. I think it has to do with Kingman as a man.&rdquo;
+		<br /><br />
+		Yet to some, circumstances are a factor that demand political nimbleness &mdash; circumstances like the president&rsquo;s role as a fundraiser.
+		<br /><br />
+		I asked Professor John Merriman whether the president today would speak out on an issue like Vietnam.
+		<br /><br />
+		&ldquo;I don&rsquo;t know,&rdquo; he responded, &ldquo;but I would say probably not. They would say, &lsquo;We&rsquo;ve got big money down in Texas.&rsquo;&rdquo;
+		<br /><br />
+		The president&rsquo;s fundraising responsibilities have changed enormously. Griswold and Brewster simply did not spend as much time flying around the country, raising money; Salovey, on the other hand, told the News in a November 2013 interview that he spends as much as a third of his time away from campus, usually at meetings set up by the Association of Yale Alumni, the Office of Alumni Affairs or the Development Office.
+		<br /><br />
+		This is hardly unusual for a college president. According to Krislov, &ldquo;I definitely think the norm now is that fundraising is probably the single most important thing for most presidents.&rdquo;
+		<br /><br />
+		According to Bromwich, &ldquo;That means you&rsquo;re dealing with all the dreams and hopes of potential donors.&rdquo; These dreams and hopes fall across the political spectrum. As a News article pointed out last fall, Charles Johnson &rsquo;54, whose $250 million gift was the largest in Yale&rsquo;s history, is one of the country&rsquo;s top Republican donors. On the other hand, many deep-pocketed donors are Democrats.
+		<br /><br />
+		The increasing focus on fundraising, and the varied ideologies of donors, serves as a check against controversial political statements.
+		<br /><br />
+		The easiest thing for presidents to do, Zolner told me, &ldquo;is to stay very bland.&rdquo;
+		<br /><br />
+		* * *
+		<br /><br />
+		Brewster truly was a political figure, and in 1977 Jimmy Carter nominated him to serve as U.S. Ambassador to England. After Hanna Holborn Gray served as acting president for a year, the job fell to A. Bartlett Giamatti.
+		<br /><br />
+		Giamatti, like Griswold, had spent virtually his entire adult life at Yale, first as an undergraduate, then as a graduate student, then as a professor of comparative literature, then as master of Ezra Stiles, and finally as president.
+		<br /><br />
+		For most of his presidency, Giamatti was a popular figure on campus, in spite of his unpopular positions regarding divestment from South Africa and a ten-week strike by clerical and technical workers.
+		<br /><br />
+		&ldquo;But none of that seemed to impact the generally benevolent image Bart Giamatti seemed to project,&rdquo; says Marc Bousquet &rsquo;85, who was an undergraduate during the Giamatti years and is now an associate professor of English at Emory.
+		<br /><br />
+		Even though Giamatti spent more time away from Yale fundraising than any president before him, &ldquo;the impression you had of Bart was he was always here,&rdquo; says Long. &ldquo;He was always walking around.&rdquo;
+		<br /><br />
+		In 1986, Giamatti &mdash; an avid baseball fan &mdash; left Yale to serve as the president of the National League. In his place, the Corporation appointed Benno Schmidt, Jr., former dean of Columbia Law School.
+		<br /><br />
+		<img src="timeline.jpg" alt="employers" class="center" >
+		<br /><br />
+		As president, Schmidt faced an era of tight finances. So he undertook many controversial and unpopular moves, such as attempting to reduce the size of the faculty. But some of his unpopularity wasn&rsquo;t his positions. It was his persona, especially contrasted with that of his predecessor. Schmidt wasn&rsquo;t visible in the same way Giamatti had been. He wasn&rsquo;t as warm.
+		<br /><br />
+		Perhaps the greatest personal controversy of them all was Schmidt&rsquo;s residence. As president of a university in Connecticut, he still lived in New York.
+		<br /><br />
+		Even though Giamatti probably spent more time away fundraising, Long told me, Schmidt was just never as visible when he was in town.
+		<br /><br />
+		&ldquo;The whole campus was displeased by this,&rdquo; Long says. Students and faculty alike expected their president to be a public persona.
+		<br /><br />
+		&ldquo;Where&rsquo;s Benno?&rdquo; started appearing on t-shirts across campus.
+		<br /><br />
+		1992 was a tough year for Schmidt. Faculty members were increasingly vocal in their criticism of him and his austerity measures. Several senior members of his administration resigned. So, on the morning of Yale&rsquo;s Commencement, Schmidt announced that he too would leave, in order to run a for-profit education start-up. The departure was sudden. According to a 1992 New York Times article, several members of the Corporation literally sat there with their mouths wide open as Schmidt made his announcement.
+		<br /><br />
+		A year passed under another temporary president, after which Richard Levin &mdash; a young economics professor and dean of the Graduate School &mdash; took Yale&rsquo;s helm, and the rest, as they say, is history.
+		<br /><br />
+		It is, perhaps, ironic that Levin is now so often painted as an aloof administrator, since, when he started the job &mdash; right after the &ldquo;Where&rsquo;s Benno?&rdquo; controversy &mdash; people saw him as refreshingly present. Levin actually lived in New Haven, and students occasionally glimpsed him walking around. 
+		<br /><br />
+		&ldquo;I think Rick Levin, in the beginning, was more like Brewster,&rdquo; Chauncey told me. &ldquo;I don&rsquo;t mean personality, but I think he saw more people, he was able to reach out more, and so on. I think the job got much more complex because of bureaucracy and also because, the longer you stay in, the more complex it gets. So, by the end, he became a much more removed man from the day-to-day things that were going on at Yale.&rdquo;
+		<br /><br />
+		When the News asked upperclassmen, in a poll of 57 Yale undergraduates, how Salovey differed from Levin, the responses were notably similar. &ldquo;He seems more accessible,&rdquo; wrote one, referring to Salovey; &ldquo;he&rsquo;s nicer,&rdquo; wrote another. &ldquo;Much more involved and present in student life,&rdquo; wrote a third.
+	</div>
+	<div class="side">
+		<div class="sidequote">In perhaps his most famous moment as president, on one rainy night in 1970, Brewster told a crowd of thousands that he was &ldquo;skeptical of the ability of black revolutionaries to achieve a fair trial anywhere in the United States.&rdquo;
+		</div>
+	</div>
+</div>
+<div class="feature" id="feature3">
+</div>
+<div class="content">
+	<div class="text">
+		<big>&ldquo;T</big>he biggest change&rdquo; that has occurred in college presidencies, according to Bousquet, who has written widely on university governance, &ldquo;is that the president has gone from an avuncular sort of hands-on figure to a hands-off, largely fundraising figure.&rdquo; In other words, college presidents have gone from people you see around campus, to people you don&rsquo;t.
+		<br /><br />
+		Even though Griswold was a very reserved man, he certainly had time to meet with students, and did so from time to time. Brewster and Giamatti were constant campus presences, and well-liked for it. Yet Schmidt&rsquo;s decision to live out of state isolated him from students, who had been used to big personalities and frequent sightings. Then came Richard Levin, Yale&rsquo;s smooth, distant, busy, endlessly competent administrator.
+		<br /><br />
+		Peter Salovey, the noted social psychologist, wants to connect with people. He too tries to walk around campus. And to a large extent, he is successful. Salovey belies Bousquet&rsquo;s label. &ldquo;I want to be at plays and concerts and sporting events,&rdquo; he told me. &ldquo;I want to eat in dining halls when I can. But I also want to be right here in this office, meeting with people who have ideas that they want to share with the president.&rdquo;
+		<br /><br />
+		And every single person I talked to &mdash; whether they knew Salovey well or hardly at all &mdash; said that he is a genuinely wonderful person. &ldquo;Peter is a good guy,&rdquo; says Merriman. &ldquo;I wish I knew him better.&rdquo;
+		<br /><br />
+		In the aforementioned poll, only three of 57 students surveyed expressed dissatisfaction with Salovey&rsquo;s presidency.
+		<br /><br />
+		Still, some wonder how much being well-liked matters anymore.
+		<br /><br />
+		&ldquo;The presidency is not a position of particular power to reform,&rdquo; Bousquet told me. &ldquo;The president&rsquo;s freedoms are within a very narrow range.&rdquo; In other words, no matter how beloved he is, the president couldn&rsquo;t just name the new residential colleges whatever he chooses anymore. There are too many other factors to consider. On top of new responsibilities such as alumni relations, fundraising and constant international travel, Yale&rsquo;s president must deal with the day-to-day reality of an ever-expanding bureaucracy.
+		<br /><br />
+		The administration has grown enormously. &ldquo;The best example&rdquo; of this growth, says Chauncey, &ldquo;is the Yale College Dean&rsquo;s office, which, in 1963, had the dean, the dean of students, and three assistant deans. And today, the last time I counted, there were 52 people in that office who had the title of dean, assistant dean, associate dean, etc.&rdquo;
+		<br /><br />
+		&ldquo;I think this has made it very difficult for the president to act,&rdquo; he added.
+		<br /><br />
+		This is not a phenomenon unique to Yale. &ldquo;Most administrators report feeling powerless in their jobs,&rdquo; Bousquet says. &ldquo;It&rsquo;s because they all feel limits. Once they move out of line, someone else begins to exert pressure on them.&rdquo;
+		<br /><br />
+		Bousquet points to the memoir of Annette Kolodny, former dean of humanities at the University of Arizona. Of dealing with Arizona&rsquo;s huge bureaucracy, Kolodny wrote, &ldquo;If logic and hard data failed me and I thought it would help me, I teased, I cajoled, I flirted, I pouted. I bought small gifts for one provost and always remembered the birthday of another.&rdquo; But no matter how personable or even flirtatious she made herself, in the end, Kolodny felt &ldquo;isolated&rdquo; and &ldquo;trapped.&rdquo;
+		<br /><br />
+		* * *
+		<br /><br />
+		There are few people living who are more knowledgeable about the history of Yale administrations than Chauncey. When I asked him if it was too early to assess the Salovey presidency, he told me, &ldquo;In Griswold through Levin, in my view, the time in which you identified the uniqueness of the man &mdash; I&rsquo;m sorry there have never been any women, but the man &mdash; is when he disagrees with his predecessor and takes the University in a new direction.&rdquo;
+		<br /><br />
+		Each of Yale&rsquo;s last five presidents has made an institutional change that clearly distinguishes him from his predecessor: Griswold started &ldquo;purifying&rdquo; from day one; Brewster returned to an interdisciplinary focus within two years, creating new programs while largely neglecting fundraising; Giamatti quickly cut funding for many of Brewster&rsquo;s new programs, instead focusing on fundraising so as to achieve what he called &ldquo;financial equilibrium&rdquo;; Schmidt tried to drastically reduce the size of the faculty; and though earlier presidents had been skeptical about international ventures, Levin announced that he wanted to go abroad as early as his inaugural address.
+		<br /><br />
+		This has become a pattern, Chauncey says.
+		<br /><br />
+		&ldquo;The president says, &lsquo;Respectfully, my predecessors were wrong about this, and we must chart a new path.&rsquo; So that&rsquo;s a way in which I&rsquo;m trying to indirectly say, we won&rsquo;t know anything about Peter Salovey until he does something that is unique and, quite probably, contrary to what his predecessor, or predecessors, thought was right.&rdquo;
+		<br /><br />
+		When I brought this idea up to Salovey, he expressed some skepticism. If universities are in a good place, he says, presidents are chosen with a sense of &ldquo;continuity.&rdquo;
+		<br /><br />
+		&ldquo;I think universities are not very well served if, from president to president, you&rsquo;re just kind of jerking the institution from right to left, forwards and center,&rdquo; he told me.
+		<br /><br />
+		In so many ways, the Levin-to-Salovey transition has indeed been characterized by continuity. Some point to this year&rsquo;s creation of the Dean of the Faculty of Arts and Sciences as a distinctly Salovey initiative, but other, arguably more recognizable undertakings &mdash; such as expansion abroad, the new residential colleges, and the push for more STEM students &mdash; are decidedly Levin-era projects.
+		<br /><br />
+		When I asked Merriman about Salovey&rsquo;s initiatives, he responded that it&rsquo;s just &ldquo;too early&rdquo; to name any. Professor Christina Kraus responded to the same question in an email: &ldquo;So far, he&rsquo;s just continuing Levin&rsquo;s [initiatives] &#8230; I imagine those will change and become his own as he goes along.&rdquo;
+		<br /><br />
+		Salovey, for his part, talked at great length and with enthusiasm about his initiatives, including the Yale Center for Teaching and Learning, the Center for Preservation of Cultural Heritage, his efforts toward a &ldquo;more unified Yale,&rdquo; and, of course, his aggressive efforts toward expanding Yale&rsquo;s outreach and services for underprivileged kids.
+		<br /><br />
+		&ldquo;My style isn&rsquo;t to stand up and say&rdquo; &mdash; Salovey adopted a booming voice &mdash; &ldquo;&lsquo;Initiative number one,&rsquo; but it is to&mdash;&rdquo; He paused. &ldquo;If you connect the dots, you can see what I&rsquo;m doing.&rdquo;
+		<br /><br />
+		Students, in spite of almost universal good will toward Salovey, appear not to be connecting the dots. Answers to a question about Salovey&rsquo;s most important initiatives to date include: &ldquo;no clue,&rdquo; &ldquo;Nothing comes to mind,&rdquo; &ldquo;no idea,&rdquo; &ldquo;unknown,&rdquo; &ldquo;I don&rsquo;t know,&rdquo; and &ldquo;not sure,&rdquo; as well as a smattering of slightly more substantive responses, such as &ldquo;college expansion,&rdquo; &ldquo;positive climate towards sexual assault,&rdquo; and &ldquo;I guess expansion into Africa? I remember reading about that, but I haven&rsquo;t heard about it since. Also Singapore.&rdquo;
+		<br /><br />
+		* * *
+		<br /><br />
+		For my part, I&rsquo;ve been fairly critical of Salovey in my column. Writing this piece, I realize I&rsquo;ve been, perhaps, a little unfair. There are just so, so many reasons his job is really tough: a metastasizing administration, the demands of fundraising and alumni relations, travel obligations, and on and on. After meeting Salovey, I find myself agreeing with everyone else: He&rsquo;s nice, charming and well intentioned.
+		<br /><br />
+		I also find myself agreeing with Kraus, Merriman, and others &mdash; it&rsquo;s too early to really assess the Salovey presidency. As Chauncey suggested, until Salovey departs from Levin-era policies, until he says, &ldquo;Respectfully, my predecessors were wrong about this, and we must chart a new path,&rdquo; we just can&rsquo;t know what the future holds.
+		<br /><br />
+		I guess my only real insight is this: with all of the constraints on his job, it&rsquo;s only going to get harder and harder to depart from the past. And, since there are so many ways for Yale to improve, that&rsquo;s pretty scary. I don&rsquo;t envy President Salovey.
+		<br /><br />
+		&ldquo;Personalities do matter in this business,&rdquo; Merriman told me at the end of our interview, &ldquo;but presidents are now prisoners of, as Bruce would sing, &lsquo;the New World Order.&rsquo;&rdquo;
+	</div>
+	<div class="side">
+		<div class="sidequote">When I asked Chauncey if it was too early to assess the Salovey presidency, he told me, &ldquo;In Griswold through Levin, in my view, the time in which you identified the uniqueness of the man &mdash; I&rsquo;m sorry there have never been any women, but the man &mdash; is when he disagrees with his predecessor and takes the university in a new direction.&rdquo;
+		</div>
+	</div>
+</div>
+<br /><br />
+<br /><br />
+<br /><br />
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
