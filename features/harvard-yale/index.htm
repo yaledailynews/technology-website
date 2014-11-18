@@ -1,0 +1,408 @@
+<html>
+<head>
+<title>Yale Daily News - Part I | Head-On: Confronting the Science of Concussions</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+		#feature3 {
+			background-image: url('cover3.jpg');
+		}
+		#feature4 {
+			background-image: url('cover4.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 200px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+			.sidequote {
+				margin-top: 200px;
+				font: 400 13px/22px 'Open Sans', sans-serif;
+				font-weight: bold;
+			}
+		}
+
+		@media only screen and (max-width: 700px) {
+			.sidequote {
+				margin-top: 200px;
+				font: 400 12px/18px 'Open Sans', sans-serif;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	Part I | Head-On: Confronting the science of concussions
+	<a href="/features/concussions-iii"><div class="part">Part III: Tackling concussion policy</div></a>
+	<a href="/features/concussions-ii"><div class="part">Part II: After the hit</div></a>
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		Across the country, college athletes are confronting the troubling brain science behind concussions. With the majority of concussions going undiagnosed, and athletes reticent to report brain injuries, medical researchers are working to understand the underlying causes and long-term effects of the injury. This is the first story in a three-part series. <em style="font-weight:normal;">Ben Fait reports.</em>
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/benfait/" target="_blank">Ben Fait</a> &middot; Staff Reporter
+		<div class="q">Web design by Qingyang Chen, Soham Sankaran, Aaron Lewis and Chris Wan</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>M</big>ost injuries have finite recovery times. A soccer player sprains an ankle, and it is a couple weeks until she is back at full strength. A baseball player pulls a hamstring, and he is back on the field within two months.
+		<br /><br />
+		But concussions are different. They pervade every aspect of a player&rsquo;s life.
+		<br /><br />
+		Lillian Bitner &rsquo;17 would know. A forward on the Yale women&rsquo;s soccer team, Bitner was kept off the field and prevented from all physical activity after suffering a concussion &mdash; the team trainer told her she was not allowed to participate.
+		<br /><br />
+		&ldquo;[The concussion] prevented me from taking other headers because I was scared,&rdquo; Bitner said.
+		<br /><br />
+		Then there were the off-the-field problems.
+		<br /><br />
+		&ldquo;In social settings ... I always had a headache,&rdquo; she said. &ldquo;I just didn&rsquo;t feel right.&rdquo;
+		<br /><br />
+		<h2>A National Issue</h2>
+		On Monday, U.S. Senator Chris Murphy (D-Conn.), brain injury experts and athletic medicine experts gathered to call for a federal response to the alarmingly high rate of student athlete concussions. According to the University of Pittsburgh&rsquo;s Department of Neurosurgery, in the last decade alone, at least 30 athletes have died from concussion-related hemorrhages.
+		<br /><br />
+		By 2012, the National Football League was responding, and had pledged $30 million to the National Institutes of Health, earmarked for experimental programs and research designed to fight concussions.
+		<br /><br />
+		Even President Barack Obama, whose speeches are usually reserved for the policy domain, felt compelled to speak out on the issue.
+		<br /><br />
+		&ldquo;All across the country, parents are ... having a more troubling conversation ... about the risks of concussions,&rdquo; he said at a White House concussion summit last May. &ldquo;There&rsquo;s a lot of concern, but there&rsquo;s a lot of uncertainty.&rdquo;
+		<br /><br />
+		Every year, as many as 3.8 million Americans suffer concussions in recreational and athletic activity, according to a 2013 study conducted by the American Medical Society for Sports Medicine. The brain injury represents a troubling problem for athletic programs across the nation, and coaches, athletes, parents, policymakers &mdash; even sports observers themselves &mdash; are beginning to question where to draw the line between love of their sport and the risk of brain damage.
+		<br /><br />
+		Concussions are concerning by themselves, but they are made even more troublesome by the fact that they are difficult to diagnose &mdash; an athlete can have a concussion without even knowing it.
+	</div>
+
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;All across the country, parents are ... having a more troubling conversation ... about the risks of concussions. There&rsquo;s a lot of concern, but there&rsquo;s a lot of uncertainty.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Scatter Brained</h2>
+		The finer details of what happens when someone gets a concussion are still unclear. What scientists do know is that the injury starts in the nerve cells &mdash; the wiring &mdash; of the brain.
+		<br /><br />
+		Concussions start when a blow to the head causes the brain to get stretched and twisted, an effect called torsional strain. An athlete suffers a blow to the head, and two types of motion are present. One is rotational &mdash; the head pivots around the neck violently. The other is linear &mdash; the head moves backward and forward on one plane.
+		<br /><br />
+		The rotational or twisting motion is the same type of effect boxers try to produce with a cold knock-out punch to the chin or face. Current research tells us that it is mostly responsible for concussions.
+		<br /><br />
+		When the brain is stretched and strained, so too are its neurons. Ultimately, a concussion results when neurons cease to function. 
+		<br /><br />
+		Neurons operate by keeping different concentrations of ions on either side of their cellular membrane. During a concussion, ion channels across the cell are mechanically opened, causing the cell to depolarize, as if it were a battery that were short circuited. The cell then goes into metabolic overdrive and attempts to restore the balance of ions.
+		<br /><br />
+		But this process takes time and requires more nutrients than the cell can easily acquire. The cell&rsquo;s metabolism drops and important neurotransmitter systems, which connect individual cells, begin to function poorly. This process &mdash; along with others &mdash; ultimately leads to a concussion.
+		<br /><br />
+		With neurons temporarily out of commission, cognitive function is significantly impaired.
+		<br /><br />
+		&ldquo;That pathway that the person would normally access to remember a word or a shape or whatever the case may be, is impaired,&rdquo; said Steven Broglio, director of the NeuroSport Research Laboratory at the University of Michigan. &ldquo;Either they can&rsquo;t [retrieve the information] if the injury is bad enough, or they have to use other areas of the brain that aren&rsquo;t normally designated to remember words and shapes in order to achieve the goal. They can do that, but it tends to take them longer, and they aren&rsquo;t as accurate as they were in a normal, healthy state.&rdquo;
+		<br /><br />
+		In rare cases, repeated concussions in a short period of time can lead to &ldquo;second impact syndrome,&rdquo; wherein the brain mechanism that normally regulates blood pressure fails, leading to hemorrhaging and often death.
+		<br /><br />
+		Treatment for concussions mainly consists of cognitive and physical rest, which often entails athletes limiting or stopping academic work and being pulled out of their sport.
+	</div>
+	<div class="side">
+		<img src="brain.jpg" />
+	</div>
+	<div class="side">
+		<img src="brain2.jpg" />
+	</div>
+</div>
+<div class="feature" id="feature3">
+	<div class="featuretext">
+		&ldquo;Either they can&rsquo;t [retrieve the information] if the injury is bad enough, or they have to use other areas of the brain that aren&rsquo;t normally designated to remember words and shapes in order to achieve the goal.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>Lasting Effects</h2>
+		Researchers are just now discovering the long term effects of concussions, and they are far from inconsequential.
+		<br /><br />
+		It turns out that concussions&rsquo; effects can be cumulative, leading to permanently impaired cognitive functioning. Broglio explained the long-term risk via analogy. If the brain were a four-lane highway, and three lanes were shut down, eventually the road would be repaired and traffic would flow easily.  But repeated damage might lead to pot holes, and the back-up of traffic in the brain may be more permanent.
+		<br /><br />
+		Repeated concussions are also associated with elevated levels of plaque-forming proteins and others known to be associated with cognitive decline, according to a research review in The Journal of Clinical Neuroscience. Sometimes the consequences are severe enough that they produce the early onset of symptoms resembling those of Parkinson&rsquo;s, Alzheimer&rsquo;s and dementia.
+		<br /><br />
+		&ldquo;You peak at maximum brain function in your late 20s or early 30s and basically you start declining at that point &mdash; this is in normal healthy people,&rdquo; Broglio said. &ldquo;But it doesn&rsquo;t become apparent until maybe your 60s. One theory is that when you have concussions, you might accelerate that process.&rdquo;
+		<br /><br />
+		In a study conducted at the Department of Veterans Affairs&rsquo; brain repository in Bedford, Mass., 79 NFL players suffering from cognitive problems donated their brains to research upon their deaths. Of those, 76 exhibited signs of chronic traumatic encephalopathy (CTE), a concussion-linked neurodegenerative disease which can cause a constellation of debilitating problems, ranging from violent behavior to Alzheimer&rsquo;s and Parkinson&rsquo;s disease-like symptoms.
+		<br /><br />
+		The results of these studies may not apply to non-professional athletes, but they are still troubling, said Peter Arnett, director of clinical training in neuropsychology at Pennsylvania State University.
+		<br /><br />
+		&ldquo;These are very unusual people in very unusual circumstances,&rdquo; Arnett said, referring to the NFL players whose brains were studied. &ldquo;Whether that same type of finding will be found among the population in general [which includes college, high school and recreational athletes], I don&rsquo;t think anybody really knows the answer to that.&rdquo;
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;These are very unusual people in very unusual circumstances. Whether that same type of finding will be found among the population in general [which includes college, high school and recreational athletes], I don&rsquo;t think anybody really knows the answer to that.&rdquo;
+		</div>
+	</div>
+</div>
+<div class="feature" id="feature4">
+	<div class="featuretext">
+		&ldquo;You peak at maximum brain function in your late 20s or early 30s and basically you start declining at that point &mdash; this is in normal healthy people... One theory is that when you have concussions, you might accelerate that process.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<h2>UNDER THE RADAR</h2>
+		Despite the dangers they present to short and long-term health, concussions remain grossly underdiagnosed. A study published in Neurosurgical Focus says as much.  
+		<br /><br />
+		Researchers followed 67 junior hockey players in the 2009-2010 season.  Physicians watched every game, and tested hockey players every time a concussion seemed likely. The result: a rate of diagnosis seven times higher than that previously reported for the league. 
+		<br /><br />
+		Concussions remain underdiagnosed for a number of reasons, but perhaps chief among them is that the people who are in the best position to understand their condition &mdash; the patients themselves &mdash; often do not know what is happening.
+		<br /><br />
+		Katie Holmes, a Yale Medical Group (YMG) APRN and primary provider for Yale-New Haven Children&rsquo;s Hospital (YNHCH) Pediatric Concussion Clinic, said that in her experience many athletes are simply unaware of what constitutes a concussion.
+		<br /><br />
+		&ldquo;I&rsquo;ll see people who come to me having had a concussion, and then say &lsquo;Oh, actually I think I&rsquo;ve probably had other concussions in the past,&rsquo;&rdquo; Holmes said. &ldquo;Kids don&rsquo;t know they&rsquo;ve had concussions, and the coach&rsquo;s eyes can&rsquo;t be everywhere.&rdquo;
+		<br /><br />
+		According to Arnett, this may result from a gap in education between medical professionals and coaches and athletes. Medical personnel and trainers are significantly more educated about concussions and safe in their approach to them than athletes and coaches, according to a 2010 study by Arnett&rsquo;s research group.
+		<br /><br />
+		Then, there is the issue of sports culture, which Arnett thinks exacerbates the underdiagnosis problems. Players don&rsquo;t want to be removed from the game and want to be viewed as tough by their teammates, he said.
+		<br /><br />
+		&ldquo;In the athletic context, there is an ethos, particularly in football but also in other sports, about playing through injury and toughness,&rdquo; Arnett said. &ldquo;There are many examples of athletes being lauded for playing through injury, but in concussions that&rsquo;s not a good idea... If the player reports a concussion, they know they are going to be removed from play. If that happens, they might ultimately lose their status and position on the team.&rdquo;
+		<br /><br />
+		According to Broglio, part of the problem lies in the difficulty of diagnosing concussions. Currently, there is no concrete diagnosis, so physicians have to rely on reported symptoms. And the nature of the symptoms, he explained, can make it difficult to recognize concussions.
+		<br /><br />
+		&ldquo;[It] is a clinical diagnosis, so it&rsquo;s no different from someone who has ADHD or autism &mdash; there&rsquo;s no blood test, there&rsquo;s no imaging that can definitively say that someone had a concussion,&rdquo; Broglio said.  &ldquo;It&rsquo;s clinically challenging, but that is where we are in the science and the medicine... Part of the complexity of concussions is that signs and symptoms of concussions overlap with other issues.&rdquo;
+		<br /><br />
+		He added that some patients have migraine disorders or are prone to headaches, but their symptoms do not mean they have a concussion. And athletes may endure a tough practice and feel fatigued, but that does not mean they have a concussion.
+		<br /><br />
+		In addition to dealing with all of these factors, physicians also have to determine an acceptable level of risk, which changes depending on the patient being treated, Arnett said. If an athlete has a career in athletics, for instance, their cost-benefit calculus is going to be significantly different than that of an IM sports player. 
+		<br /><br />
+		According to Holmes, intervention becomes necessary when athletes report lasting cognitive impairment and difficulty with balancing and coordination. Taking longer than usual to heal is also a warning sign. 
+		<br /><br />
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/ZMcB5bcSiPo"></iframe>
+		<br /><br />
+		All three experts interviewed said the most important route to improvement will be educating athletes and changing the culture of sports to make it acceptable to report a concussion. Part of that responsibility lies with educational institutions.
+		<br /><br />
+		&ldquo;The NCAA, based on the way they are designed and set up ... [leaves] the concussion protocols up to the schools to decide,&rdquo; Broglio said. &ldquo;It really comes down to if the schools are putting the right tools and infrastructure in place to identify and manage the injury appropriately.&rdquo;
+		<br /><br />
+		Athletic programs are faced with a challenging problem: a cost-benefit equation whose costs are uncertain, but potentially devastating.
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;It really comes down to if the schools are putting the right tools and infrastructure in place to identify and manage the injury appropriately.&rdquo;
+		</div>
+	</div>
+</div>
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
