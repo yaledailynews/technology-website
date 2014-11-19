@@ -416,8 +416,8 @@ body {
 
 @media(max-width:500px) {
     #logo {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
 
     }
     .section-two {
