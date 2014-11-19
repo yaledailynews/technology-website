@@ -292,6 +292,24 @@ a:focus {
     border-radius: 25px;
 }*/
 
+#olukun {
+    background: url(../img/olukun.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#conditioned-freshman {
+    background: url(../img/freshman.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
 #section-five {
     background: url(../img/hard_hitter.png) no-repeat center center scroll;
     -webkit-background-size: cover;
