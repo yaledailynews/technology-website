@@ -158,7 +158,7 @@ video {
       z-index: -1; // Put the video behind all other elements
       margin-bottom: 30px;
       width: 100%;
-      height: 100%;
+      height: auto;
 }
 
 .intro .intro-body {
@@ -173,6 +173,7 @@ video {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+
 
 @media(min-width:767px) {
     .intro {
