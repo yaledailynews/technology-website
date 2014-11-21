@@ -317,6 +317,25 @@ video {
 
 }
 
+#gameday2 {
+    background: url(../img/gameday2.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#ciotti {
+    background: url(../img/ciotti.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+
 #line {
     background: url(../img/line.png) no-repeat center center scroll;
     -webkit-background-size: cover;
