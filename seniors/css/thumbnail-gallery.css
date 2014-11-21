@@ -6,6 +6,11 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background-image: url("../img/grass.jpg");
+
+}
+.navbar-inverse {
+  box-shadow: 1px 1px 15px rgba(102,102,102,.3);
 }
 
 .thumb {
@@ -14,4 +19,18 @@ body {
 
 footer {
     margin: 50px 0;
+}
+
+.face {
+  width:250px;
+  height: 375px;
+}
+
+.navbar-header{
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+.page-header {
+  color: white;
+  font-weight: bold;
 }

@@ -1,0 +1,459 @@
+<html>
+<head>
+<title>MAG: Space Invaders</title>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<style>
+	body, html {
+		margin: 0;
+		height: 100%;
+	}
+	.topbar {
+		height: 30px;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+		z-index: 5;
+		padding: 5px 5px 5px 180px;
+		font: 400 20px/30px georgia, "times new roman", times, serif;
+		text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	}
+		.logo {
+			background: url('logo.png') no-repeat top left / contain;
+			height: 30px;
+			width: 130px;
+			display: inline-block;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+		}
+		.part {
+			text-transform: uppercase;
+			float: right;
+			font: 400 14px/30px 'Lato', serif;
+			margin: 0 10px;
+			padding: 0 10px;
+			cursor: pointer;
+			border-radius: 15px;
+			transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+		}
+		.part:hover {
+			background: #ccf;
+		}
+	.feature {
+		height: 100%;
+		background: #fff no-repeat top left fixed;
+		background-size: cover;
+		position: relative;
+	}
+		.featuretext {
+			font: 400 20px/35px georgia, "times new roman", times, serif;
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			width: 33%;
+			position: absolute;
+			top: 15%;
+			right: 40px;
+			text-align: right;
+			padding: 40px;
+			background: rgba(255, 255, 255, 0.8);
+
+		}
+		#feature1 {
+			background-image: url('cover.jpg');
+		}
+		#feature2 {
+			background-image: url('cover2.jpg');
+		}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+		font: 400 18px/27px georgia, "times new roman", times, serif;
+	}
+	.content:after { 
+		content: " ";
+		display: block; 
+		height: 0; 
+		clear: both;
+	}
+		.title {
+			color: #999;
+			text-transform: uppercase;
+			font: 400 14px/20px 'Lato', sans-serif;
+			margin-top: 10px;
+		}
+		.title a {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title a:hover {
+			color: #aaf;
+			text-decoration: underline;
+		}
+		.title a:visited {
+			text-decoration: none;
+			color: #aaf;
+		}
+		.title hr {
+			height: 1px;
+			margin: 10px 0 20px 0;
+			background: #999;
+			border: 0;
+		}
+		.q {
+			line-height: 20px;
+			font-size: 12px;
+
+			
+		}
+		.text {
+			width: 66%;
+			text-align: left;
+			margin: 40px 0;
+			float: left;
+		}
+		.textimg {
+			background: #fff no-repeat top center;
+			background-size: contain;
+			margin: 40px auto;
+		}
+			#textimgmoney {
+				background-image: url('money.png');
+				height: 500px;
+			}
+			#textimgstem {
+				background-image: url('stem.png');
+				height: 300px;
+			}
+		.text big {
+			font-size: 80px;
+			float: left;
+			line-height: 70px;
+			margin-right: 10px;
+		}
+		.side {
+			width: 30%;
+			padding-left: 3%;
+			float: right;
+			margin: 40px 0;
+		}
+			.side img {
+				width: 100%;
+			}
+			.sidequote {
+				margin-top: 1000px;
+				font: 400 14px/25px 'Open Sans', sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.25px;
+				text-align: right;
+				margin-left: 30px;
+			}
+		h2 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+			letter-spacing: 2px;
+		}
+		h3 {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 25px;
+			margin: 0 0 15px 0;
+			letter-spacing: 2px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.featuretext {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: bold;
+				width: 50%;
+			}
+
+		@media only screen and (max-width: 500px) {
+
+			.content {
+				width: 90%;
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			.featuretext {
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0px;
+			}
+		}
+</style>
+<script>
+	$(function() {
+		$('.part').click(function() {
+			var href = $(this).attr('href');
+			if (typeof href !== 'undefined' && href !== false) {
+				window.location = href;
+			}
+		});
+	});
+</script>
+<script type="text/javascript" async="" src="http://yaledailynews.disqus.com/embed.js?pname=wordpress&amp;pver=2.73"></script>
+</head>
+
+<body>
+<div class="topbar">
+	<a href = "http://yaledailynews.com"><div class="logo"></div></a>
+	MAG: Space Invaders
+</div>
+<div class="feature" id="feature1">
+	<div class="featuretext">
+		With more people playing games than ever before, issues in gaming culture, including misogyny, have opened themselves up to broader scrutiny. How is the gaming community at Yale, and at large, responding to issues of its own expansion? <em style="font-weight:normal;"> Joyce Guo reports.</em>
+	</div>
+</div>
+<div class="content">
+	<div class="title">
+		By <a href="http://yaledailynews.com/blog/author/joyceguo/" target="_blank">Joyce Guo</a>
+		<div class="q">Web design by the Yale Daily News</div>
+		<hr />
+	</div>
+	<div class="text">
+		<big>W</big>hat is a gamer?
+		<br /><br />
+		On a Wednesday night, the 10 regulars of Smash@Yale have lugged eight 20-pound cathode ray televisions from their dorms to the basement of WLH to play Super Smash Brothers Melee. They use these bulky, outdated TVs, the group explains, because modern LCDs produce a delay in gameplay of about 100 milliseconds &mdash; which, in a fast-paced multiplayer fighting game like Smash, can make the difference between living and losing.
+		<br /><br />
+		I am watching a room of people play Smash for the first time, and it&rsquo;s like watching a silent symphony orchestra: a room of coordinated finger patterns executed with precision and speed. No one is going to risk small talk when it might mean dying in the next round. The concentration is broken only by the occasional pained &ldquo;ah&rdquo; or exuberant &ldquo;yes!&rdquo;
+		<br /><br />
+		Tonight, Smash@Yale has invited Anthony Detres, a professional Melee player from Bridgeport, Connecticut, to mentor some novice players.
+		<br /><br />
+		&ldquo;This kid hasn&rsquo;t slept in 40 hours, and he&rsquo;s down here playing Smash,&rdquo; Detres says, gesturing to Smash@Yale&rsquo;s President Eryk Banatt &rsquo;17, who is furiously pushing the buttons on his controller.
+		<br /><br />
+		Banatt rebuts.&ldquo;That&rsquo;s not fair, I had two midterms.&rdquo;
+		<br /><br />
+		&ldquo;Right &mdash; but, instead of catching up on sleep, you are down here playing video games,&rdquo; Detres counters.
+		<br /><br />
+		The room laughs.
+		<br /><br />
+		Banatt tells me he has been playing video games for as long as he can remember &mdash; he claims it&rsquo;s even through video games that he learned to read. There was no formal gaming group at Yale when he enrolled, so he co-founded Smash@Yale with four of his friends this year to centralize the gaming that had been taking place in common rooms all over campus. Almost every day, there&rsquo;s a post on the 160-member Smash@Yale Facebook group inviting members to watch a how-to, read an article, play a game.
+		<br /><br />
+		Like many of his friends, Banatt wouldn&rsquo;t necessarily call himself a gamer: &ldquo;It&rsquo;s a hobby, just like any other hobby,&rdquo; he tells me &mdash; no more distinctive than reading or watching TV. &ldquo;I don&rsquo;t attach a weird label to my identity because of it.&rdquo;
+		<br /><br />
+		But a gamer, according to the dictionary, is just someone who plays video games. Under that definition, more and more people, whether serious vide game players like Banatt or not, could call themselves gamers. According to the 2014 Entertainment Software Association Annual Report, the chances of the person sitting next to you having played a video game, whether a mobile game or a massive multiplayer online role playing game like League of Legends, is 58 percent. Media researchers attribute this statistic, in part, to there being more platforms, like tablets and smartphones, on which to play.
+		<br /><br />
+		There&rsquo;s the gamer who plays Candy Crush on the way to work &mdash; and then there&rsquo;s the sort of gamer who, in 2013, the U.S. State Department officially recognized as a professional athlete. Last month, in a South Korean stadium built for soccer, those athletes competed for $1 million in the League of Legends World Championship before an international audience of 40,000.
+		<br /><br />
+		The internet has helped to transform gaming into a spectator sport. Sixty million fans per month tune in to watch competitive gamers play on the website Twitch.tv, the brainchild of Yale graduates Emmett Shear &rsquo;05 and Justin Kan &rsquo;05, who sold Twitch to Amazon this October for an unprecedented $970 million.
+		<br /><br />
+		Whatever the game, to play is to participate, even momentarily, in an industry that technology company Gartner anticipates will generate about $111 billion dollars in 2015. It&rsquo;s easier than ever to be a part of the gaming community.
+		<br /><br />
+		But not everyone feels welcome.
+		<br /><br />
+		___
+		<br /><br />
+		In August, Zoe Quinn, a female indie game developer, released a narrative-driven, text-heavy game called Depression Quest that placed players in the shoes of a young adult suffering from depression. Later that month, Quinn&rsquo;s ex-boyfriend, Eron Gjoni, posted a long diatribe on his blog accusing Quinn of sleeping with Nathan Grayson, a journalist for the video game blog Kotaku, for a favorable review of her game.
+		<br /><br />
+		The accusation that Quinn traded sex for a review is unfounded. Kotaku editor-in-chief Stephen Totilo pointed out that the single article Grayson published mentioning Depression Quest was not a review of the game at all, but rather a discussion of Quinn&rsquo;s participation in a reality show. The article was published in late March &mdash; before the two began a romantic relationship in early April.
+		<br /><br />
+		#Gamergate, a term meant to evoke Watergate, was coined on Twitter under the pretense of reassessing ethics in video game journalism, which users of the hashtag believed Quinn had violated. Looking at what happened, though, it seems people were less interested in journalistic ethics than they were in harassing Quinn. She received 14 times more outraged tweets with #Gamergate than did Grayson. After being sent a barrage of death threats, Quinn felt unsafe enough to leave her home; the BBC reported on October 29 that she was still living elsewhere. She was &ldquo;doxed,&rdquo; her personal details obtained and posted online. Her home address, sexual history, and nude photos spread all over social media sites like 4chan.
+		<br /><br />
+		#Gamergate became the rallying cry of a movement that soon spiraled into an incomprehensible mess. Anyone seeking change in the gaming community was targeted, with an overwhelming majority of harassment directed toward female gamers, female game developers, and feminists in the gaming community. When game developer Brianna Wu tweeted out a meme that made fun of the #Gamergate movement and expressed solidarity with the harassed women, she received so many death threats in response that she and her husband were forced to go into hiding, just like Quinn.
+		<br /><br />
+		In October, Anita Sarkeesian, a feminist pop culture critic, planned to give a talk at Utah State University based on her work in her YouTube series &ldquo;Tropes vs. Women in Video Games,&rdquo; which criticizes games&rsquo; perpetuation of misogynistic tropes. After the school received an email from an anonymous source threatening a shooting rampage if she went through with the talk, Sarkeesian was forced to cancel.
+		<br /><br />
+		As the gaming community continues to grow, it&rsquo;s inviting more scrutiny. Misogyny and harassment are not uncommon in online gaming forums, but #Gamergate has thrust gaming culture&rsquo;s dark underbelly into the headlines. Gamers who are hurling harassment are worried that their medium is becoming corrupted by &ldquo;social justice warriors,&rdquo; who see games as the next platform on which to advocate their liberal agendas. But Sarkeesian and her supporters argue that their intention is not to dismantle the gaming community. Rather, they are pointing out the misogyny they find, both in gaming content and culture, that might be alienating to women. Sarkeesian believes that tropes like the &ldquo;damsel in distress&rdquo; &mdash; a weak, often minimally-clothed female who must be saved by the gamer&rsquo;s male protagonist &mdash; are off-putting to girls who are trying to join the community.
+		<br /><br />
+		Gaming has reached a watershed moment. What will #Gamergate mean to the inheritors and the innovators of the changing gaming community?
+		<br /><br />
+		___
+		<br /><br />
+		While the male gamers I spoke to at Yale said they disagreed with what had happened to Quinn and Sarkeesian, none of them felt they had an obligation to respond to the vitriolic gamer culture from which Yale seems to be exempt.
+		<br /><br />
+		Kar Jin Ong &rsquo;17, who is on the board of Gamers@Yale, the umbrella gaming organization that encompasses Smash@Yale and other gaming groups, has been closely following #Gamergate. He believes the harassment is an issue, but not one that necessarily impacts the Yale gaming community.
+		<br /><br />
+		&ldquo;I think that it&rsquo;s a very small minority of gamers that are into this sort of thing, and you can find that sort of minority everywhere,&rdquo; he said. &ldquo;I think they are given much more credit than they deserve.&rdquo;
+		<br /><br />
+		Ong believes #Gamergate is under media scrutiny only because gaming is still so new. A lot of gamers end up feeling unfairly targeted when they are told their community is more unwelcoming to women than others, he said.
+		<br /><br />
+		Diwakaran Ilangovan &rsquo;17, co-president of Gamers@Yale, feels similarly.
+		<br /><br />
+		&ldquo;I would say that misogyny and other aspects of male culture that pervade video games are not in any way excusable, but video games have a tendency to be used as a scapegoat, because they are new and not as well established,&rdquo; Ilangovan said. &ldquo;I get somewhat frustrated when other people start blaming video games for perpetuating stereotypes when they&rsquo;re not just present in video game culture &mdash; they&rsquo;re pervasive everywhere else, too.&rdquo;
+		<br /><br />
+		&ldquo;If anyone ever told me that she felt discriminated against, I would definitely do something about it,&rdquo; he added. &ldquo;But no one ever has.&rdquo;
+		<br /><br />
+		___
+		<br /><br />
+		&ldquo;People [assume] that if you&rsquo;re a girl, you&rsquo;re not playing seriously.&rdquo;
+		<br /><br />
+		By her own estimate, Meredith Derecho &rsquo;17 is one of two serious female Smash players on campus. Derecho started playing Smash with her little brother before she came to college, and found that she was good at it. She entered local competitions, and even appeared in an episode of the popular Smash Brothers Documentary Series, posted last year on YouTube. The video has received 400,000 views.
+		<br /><br />
+		The five Smash players I talked to consider Derecho one of the best players on campus. But despite her skill, Derecho feels that it is hard to be taken seriously as a girl in the broader Smash community. &ldquo;I think I&rsquo;ve definitely had the feeling sometimes that &lsquo;Oh, Smash is this guys&rsquo; game,&rsquo; and I am intruding on it,&rdquo; she said. &ldquo;It&rsquo;s a fear, a feeling that maybe I shouldn&rsquo;t be here, because this is the guys&rsquo; thing.&rdquo;
+		<br /><br />
+		Although she doesn&rsquo;t experience that fear at Yale, she does feel it when she goes to local tournaments. Derecho even said that people have accused her of playing Smash just to get guys.
+		<br /><br />
+		At the end of last year, Lining Wang &rsquo;17 co-founded Gamers@Yale with Ilangovan, with whom she now shares the presidency. Among other duties, Wang helps organize weekly dinners and events like viewing parties for major game tournaments. The group has 148 members &mdash; 16 of the members are girls. 
+		<br /><br />
+		Wang, alone of the people I&rsquo;ve spoken to, openly declared how she felt about her peers and Quinn&rsquo;s harassment at the hands of the #Gamergate movement:
+		<br /><br />
+		&ldquo;I&rsquo;m definitely anti-Gamergate.&rdquo; 
+		<br /><br />
+		Wang has taken a firm stance, but she thinks that getting the gaming community to organize in its entirety will be difficult.
+		<br /><br />
+		&ldquo;To reform the culture thoroughly as a whole, you don&rsquo;t just need to denounce the blatant misogynists,&rdquo; Wang said. &ldquo;You need to reach the bystanders too &mdash; people who are fairly certain that they will never harass anyone, and so when they see it happening, they say, &lsquo;Wow, that&rsquo;s not my problem.&rsquo;&rdquo;
+		<br /><br />
+		Together, the gaming community needs to openly declare its opposition to #Gamergate, she thinks, not merely marginalize the offenders.
+		<br /><br />
+		But, when asked whether she had ever tried to bring #Gamergate up with her male gamer friends, Wang admitted it was harder than it sounded.
+		<br /><br />
+		&ldquo;I guess it usually doesn&rsquo;t quite come up when I hang out with them, and it&rsquo;s really difficult to present it in a non-polarizing way,&rdquo; she said. &ldquo;I&rsquo;m a non-confrontational person. But people really do need to hear about it.&rdquo;
+	</div>
+	<div class="side">
+		<img src="51.jpg" />
+	</div>
+		<div class="side">
+		<img src="gamesquote.jpg" />
+	</div>
+	<div class="side">
+		<img src="59.jpg" />
+	</div>
+	<div class="side">
+		<div class="sidequote">Gaming has reached a watershed moment. What will #Gamergate mean to the inheritors and the innovators of the changing gaming community?
+		</div>
+	</div>
+</div>
+<div class="feature" id="feature2">
+	<div class="featuretext">
+		&ldquo;People [assume] that if you&rsquo;re a girl, you&rsquo;re not playing seriously.&rdquo;
+	</div>
+</div>
+<div class="content">
+	<div class="text">
+		<big>N</big>ick Yee, a video games researcher and author of The Proteus Paradox: How Online Games and Virtual Worlds Change Us &mdash; And How They Don&rsquo;t, has found #Gamergate draining.
+		<br /><br />
+		&ldquo;We&rsquo;re all just physically exhausted by the storm,&rdquo; he said.
+		<br /><br />
+		For Yee, #Gamergate is a leaderless movement with too many different interests at stake, all of them churning within the chaos of the Internet.
+		<br /><br />
+		&ldquo;There&rsquo;s no one who&rsquo;s come forward to say, &lsquo;This is the mission, these are the goals, these are the demands, this is what we&rsquo;re against,&rsquo;&rdquo; he explained. &ldquo;It&rsquo;s got several different strains of very different claims. It all depends on who you talk to.&rdquo;
+		<br /><br />
+		For Yee, the people slinging death threats and other forms of harassment under #Gamergate are thought of as just the rabble. &ldquo;[The death threats] sound massively bonkers to people who are not in the gaming community &mdash; but the problem is that, within the gaming community, everyone has normalized this behavior so much that when the Anita Sarkeesian episode came about &#8230;it was kind of like the big reaction within the community was, well of course she got emailed death threats, everyone gets emailed death threats.&rdquo;
+		<br /><br />
+		However commonplace, the &ldquo;rabble&rdquo; is powerful.
+		<br /><br />
+		&ldquo;Academics and industry leaders have said, &lsquo;I&rsquo;d like to speak up, but I&rsquo;m just afraid of getting death threats and harassed,&rsquo;&rdquo; Yee said. &ldquo;It&rsquo;s been really, really scary. Until the story broke in the mainstream, in The New York Times, there was this pervasive fear of, &lsquo;My God, I don&rsquo;t want to speak out because who knows what&rsquo;s going to happen.&rsquo;&rdquo;
+		<br /><br />
+		Yale professor Laura Wexler, who teaches the Yale course &ldquo;Gender &amp; Sexuality in Media and Popular Culture: Dialogues in Feminism and Technology,&rdquo; believes that part of the issue is that the anonymous nature of the Internet has created a space where people can delve scot-free into their basest fantasies and speak without impunity.
+		<br /><br />
+		The issue for Wexler is when that virtual behavior starts to bleed into reality.
+		<br /><br />
+		&ldquo;[People] can say and do whatever they want in fantasy and in cyberspace,&rdquo; Wexler said. &ldquo;But that freedom has crossed over to have real consequences, and that&rsquo;s what the public doesn&rsquo;t quite understand.&rdquo;
+		<br /><br />
+		&ldquo;The ceaseless barrage of random people sending you disgusting shit is initially impossible to drown out &mdash; it was constant, loud, and it became my life,&rdquo; Quinn wrote in an article published on Cracked.com in September, shortly after the harassment began. &ldquo;Of course I know that this is just a small minority of the angry and disenfranchised, but I felt like it was the entire world.&rdquo;
+		<br /><br />
+		___
+		<br /><br />
+		Max Jesse Goldberg &rsquo;17 feels online gaming forums have always been toxic. &ldquo;It was guys saying things that&rsquo;s beyond what anyone would hear outside of the virtual world,&rdquo; he said.
+		<br /><br />
+		Goldberg used to play video games pretty seriously in high school. When he came to college, he stopped. He has not considered himself a part of the gaming community at Yale &mdash; or, for that matter, part of the broader gaming community &mdash; since he came out as gay during his freshman year of college.
+		<br /><br />
+		Goldberg said many of the games he played in high school, like Team Fortress 2, were multiplayer, in which you can speak to other players via microphones or group messaging. Gamer comment culture, Goldberg said, is extreme: he&rsquo;d often hear &ldquo;Faggot, come over here,&rdquo; or &ldquo;we just got raped,&rdquo; in the midst of gameplay.
+		<br /><br />
+		Goldberg tried to push back. At one point, he changed his profile picture to a rainbow flag in order to make the other players more aware of how their language could be harmful to others. The idea backfired: he himself was attacked with slurs and hateful language.
+		<br /><br />
+		&ldquo;I think it&rsquo;s a reflection of what this community has become,&rdquo; he said. &ldquo;[It&rsquo;s] one of the last places where you can say those things and not be shouted out of the room, or have even a concern raised.&rdquo;
+		<br /><br />
+		___
+		<br /><br />
+		Jessica Yang &rsquo;16 told me she hadn&rsquo;t had many discussions about #Gamergate or the gaming industry with her friends in Gamers@Yale.
+		<br /><br />
+		&ldquo;Gamers usually only talk about the gaming experience as a very mechanical experience,&rdquo; she said. &ldquo;It&rsquo;s this big issue about the gaming community at large, [and] if I&rsquo;m talking about games with someone, I&rsquo;m going to be talking about how to exploit a bug to get additional cash from this quest, not about the industry in general.&rdquo;
+		<br /><br />
+		Five hours after I spoke with her, at one in the morning, Yang sent me a text.
+		<br /><br />
+		She told me that she was playing a driving simulation game, Euro Truck Simulator 2, and she wanted to show a male gamer friend one of her plays. She started a live-stream of her game. At some point, while having trouble reverse-parking her truck, another gamer whom she had never met logged onto her channel, watched her struggle, and commented to her friend, &ldquo;Women and reversing don&rsquo;t mix.&rdquo; Her friend said nothing in response.
+		<br /><br />
+		The comment bothered Yang for long afterwards. She said that when it first happened, she just felt annoyed. But she kept going back to it. Every time she tried to parse the incident in her head, her feelings about it grew stronger. She knew that misogyny in gaming culture existed, but before this she thought of it as something remote, something exaggerated by the media. It was never something she considered relevant to her or to the gamers that she knew.
+		<br /><br />
+		&ldquo;I definitely started to see how one could start to feel alienated by the gaming community,&rdquo; she said.
+		<br /><br />
+		Yang didn&rsquo;t know how to respond. &ldquo;I&rsquo;m not sure why I didn&rsquo;t complain to my friend about it,&rdquo; she said. &ldquo;It&rsquo;s like I thought it wasn&rsquo;t really relevant to our discussion and that it wouldn&rsquo;t interest him, that maybe he&rsquo;d think I was making a mountain out of a molehill.&rdquo;
+		<br /><br />
+		She admitted to me that she had been unable to get the incident off her mind for the last five hours, and had no one else to turn to voice her frustration. She tried messaging a male gamer friend at Yale about what had happened, but the reply she got was bored and ineffectual. The only advice he gave her was to mute the player so that he couldn&rsquo;t bother her anymore. But no one she talked to seemed willing to engage in a dialogue with her about her experience.
+		<br /><br />
+		Of the four out of nine Gamers@Yale board members I spoke to, none seemed to hold increasing representation of women in gaming at Yale to be a priority. But Niv Sultan, a member of the Harvard E-Sports Association, a campus gaming group started around the same time as Gamers@Yale told me the issue was on his mind.
+		<br /><br />
+		Sultan, a senior and board member of the E-Sports Association, told me that the problem of gender disparity in gaming exists across the broad gaming community, not necessarily in any individual gaming organization.
+		<br /><br />
+		When asked about #Gamergate, Sultan said that because gaming was becoming so ubiquitous, there was a social responsibility to make sure the gaming community was welcoming to all groups.
+		<br /><br />
+		&ldquo;If you want to be taken seriously, you have to be willing to look at the flaws,&rdquo; he said. &ldquo;The argument that it&rsquo;s a small remote minority is just ludicrous, because if that&rsquo;s the face of gaming at all, then it&rsquo;s something that the people who don&rsquo;t agree with have to take active measures to combat.&rdquo;
+		<br /><br />
+		Sultan told me that his board is discussing active measures that can be taken to ensure a welcoming gaming group to all. It is partnering with women&rsquo;s organizations on campus to give women more opportunities to play video games, and makes clear that the E-Sports Association does not support misogyny of any kind.
+		<br /><br />
+		Since the last time he played in high school, Goldberg said, he has observed the broader gaming community starting to change.
+		<br /><br />
+		One reason for the change, he explained, is that gaming is becoming more visible and shared by more people. Popular gaming sites like Twitch.tv, where players can live-stream themselves and watch others play games, are helping to create a more positive gaming culture by broadening access to the gaming world. As gaming expands, Goldberg said, it would become more accountable to its members.
+		<br /><br />
+		Yee also believes that Twitch has helped to counter assertions that women aren&rsquo;t gamers by allowing people to watch women streaming themselves gaming. Twitch, he explained, is providing a counter-narrative to the stereotype that women aren&rsquo;t serious gamers.
+		<br /><br />
+		He added that gamers can also enact change on an individual level.
+		<br /><br />
+		&ldquo;I think it&rsquo;s really easy for people to discount these experiences of people that they don&rsquo;t know that they read online,&rdquo; Yee said. &ldquo;I think one thing male gamers can do is talk to female gamers they know and really ask them about their experience.&rdquo;
+		<br /><br />
+		___
+		<br /><br />
+		My first experience with gaming was at parties my parents used to drag me to when I was little. The adults stood in the dining room, sipping drinks and eating food, and the children were thrown in the basement with a gaming console, a box of pizza, and some emergency protocol.
+		<br /><br />
+		Gaming for us was more than just about the video games, more than just the mechanics behind winning or about beating an opponent &mdash; it was what we did to be together. But now games are more than just that small community in the basement. The gaming community has become too large to be contained in a single room.
+		<br /><br />
+		Writing this article was hard. For two months of my life, I went from never thinking about video games to only ever thinking about video games. I skipped classes to see game developers give speeches and to call gamers who were willing to speak to me. I stayed up late at night watching YouTube videos of Pikachu and Fox battling it out on a digital screen. A week ago, a friend questioned whether a topic like video games was really important enough to stress over, and I nearly took his head off. Two game developers I talked to refused to be included in the piece after the word #Gamergate was mentioned. I was told I was not a part of the gaming community, and therefore had no right to write this article. I was told that if I have ever played a single video game, even played a round of solitaire on a bored afternoon, then I could not deny I was a gamer. People told me #Gamergate was dead. Yee believes that until the issues at stake are addressed, #Gamergate will never die: even if the hashtag fades out, the #Gamergate specter would continue to haunt the video game community until something changed.
+		<br /><br />
+		As a person, writing this has been tiring. As a woman, writing this has been disturbing. I read so many 140-character death and rape threats directed at Quinn, Wu, Sarkeesian, and other women in the gaming community that I started to become paranoid myself. When I tried to share that fear with other gamers, I was instructed, again and again, to simply ignore them. &ldquo;It&rsquo;s the rabble of the internet&rdquo; was the mantra I was given each time I tried to tell them that as a woman, I felt like there were crosshairs on my back. One gamer was even convinced that Sarkeesian had made up most of the death threats for attention. I began to fear myself that I was making mountains out of molehills, that my fears were unfounded, that they would think I was just doing it for attention.
+		<br /><br />
+		I began to fray. I asked how this industry would ever change. Gamers told me it had to come from game developers. Game developers told me it had to come from gamers. Male gamers told me it had to come from the female gamers, female gamers told me it had to come from the male gamers.
+		<br /><br />
+		So who is going to pick up the controller and do it?
+	</div>
+	<div class="side">
+		<div class="sidequote">Five hours after I spoke with her, at 1 in the morning, [Yang] sent me a text... She had been unable to get the incident off her mind.
+		</div>
+	</div>
+	<div class="side">
+		<img src="controller.jpg" />
+	</div>
+	<div class="side">
+		<div class="sidequote">&ldquo;The ceaseless barrage of random people sending you disgusting shit is initially impossible to drown out... Of course I know that this is just a small minority of the angry and disenfranchised, but I felt like it was the entire world.&rdquo;
+		</div>
+	</div>
+</div>
+		<br /><br />
+		<br /><br />
+		<br /><br />
+</div>
+<div class="content" id = "comments">
+	<div class = "title"><hr /><h2>Comments</h2><hr /></title>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yaledailynews'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</div>
+
+<div class="content">
+	<hr />
+	<div class="title">
+		&copy; Copyright 2014 Yale Daily News. All rights reserved.
+	</title>
+</div>
+</body>
+</html>
