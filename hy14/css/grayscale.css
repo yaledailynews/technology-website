@@ -363,6 +363,15 @@ video {
 
 }
 
+#seniors {
+    background: url(../img/seniors.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
 #celebration {
     background: url(../img/celebration.png) no-repeat center center scroll;
     -webkit-background-size: cover;
