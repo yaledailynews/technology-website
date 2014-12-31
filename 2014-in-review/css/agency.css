@@ -36,6 +36,7 @@ a.active {
 
 a {
     color: #0645ad !important;
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
