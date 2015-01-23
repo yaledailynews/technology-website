@@ -19,26 +19,36 @@ footer {
 h3 {
 	margin-top: 0px;
 	margin-bottom: 0px;
+	margin-left: 90px;
+}
+
+.margin {
+	margin-left: 90px;
+	padding-bottom: 10px
 }
 
 .img-responsive-author{
 	width: 80px;
 	height: 80px;
 	max-height: 80px;
+	max-width: 80px;
 	float: left;
 	border-radius: 4px;
-	margin-right: ;
+	position: relative;
+	margin-top: 3px;
+	left: 3px;
 }
 
 .caption{
-	height: 125px;
-	max-height: 125px;
-	/*margin-right: 4px;*/
+	height: 130px;
+	max-height: 140px;
+	margin-right: 4px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
-.caption-long{
-	height: 145px;
-	max-height: 145px;
+.long{
+	font-size: 0.93em;
 }
 
 img {
