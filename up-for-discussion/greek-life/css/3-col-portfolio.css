@@ -9,7 +9,7 @@ body {
 }
 
 .portfolio-item {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 footer {
@@ -24,14 +24,16 @@ h3 {
 
 .margin {
 	margin-left: 90px;
-	padding-bottom: 10px
+	padding-bottom: -20000px;
 }
 
 .img-responsive-author{
-	width: 80px;
-	height: 120px;
-	max-height: 120px;
-	max-width: 80px;
+	/*width: 80px;*/
+	/*height: 120px;*/
+	width: 15.5%;
+	height: 20%;
+	max-height: 1520px;
+	max-width: 180px;
 	float: left;
 	border-radius: 4px;
 	position: relative;
@@ -40,11 +42,21 @@ h3 {
 }
 
 .caption{
-	height: 130px;
-	max-height: 140px;
+	/*height: 130px;*/
+	height: 100%;
+	max-height: 540px;
 	margin-right: 4px;
 	padding-bottom: 5px;
 	padding-top: 5px;
+}
+
+@media (max-device-width: 768px) {
+	/*.img-responsive-author .caption .long-long{
+		height: 200px;
+	}*/
+	h3{ 
+		color: red;
+	}
 }
 
 .long{
@@ -53,12 +65,16 @@ h3 {
 
 .long-long{
 	/*font-size: 0.75em;*/
-	height: 160px;
-	max-height: 170px;
+	/*height: 160px;*/
+	/*max-height: 170px;*/
 	margin-right: 4px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	font-size: 0.88em;
+}
+
+.small {
+	font-size: 1.18em;
 }
 
 img {
