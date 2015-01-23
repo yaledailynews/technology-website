@@ -27,6 +27,11 @@ h3 {
 	padding-bottom: -20000px;
 }
 
+.author{
+	margin-left: 10px;
+	font-size: 10em;
+}
+
 .img-responsive-author{
 	/*width: 80px;*/
 	/*height: 120px;*/
@@ -75,8 +80,4 @@ h3 {
 
 .small {
 	font-size: 1.18em;
-}
-
-img {
-	/*margin-right: 5px;*/
 }
